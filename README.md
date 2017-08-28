@@ -1,21 +1,36 @@
 # LHC
 
-A generator for functional CSS. Inspired by Tachyons and gr8.
+A generator for functional CSS.
 
 ## Getting Started
 
 ```js
-const lhc = require('lhc');
+import lhc from 'lhc';
 
 const colors = { blue: '#00f', red: '#f00' };
 const spacing = [0, 2, 4, 8, 16, 24];
-const fontWeights
+const fontWeight = { light: 300, regular: 400, semibold: 600 };
 
-const css = lhc.generate({ colors, spacing, fontWeights });
+const css = lhc.generate({ colors, spacing, fontWeight }, { verbose: true });
 
 // `css` is now a minified string of CSS
 console.log(css);
 ```
+
+You can also define a full rule-set from scratch if you'd like fine-grained control over all the CSS that gets generated.
+
+```js
+import lhc, { rule } from 'lhc';
+
+const rules = [
+  rule('d', 'display', { none: 'none', inlineBlock: 'inline-block', block: 'block' }, { responsive: true }),
+  rule('p', 'position', { relative: 'relative', absolute: 'absolute' }),
+];
+
+const css = lhc.generate(rules);
+```
+
+LHC will take care of the AST, generating the CSS, and grouping rules into media queries, leaving you to declaratively define the rules you want.
 
 ## Motivation
 
