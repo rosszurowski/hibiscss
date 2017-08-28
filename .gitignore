@@ -1,0 +1,10 @@
+# Ignore npm/yarn scraps
+node_modules/
+npm-debug.log
+yarn.lock
+yarn-debug.log
+yarn-error.log
+
+# Ignore temporary files
+.next/
+dist/

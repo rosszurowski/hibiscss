@@ -1,0 +1,11 @@
+{
+  "name": "lhc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "csso": "^3.1.1",
+    "lodash": "^4.17.4",
+    "ramda": "^0.24.1",
+  }
+}
