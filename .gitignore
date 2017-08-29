@@ -5,6 +5,9 @@ yarn.lock
 yarn-debug.log
 yarn-error.log
 
+# Ignore dev files
+flow-typed/
+
 # Ignore temporary files
 .next/
 dist/

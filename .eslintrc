@@ -1,0 +1,17 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "flowtype"
+  ],
+  "extends": "watsi",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "max-len": "off",
+    "no-bitwise": "off",
+    "no-return-assign": ["error", "except-parens"],
+    "react/sort-comp": "off"
+  }
+}

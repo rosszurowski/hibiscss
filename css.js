@@ -1,3 +1,5 @@
+// @flow
+
 const r = require('ramda');
 const csso = require('csso');
 const lhc = require('./lib/generate');
@@ -60,8 +62,7 @@ const sizes = (values, opts = {}) => {
     rule('w', 'width', values, withResponsive),
     rule('h', 'height', values, withResponsive),
   ];
-}
-
+};
 
 const flex = (opts = {}) => {
   const withResponsive = Object.assign({}, opts, { responsive: true });
@@ -77,7 +78,7 @@ const flex = (opts = {}) => {
     rule('xj', 'justify-content', { start: 'flex-start', spaceAround: 'space-around', spaceBetween: 'space-between', center: 'center', end: 'flex-end' }, withResponsive),
     rule('xo', 'order', [0, 1, 2, 3, 4], withResponsive),
   ];
-}
+};
 
 const getRules = () => r.flatten([
   //
@@ -88,7 +89,7 @@ const getRules = () => r.flatten([
     '25p': 0.25,
     '50p': 0.5,
     '75p': 0.75,
-    '100p': 1.0
+    '100p': 1.0,
   }),
   //
   // Layout
