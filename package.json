@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src/ -d lib/ --ignore '**/*.test.js,src/types.js'",
+    "prepublish": "npm run build",
     "test": "jest"
   },
   "dependencies": {
