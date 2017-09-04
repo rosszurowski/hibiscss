@@ -1,4 +1,4 @@
-# LHC 🚉
+# lhc 🚉
 
 A tool for generating functional CSS kits.
 
@@ -14,7 +14,15 @@ Generate styles by calling `lhc` with a set of rules. To get a quick start, you 
 import lhc from 'lhc';
 import hadron from 'lhc/hadron';
 
-const config
+const config = {
+  colors: {
+    pink: '#ffb7b3',
+    black: '#141414'
+  },
+  fontFamily: {
+    sans: 'Work Sans, sans-serif'
+  }
+}
 
 const css = lhc(hadron(config));
 
@@ -22,7 +30,7 @@ const css = lhc(hadron(config));
 process.stdout.write(css);
 ```
 
-You can also generate [tachyons](http://tachyons.io/)-style selectors with the `lhc/tachyons` pack:
+You can also generate `[tachyons](http://tachyons.io/)`-style selectors with the `lhc/tachyons` pack:
 
 ```js
 import tachyons from 'lhc/tachyons';
@@ -32,7 +40,7 @@ const css = lhc(tachyons(config));
 
 ### Kits
 
-LHC comes with two built-in kits for generating styles: `hadron` and `tachyons`.
+LHC comes with two built-in kits for generating styles: [`hadron`](#hadron) and [`tachyons`](#tachyons).
 
 Kits are simply functions that return a bunch of [rules](#), and take options to configure them. Hadron, for instance, lets you customize the colours, typefaces, and spacings with an object.
 
@@ -58,7 +66,11 @@ Which spits out classes like:
 .mh-5 { margin-left: 24px; margin-right: 24px; }
 ```
 
+### Hadron
 
+To be written...
+
+### Tachyons
 
 Tachyons is all the rules from [tachyons](http://tachyons.io/docs/) CSS, but configured to follow LHC's [rule anatomy](#anatomy-of-a-rule): `.prefix-prop-value-suffix { ... }`. So it looks like this:
 
@@ -67,6 +79,8 @@ Tachyons is all the rules from [tachyons](http://tachyons.io/docs/) CSS, but con
 .bc-green { background-color: green; }
 .bc-blue  { background-color: blue; }
 ```
+
+### Making a custom kit
 
 You can also define a full rule-set from scratch if you'd like fine-grained control over all the CSS that gets generated.
 
@@ -90,13 +104,13 @@ const css = lhc(rules);
 
 LHC will take care of the AST, generating the CSS, and grouping rules into media queries, leaving you to declaratively define the rules you want.
 
+You can integrate lhc into your build step, tie it together via [styled-components](https://github.com/styled-components/styled-components), or just generally do whatever!
+
 ## Why?
 
 * **Flexible**:
 * **Small**: the default preset comes out to ~1kB gzipped
 * **Everything in JS**: integrates f(css) nicely with CSS-in-JS tools
-
-## Motivation
 
 [f(css)](http://www.jon.gold/2015/07/functional-css/) makes CSS a lot of fun, but many of the toolkits out there are difficult to customize.
 
@@ -106,7 +120,7 @@ LHC is a composable toolkit for generating your own f(css) kit from simple js co
 
 Everything it spits out is customizable, but it comes with a few [starter packs](#) to get you moving quickly with basic customization (colors, spacing, fonts).
 
-[Check out the examples](#) for more!
+[Check out the examples](https://github.com/rosszurowski/lhc/tree/master/examples) for more!
 
 ## Goals
 
