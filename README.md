@@ -1,17 +1,59 @@
-# LHC
+# Hibiscus 🌺
 
-A generator for functional CSS.
+A tool for generating functional CSS kits.
+
+```bash
+npm install lhc --save
+```
 
 ## Getting Started
 
+Generate styles by calling `lhc` with a set of rules. To get a quick start, you can use the default pack, hadron:
+
 ```js
 import lhc from 'lhc';
+import hadron from 'lhc/hadron';
+
+const config
+
+const css = lhc(hadron(config));
+
+// Pipe the css out to a file
+process.stdout.write(css);
+```
+
+You can also generate tachyons-style selectors with the `lhc/tachyons` pack:
+
+```js
+import tachyons from 'lhc/tachyons';
+
+const css = lhc(tachyons(config));
+```
+
+### Hadron
+
+A 
+
+```
+
+const config = {
+  colors,
+  spacing,
+
+};
+
+const styles = lhc(tachyons(config));
+const output = csso.minify(styles);
+```
+
+```js
+import lhc, { defaultRules } from 'lhc';
 
 const colors = { blue: '#00f', red: '#f00' };
 const spacing = [0, 2, 4, 8, 16, 24];
 const fontWeight = { light: 300, regular: 400, semibold: 600 };
 
-const css = lhc.generate({ colors, spacing, fontWeight }, { verbose: true });
+const css = lhc(defaultRules({ colors, spacing, fontWeight }), { verbose: true });
 
 // `css` is now a minified string of CSS
 console.log(css);
@@ -27,29 +69,28 @@ const rules = [
   rule('p', 'position', { relative: 'relative', absolute: 'absolute' }),
 ];
 
-const css = lhc.generate(rules);
+const css = lhc(rules);
 ```
 
 LHC will take care of the AST, generating the CSS, and grouping rules into media queries, leaving you to declaratively define the rules you want.
 
+## Why?
+
+* **Flexible**:
+* **Small**: the default preset comes out to ~1kB gzipped
+* **JS-only**: integrates f(css) nicely with CSS-in-JS tools
+
 ## Motivation
 
-Functional CSS is amazing. But it's not enough to drop the same preset CSS into every project.
+[f(css)](http://www.jon.gold/2015/07/functional-css/) makes CSS a lot of fun, but many of the toolkits out there are difficult to customize.
 
-Every new project I spend a bunch of time customizing f(css) frameworks for the properties that I need:
+For each project, I found myself manually spitting out the tachyons css, adjust colour and typefaces, removing unused rules, tweaking breakpoints, etc. I’ve also found myself in situations with other devs who aren’t comfortable with tachyons’ concise class names.
 
-* Colors
-* Typefaces
-* Spacing scale
-* Breakpoints
-* Compact class names (`lh-tight`, `ma-4-s`) or verbose ones
-* Removing variables I never use ([this](http://tachyons.io/docs/themes/box-shadow/) or [this](http://tachyons.io/docs/layout/clearfix/), for example) to save bandwidth
+Hibiscus is a compassable toolkit for generating your own f(css) kit from simple js configuration.
 
-These things change depending on the team size and experience, brand, and all sorts of factors.
+Everything it spits out is customizable, but it comes with a few [starter packs](#) to get you moving quickly with basic customization (colors, spacing, fonts).
 
-LHC lets you generate your own CSS lib from configuration you put in.
-
-Everything it spits out is customizable, but it comes with some sane defaults to get you configuring the most important things first (colors, spacing, fonts)
+[Check out the examples](#) for more!
 
 ## Goals
 
@@ -109,17 +150,18 @@ A rule
 * Hover/focus/active states?
 * Background images, etc?
 
-## Further Reading
+## See also
 
-Some functional CSS projects:
+Pairs nicely with:
 
-* [Tachyons](https://github.com/tachyons-css/tachyons/)
-* [jongacnik/gr8](https://github.com/jongacnik/gr8)
+* [rosszurowski/vanilla](https://github.com/rosszurowski/vanilla), a browser-wide reset designed for functional css
+
+Functional CSS:
+
+* [tachyons](https://github.com/tachyons-css/tachyons/)
 * [basscss](https://github.com/basscss/basscss)
+* [jongacnik/gr8](https://github.com/jongacnik/gr8)
 
-Some writing about functional CSS:
+In use:
 
-* [Immutable CSS by Harry Roberts](https://csswizardry.com/2015/03/immutable-css/)
-* [Functional CSS by Jon Gold](http://www.jon.gold/2015/07/functional-css/)
-* [Functional CSS at Wealthfront](http://eng.wealthfront.com/2013/08/20/functional-css-fcss/)
-* [BassCSS Principles](http://basscss.com/v7/docs/reference/principles/)
+* [watsi.org](https://watsi.org)

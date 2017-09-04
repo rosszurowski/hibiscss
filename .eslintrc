@@ -6,11 +6,13 @@
   "extends": "watsi",
   "env": {
     "browser": true,
-    "node": true
+    "node": true,
+    "jest": true
   },
   "rules": {
     "max-len": "off",
     "no-bitwise": "off",
+    "no-multi-spaces": "off",
     "no-return-assign": ["error", "except-parens"],
     "react/sort-comp": "off"
   }

@@ -10,4 +10,5 @@ flow-typed/
 
 # Ignore temporary files
 .next/
+lib/
 dist/
