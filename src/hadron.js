@@ -1,14 +1,14 @@
-const r = require('ramda');
-const lhc = require('./index');
+import r from 'ramda';
+import { rule } from '.';
 
-const rule = lhc.rule;
+const breakpoints = {
+  s: '479px',
+  m: '767px',
+  l: '1023px',
+};
 
 const defaults = {
-  breakpoints: {
-    s: '479px',
-    m: '767px',
-    l: '1023px',
-  },
+  breakpoints,
   colors: {
     black: '#000',
     midGray: '#555',
@@ -48,8 +48,8 @@ const defaults = {
 };
 
 const spacing = (values, opts = {}) => {
-  const withResponsive = r.merge({}, opts, { responsive: true });
-  const withUnit = r.merge({}, withResponsive, { unit: 'px' });
+  const withResponsive = r.merge(opts, { responsive: true });
+  const withUnit = r.merge(withResponsive, { unit: 'px' });
 
   return [
     rule('ma', 'margin', values, withUnit),
@@ -76,7 +76,7 @@ const spacing = (values, opts = {}) => {
 };
 
 const sizes = (values, opts = {}) => {
-  const withResponsive = r.merge({}, opts, { responsive: true });
+  const withResponsive = r.merge(opts, { responsive: true });
 
   return [
     rule('w', 'width', values, withResponsive),
@@ -85,7 +85,7 @@ const sizes = (values, opts = {}) => {
 };
 
 const flex = (opts = {}) => {
-  const withResponsive = r.merge({}, opts, { responsive: true });
+  const withResponsive = r.merge(opts, { responsive: true });
 
   return [
     rule('x', 'display', 'flex', withResponsive),
@@ -125,7 +125,7 @@ const typography = (opts = {}) => [
 ];
 
 const getRules = (opts) => {
-  const config = r.merge({}, defaults, opts);
+  const config = r.merge(defaults, opts);
 
   return r.flatten([
     rule('d', 'display', { inline: 'inline', inlineBlock: 'inline-block', block: 'block', none: 'none' }, { responsive: true }),
@@ -143,7 +143,5 @@ const getRules = (opts) => {
 };
 
 
-module.exports = getRules;
-module.exports.breakpoints = defaults.breakpoints;
-module.exports.flex = flex;
-module.exports.spacing = spacing;
+export default getRules;
+export { breakpoints, flex, spacing };

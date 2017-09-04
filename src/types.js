@@ -6,6 +6,7 @@ export type RuleOptions = {
   unit?: string,
   responsive?: boolean
 };
+
 export type Rule = {
   selector: string,
   properties: { [RuleProperty]: string },

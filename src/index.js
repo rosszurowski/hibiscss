@@ -1,9 +1,9 @@
-const generateStylesheet = require('./stylesheet');
-const generateRule = require('./rule');
+import generateStylesheet from './stylesheet';
+import generateRule from './rule';
 
 function lhc (rules, breakpoints = {}) {
   return generateStylesheet(rules, breakpoints);
 }
 
-module.exports = lhc;
-module.exports.rule = generateRule;
+export default lhc;
+export const rule = generateRule;

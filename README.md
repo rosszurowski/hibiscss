@@ -1,4 +1,4 @@
-# Hibiscus 🌺
+# LHC 🚉
 
 A tool for generating functional CSS kits.
 
@@ -22,7 +22,7 @@ const css = lhc(hadron(config));
 process.stdout.write(css);
 ```
 
-You can also generate tachyons-style selectors with the `lhc/tachyons` pack:
+You can also generate [tachyons](http://tachyons.io/)-style selectors with the `lhc/tachyons` pack:
 
 ```js
 import tachyons from 'lhc/tachyons';
@@ -30,33 +30,42 @@ import tachyons from 'lhc/tachyons';
 const css = lhc(tachyons(config));
 ```
 
-### Hadron
+### Kits
 
-A 
+LHC comes with two built-in kits for generating styles: `hadron` and `tachyons`.
 
-```
-
-const config = {
-  colors,
-  spacing,
-
-};
-
-const styles = lhc(tachyons(config));
-const output = csso.minify(styles);
-```
+Kits are simply functions that return a bunch of [rules](#), and take options to configure them. Hadron, for instance, lets you customize the colours, typefaces, and spacings with an object.
 
 ```js
-import lhc, { defaultRules } from 'lhc';
+import lhc from 'lhc';
+import hadron from from 'lhc/hadron';
 
 const colors = { blue: '#00f', red: '#f00' };
 const spacing = [0, 2, 4, 8, 16, 24];
 const fontWeight = { light: 300, regular: 400, semibold: 600 };
 
-const css = lhc(defaultRules({ colors, spacing, fontWeight }), { verbose: true });
+const config = { colors, spacing, fontFamily };
 
-// `css` is now a minified string of CSS
-console.log(css);
+console.log(lhc(hadron(config)));
+```
+
+Which spits out classes like:
+
+```css
+.c-blue { color: #0ff; }
+.c-red { color: #f00; }
+
+.mh-5 { margin-left: 24px; margin-right: 24px; }
+```
+
+
+
+Tachyons is all the rules from [tachyons](http://tachyons.io/docs/) CSS, but configured to follow LHC's [rule anatomy](#anatomy-of-a-rule): `.prefix-prop-value-suffix { ... }`. So it looks like this:
+
+```css
+.bc-red   { background-color: red; }
+.bc-green { background-color: green; }
+.bc-blue  { background-color: blue; }
 ```
 
 You can also define a full rule-set from scratch if you'd like fine-grained control over all the CSS that gets generated.
@@ -64,9 +73,16 @@ You can also define a full rule-set from scratch if you'd like fine-grained cont
 ```js
 import lhc, { rule } from 'lhc';
 
+const colors = { blue: '#00f', red: '#f00' };
+const spacing = [0, 2, 4, 8, 16, 24];
+
 const rules = [
-  rule('d', 'display', { none: 'none', inlineBlock: 'inline-block', block: 'block' }, { responsive: true }),
-  rule('p', 'position', { relative: 'relative', absolute: 'absolute' }),
+  // rule(selector, property, values, options)
+  rule('bc', 'background-color', colors),
+  rule('c', 'color', colors),
+
+  rule('ma', 'margin', spacing, { responsive: true, unit: 'px' }),
+  rule('p', 'position', { relative: 'relative', absolute: 'absolute' }, { responsive: true }),
 ];
 
 const css = lhc(rules);
@@ -78,7 +94,7 @@ LHC will take care of the AST, generating the CSS, and grouping rules into media
 
 * **Flexible**:
 * **Small**: the default preset comes out to ~1kB gzipped
-* **JS-only**: integrates f(css) nicely with CSS-in-JS tools
+* **Everything in JS**: integrates f(css) nicely with CSS-in-JS tools
 
 ## Motivation
 
@@ -86,7 +102,7 @@ LHC will take care of the AST, generating the CSS, and grouping rules into media
 
 For each project, I found myself manually spitting out the tachyons css, adjust colour and typefaces, removing unused rules, tweaking breakpoints, etc. I’ve also found myself in situations with other devs who aren’t comfortable with tachyons’ concise class names.
 
-Hibiscus is a compassable toolkit for generating your own f(css) kit from simple js configuration.
+LHC is a composable toolkit for generating your own f(css) kit from simple js configuration.
 
 Everything it spits out is customizable, but it comes with a few [starter packs](#) to get you moving quickly with basic customization (colors, spacing, fonts).
 
@@ -99,61 +115,23 @@ Everything it spits out is customizable, but it comes with a few [starter packs]
 3. **Collaborative**. This should make it easy for designers and engineers to work together. Language can be shared (“headline”, “coral red”). Atomic styleguides can be generated.
 4. **Performant**. Not 87kB of CSS. It’d be great to drop the stuff that’s unneeded.
 
-
 ### Anatomy of a Rule
 
 A rule
 
 ```
- ┌─ prefix (optional)      ┌─ property key        ┌─ value
- ▼                        ▼                      ▼
+ ┌─ prefix (optional)      ┌─ property key         ┌─ value
+ ▼                         ▼                       ▼
 .u-             fontSize-  5   {   font-size   :   1.5   rem   }
-                ▲                 ▲                     ▲
+                ▲                  ▲                      ▲
                 └─ property name   └─ property           └─ unit
 ```
-
-
-
-#### Colors
-
-* Text color
-* Background color
-* Border color
-
-#### Appearance
-
-* Border radius
-* Background position, size, repeat
-* Display
-* Opacity
-* Overflow
-* z-index
-
-#### Layout
-
-* Flexbox
-* Spacing (margin, padding, negative margin, auto)
-* Widths (percentages, absolute sizes)
-* Position (`top: 0`, `-fill`)
-* Floats
-
-### Modifiers
-
-* Prefix
-    * **Utility class prefix** (`u-`) for following SUITCSS
-    * **Namespacing** (eg. `twt-`) if you work with external CSS, etc
-* Breakpoints (`-s`, `-m`, `-l` as defaults, what widths?)
-
-## How to handle…
-
-* Global resets (box-sizing, , etc)
-* Hover/focus/active states?
-* Background images, etc?
 
 ## See also
 
 Pairs nicely with:
 
+* [polished](https://github.com/styled-components/polished), a utility kit for css-in-js
 * [rosszurowski/vanilla](https://github.com/rosszurowski/vanilla), a browser-wide reset designed for functional css
 
 Functional CSS:

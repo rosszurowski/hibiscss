@@ -1,8 +1,7 @@
 // @flow
 
+import r from 'ramda';
 import type { Rule, RuleProperty } from './types';
-
-const r = require('ramda');
 
 const getDeclaration = (arr: [RuleProperty, string]): string => arr.join(':');
 const getLine = (rule: Rule, suffix?: string): string => {
@@ -24,4 +23,4 @@ const generateStylesheet = (rules: Rule[], breakpoints: { [string]: string } = {
   return r.prepend(getSection(), responsiveSections).join('\n');
 };
 
-module.exports = generateStylesheet;
+export default generateStylesheet;

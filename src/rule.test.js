@@ -1,4 +1,4 @@
-const generateRule = require('./rule');
+import generateRule from './rule';
 
 describe('generateRule', () => {
   it('generates css-safe property names', () => {

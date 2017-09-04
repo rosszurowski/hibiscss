@@ -1,8 +1,7 @@
 // @flow
 
+import r from 'ramda';
 import type { Rule, RuleProperty, RuleValue, RuleOptions } from './types';
-
-const r = require('ramda');
 
 const isArray = r.is(Array);
 const isObject = r.is(Object);
@@ -55,4 +54,4 @@ const generateRule = (
   return getRuleAST(ruleValues);
 };
 
-module.exports = generateRule;
+export default generateRule;
