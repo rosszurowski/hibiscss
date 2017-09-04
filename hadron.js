@@ -1,5 +1,5 @@
-import r from 'ramda';
-import { rule } from '.';
+const r = require('ramda');
+const rule = require('./lib').rule;
 
 const breakpoints = {
   s: '479px',
@@ -142,6 +142,5 @@ const getRules = (opts) => {
   ]);
 };
 
-
-export default getRules;
-export { breakpoints, flex, spacing };
+module.exports = getRules;
+module.exports.breakpoints = breakpoints;

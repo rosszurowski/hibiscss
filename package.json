@@ -1,5 +1,5 @@
 {
-  "name": "lhc",
+  "name": "lhcss",
   "version": "0.0.1",
   "private": true,
   "main": "lib/index.js",
@@ -8,22 +8,28 @@
     "test": "jest"
   },
   "dependencies": {
-    "csso": "^3.1.1",
     "ramda": "^0.24.1"
   },
   "devDependencies": {
-    "@std/esm": "^0.7.1",
     "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-stage-0": "^6.24.1",
+    "csso": "^3.1.1",
     "eslint": "^4.5.0",
     "eslint-config-watsi": "^1.0.15",
     "eslint-plugin-flowtype": "^2.35.0",
     "flow-bin": "^0.53.1",
-    "flow-remove-types": "^1.2.1",
     "jest": "^20.0.4"
-  }
+  },
+  "files": [
+    "hadron.js",
+    "tachyons.js",
+    "README.md",
+    "examples",
+    "lib",
+    "src"
+  ]
 }

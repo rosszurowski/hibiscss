@@ -1,18 +1,18 @@
-# lhc 🚉
+# lhcss 🚉
 
 A tool for generating functional CSS kits.
 
 ```bash
-npm install lhc --save
+npm install lhcss --save
 ```
 
 ## Getting Started
 
-Generate styles by calling `lhc` with a set of rules. To get a quick start, you can use the default pack, hadron:
+Generate styles by calling `lhcss` with a set of rules. To get a quick start, you can use the default pack, hadron:
 
 ```js
-import lhc from 'lhc';
-import hadron from 'lhc/hadron';
+import lhcss from 'lhcss';
+import hadron from 'lhcss/hadron';
 
 const config = {
   colors: {
@@ -30,23 +30,23 @@ const css = lhc(hadron(config));
 process.stdout.write(css);
 ```
 
-You can also generate `[tachyons](http://tachyons.io/)`-style selectors with the `lhc/tachyons` pack:
+You can also generate `[tachyons](http://tachyons.io/)`-style selectors with the `lhcss/tachyons` pack:
 
 ```js
-import tachyons from 'lhc/tachyons';
+import tachyons from 'lhcss/tachyons';
 
-const css = lhc(tachyons(config));
+const css = lhcss(tachyons(config));
 ```
 
 ### Kits
 
-LHC comes with two built-in kits for generating styles: [`hadron`](#hadron) and [`tachyons`](#tachyons).
+lhcss comes with two built-in kits for generating styles: [`hadron`](#hadron) and [`tachyons`](#tachyons).
 
 Kits are simply functions that return a bunch of [rules](#), and take options to configure them. Hadron, for instance, lets you customize the colours, typefaces, and spacings with an object.
 
 ```js
-import lhc from 'lhc';
-import hadron from from 'lhc/hadron';
+import lhcss from 'lhcss';
+import hadron from from 'lhcss/hadron';
 
 const colors = { blue: '#00f', red: '#f00' };
 const spacing = [0, 2, 4, 8, 16, 24];
@@ -54,7 +54,7 @@ const fontWeight = { light: 300, regular: 400, semibold: 600 };
 
 const config = { colors, spacing, fontFamily };
 
-console.log(lhc(hadron(config)));
+console.log(lhcss(hadron(config)));
 ```
 
 Which spits out classes like:
@@ -85,7 +85,7 @@ Tachyons is all the rules from [tachyons](http://tachyons.io/docs/) CSS, but con
 You can also define a full rule-set from scratch if you'd like fine-grained control over all the CSS that gets generated.
 
 ```js
-import lhc, { rule } from 'lhc';
+import lhcss, { rule } from 'lhcss';
 
 const colors = { blue: '#00f', red: '#f00' };
 const spacing = [0, 2, 4, 8, 16, 24];
@@ -99,12 +99,12 @@ const rules = [
   rule('p', 'position', { relative: 'relative', absolute: 'absolute' }, { responsive: true }),
 ];
 
-const css = lhc(rules);
+const css = lhcss(rules);
 ```
 
 LHC will take care of the AST, generating the CSS, and grouping rules into media queries, leaving you to declaratively define the rules you want.
 
-You can integrate lhc into your build step, tie it together via [styled-components](https://github.com/styled-components/styled-components), or just generally do whatever!
+You can integrate lhcss into your build step, tie it together via [styled-components](https://github.com/styled-components/styled-components), or just generally do whatever!
 
 ## Why?
 
@@ -120,7 +120,7 @@ LHC is a composable toolkit for generating your own f(css) kit from simple js co
 
 Everything it spits out is customizable, but it comes with a few [starter packs](#) to get you moving quickly with basic customization (colors, spacing, fonts).
 
-[Check out the examples](https://github.com/rosszurowski/lhc/tree/master/examples) for more!
+[Check out the examples](https://github.com/rosszurowski/lhcss/tree/master/examples) for more!
 
 ## Goals
 

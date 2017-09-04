@@ -1,7 +1,6 @@
 const csso = require('csso');
 const lhc = require('..').default;
-const hadron = require('../lib/hadron').default;
-const breakpoints = require('../lib/hadron').breakpoints;
+const hadron = require('../hadron');
 
 const styles = lhc(hadron({
   colors: {
@@ -11,6 +10,6 @@ const styles = lhc(hadron({
   fontFamily: {
     sans: 'Calibre, sans-serif',
   },
-}), breakpoints);
+}), hadron.breakpoints);
 
 console.log(csso.minify(styles).css);
