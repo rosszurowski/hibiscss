@@ -46,7 +46,7 @@ const css = lhcss(hadron(config));
 ```
 
 ```html
-<div class="c-pink ff-work fs-2">Work Sans in Pink at 24px!</div>
+<div class="c-pink ff-work fs-2">Work Sans in pink at 24px!</div>
 ```
 
 You can find [options for hadron below](#hadron).
@@ -208,11 +208,11 @@ Lots of prior art in the f(css) area:
 Pairs nicely with:
 
 * [polished](https://github.com/styled-components/polished), a utility kit for css-in-js
-* [rosszurowski/vanilla](https://github.com/rosszurowski/vanilla), a browser-wide reset meant for functional css
 
 In use:
 
 * [watsi.org](https://watsi.org)
+* [rosszurowski.com](https://rosszurowski.com)
 
 
 ## License
