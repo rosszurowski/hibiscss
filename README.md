@@ -26,9 +26,11 @@ Then you can use the classes like so:
 <div class="c-blue mh-2 mh-4-m">Hello world!</div>
 ```
 
-**Customization**
+Yay! :tada:
 
-`lhcss` was built to be flexible. Using rule kits, you can pass in options to define a visual language:
+### Customization
+
+`lhcss` was built to be flexible. You can pass options to define your project's visual language:
 
 ```js
 const config = {
@@ -36,16 +38,15 @@ const config = {
     pink: '#ffb7b3',
     black: '#141414'
   },
-  fontFamily: {
-    work: 'Work Sans, -apple-system, sans-serif'
-  }
+  fontFamily: { work: 'Work Sans, -apple-system, sans-serif' },
+  fontSize: [36, 24, 19, 17, 15, 12]
 }
 
 const css = lhcss(hadron(config));
 ```
 
 ```html
-<div class="c-pink ff-work">Work Sans in Pink!</div>
+<div class="c-pink ff-work fs-2">Work Sans in Pink at 24px!</div>
 ```
 
 You can find [options for hadron below](#hadron).
@@ -78,7 +79,7 @@ Which gives you classes like:
 <div class="c-foggy mh-2 mh-4-m fs-title fw-semibold">Semibold and large</div>
 ```
 
-Think of kits as the css classes, and the configuration as the visual language you want. Kits let you customize everything whether you can adjust line heights to how verbose the class names should be (eg. `mh-2` vs. `marginHorizontal-2`).
+Think of kits as css classes, and think of the configuration you use as your visual language. Kits let you customize everything whether you can adjust line heights to how verbose the class names should be (eg. `mh-2` vs. `marginHorizontal-2`).
 
 ### Hadron
 
