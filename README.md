@@ -1,6 +1,6 @@
 # lhcss 🚉
 
-A tool for generating functional CSS kits.
+A composable toolkit for generating functional CSS.
 
 ```bash
 npm install lhcss --save
@@ -8,62 +8,72 @@ npm install lhcss --save
 
 ## Getting Started
 
-Generate styles by calling `lhcss` with a set of rules. To get a quick start, you can use the default pack, hadron:
+For a quick start, use the bundled rule kit, [hadron](#hadron):
 
 ```js
 import lhcss from 'lhcss';
 import hadron from 'lhcss/hadron';
 
+const css = lhcss(hadron());
+
+// Pipe the css out to a file
+process.stdout.write(css);
+```
+
+And use the classes like so:
+
+```html
+<div class="c-blue mh-2 mh-4-m fw-regular">Hello world!</div>
+```
+
+**Customization**
+
+Hadron was built to be flexible. Using rule kits, you can pass in options to define a visual language:
+
+```css
 const config = {
   colors: {
     pink: '#ffb7b3',
     black: '#141414'
   },
   fontFamily: {
-    sans: 'Work Sans, sans-serif'
+    work: 'Work Sans, -apple-system, sans-serif'
   }
 }
 
-const css = lhc(hadron(config));
-
-// Pipe the css out to a file
-process.stdout.write(css);
+const css = lhcss(hadron(config));
 ```
 
-You can also generate `[tachyons](http://tachyons.io/)`-style selectors with the `lhcss/tachyons` pack:
-
-```js
-import tachyons from 'lhcss/tachyons';
-
-const css = lhcss(tachyons(config));
+```html
+<div class="c-pink ff-work">Work Sans in Pink!</div>
 ```
 
-### Kits
+You can find [options for hadron below](#).
 
-lhcss comes with two built-in kits for generating styles: [`hadron`](#hadron) and [`tachyons`](#tachyons).
+If you’re familiar with tachyons, use the (mostly) compatible [tachyons rule kit](#tachyons), or [check out the examples](https://github.com/rosszurowski/lhcss/tree/master/examples) for more!
 
-Kits are simply functions that return a bunch of [rules](#), and take options to configure them. Hadron, for instance, lets you customize the colours, typefaces, and spacings with an object.
+## Kits
+
+`lhcss` comes with two built-in kits for generating styles: [`hadron`](#hadron) and [`tachyons`](#tachyons).
+
+Kits are functions that return [css rules](#), configuring the output with options. Hadron, for instance, lets you customize colours, typefaces, and the spacing scale:
 
 ```js
 import lhcss from 'lhcss';
 import hadron from from 'lhcss/hadron';
 
 const colors = { blue: '#00f', red: '#f00' };
-const spacing = [0, 2, 4, 8, 16, 24];
+const spacing = [0, 4, 8, 16, 32, 64];
+const fontFamily = { sans: 'Work Sans, -apple-system, sans-serif' };
 const fontWeight = { light: 300, regular: 400, semibold: 600 };
 
-const config = { colors, spacing, fontFamily };
-
-console.log(lhcss(hadron(config)));
+console.log(lhcss(hadron({ colors, spacing, fontFamily, fontWeight })));
 ```
 
-Which spits out classes like:
+For classes like:
 
-```css
-.c-blue { color: #0ff; }
-.c-red { color: #f00; }
-
-.mh-5 { margin-left: 24px; margin-right: 24px; }
+```html
+<div class="c-blue mh-2 mh-4-m fw-semibold">Hello world!</div>
 ```
 
 ### Hadron
@@ -72,66 +82,35 @@ To be written...
 
 ### Tachyons
 
-Tachyons is all the rules from [tachyons](http://tachyons.io/docs/) CSS, but configured to follow LHC's [rule anatomy](#anatomy-of-a-rule): `.prefix-prop-value-suffix { ... }`. So it looks like this:
+The bundled tachyons kit generates a set of rules very similar to the [tachyons](http://tachyons.io/docs/) framework.
+
+The main difference to be aware of is that values are separated by a `-`, like so:
 
 ```css
-.bc-red   { background-color: red; }
-.bc-green { background-color: green; }
-.bc-blue  { background-color: blue; }
+/* tachyons */
+.f1 { ... }
+.fw4 { ... }
+.ttc { ... }
+.georgia { ... }
+
+/* lhcss */
+.f-1 { ... }
+.fw-4 { ... }
+.tt-c { ... }
+.georgia { ... }
 ```
+
+This kit is still in progress. If you find a bug, [submit an issue!](https://github.com/rosszurowski/lhc/issues/new)
 
 ### Making a custom kit
 
-You can also define a full rule-set from scratch if you'd like fine-grained control over all the CSS that gets generated.
+You can also define a full rule-set from scratch if you'd like fine-grained control over all the CSS that gets generated. Kits are simply a function that returns a set of rules, created with the `rule` helper function.
 
-```js
-import lhcss, { rule } from 'lhcss';
+Check out [the custom kit example](https://github.com/rosszurowski/lhc/blob/master/examples/custom-kit.js) to see more, or read [the API docs](#api).
 
-const colors = { blue: '#00f', red: '#f00' };
-const spacing = [0, 2, 4, 8, 16, 24];
-
-const rules = [
-  // rule(selector, property, values, options)
-  rule('bc', 'background-color', colors),
-  rule('c', 'color', colors),
-
-  rule('ma', 'margin', spacing, { responsive: true, unit: 'px' }),
-  rule('p', 'position', { relative: 'relative', absolute: 'absolute' }, { responsive: true }),
-];
-
-const css = lhcss(rules);
-```
-
-LHC will take care of the AST, generating the CSS, and grouping rules into media queries, leaving you to declaratively define the rules you want.
-
-You can integrate lhcss into your build step, tie it together via [styled-components](https://github.com/styled-components/styled-components), or just generally do whatever!
-
-## Why?
-
-* **Flexible**:
-* **Small**: the default preset comes out to ~1kB gzipped
-* **Everything in JS**: integrates f(css) nicely with CSS-in-JS tools
-
-[f(css)](http://www.jon.gold/2015/07/functional-css/) makes CSS a lot of fun, but many of the toolkits out there are difficult to customize.
-
-For each project, I found myself manually spitting out the tachyons css, adjust colour and typefaces, removing unused rules, tweaking breakpoints, etc. I’ve also found myself in situations with other devs who aren’t comfortable with tachyons’ concise class names.
-
-LHC is a composable toolkit for generating your own f(css) kit from simple js configuration.
-
-Everything it spits out is customizable, but it comes with a few [starter packs](#) to get you moving quickly with basic customization (colors, spacing, fonts).
-
-[Check out the examples](https://github.com/rosszurowski/lhcss/tree/master/examples) for more!
-
-## Goals
-
-1. **Quick**. This should work for a quick prototype or a complex system. Starting should be simple as a copy-paste, be it a `<link />` or a whole file). Customizing it shouldn’t make you worry about breaking things. You should be able to refine your system in the context of the final design.
-2. **Extensible**. One should be able to express the pieces of a complex design system in here. It should mesh into team philosophies and opinions (concise naming vs. full naming).
-3. **Collaborative**. This should make it easy for designers and engineers to work together. Language can be shared (“headline”, “coral red”). Atomic styleguides can be generated.
-4. **Performant**. Not 87kB of CSS. It’d be great to drop the stuff that’s unneeded.
+## API
 
 ### Anatomy of a Rule
-
-A rule
 
 ```
  ┌─ prefix (optional)      ┌─ property key         ┌─ value
@@ -141,18 +120,52 @@ A rule
                 └─ property name   └─ property           └─ unit
 ```
 
+
+### `rule(name: string, property: string, values, [options])`
+
+```js
+import lhcss, { rule } from 'lhcss';
+
+const colors = { ... };
+const spacing = [ ... ];
+
+function kit (options) {
+  return [
+    rule('bc', 'background-color', colors),
+    rule('c', 'color', colors),
+  ];
+}
+
+const styles = lhcss(kit());
+```
+
+## Motivation
+
+[f(css)](http://www.jon.gold/2015/07/functional-css/) makes CSS a lot of fun, but many of the toolkits out there are difficult to customize.
+
+For each project, I found myself manually spitting out the tachyons css, adjust colour and typefaces, removing unused rules, tweaking breakpoints, etc. I’ve also found myself in situations with other devs who aren’t comfortable with tachyons’ concise class names.
+
+I got tired of doing this, so I build  `lhcss` to provide a simple structure for quickly generating f(css) frameworks in js.
+
+### Goals
+
+1. **Quick**. This should work for a quick prototype or a complex system. Starting should be simple as a copy-paste, be it a `<link />` or a whole file), and easy to refine the visual system as you go.
+2. **Extensible**. One should be able to express the pieces of a complex design system in here. It should mesh into team philosophies and opinions (concise naming vs. full naming).
+3. **Collaborative**. Customizable selectors means language can be shared between designers and engineers (“headline”, “coral red”). Writing it in js leaves room for atomic styleguides to be generated from the rules.
+4. **Performant**. Not 87kB of CSS. Drop the code you don’t need.
+
 ## See also
+
+Lots of prior art in the f(css) area:
+
+* [tachyons](https://github.com/tachyons-css/tachyons/)
+* [jongacnik/gr8](https://github.com/jongacnik/gr8)
+* [basscss](https://github.com/basscss/basscss)
 
 Pairs nicely with:
 
 * [polished](https://github.com/styled-components/polished), a utility kit for css-in-js
-* [rosszurowski/vanilla](https://github.com/rosszurowski/vanilla), a browser-wide reset designed for functional css
-
-Functional CSS:
-
-* [tachyons](https://github.com/tachyons-css/tachyons/)
-* [basscss](https://github.com/basscss/basscss)
-* [jongacnik/gr8](https://github.com/jongacnik/gr8)
+* [rosszurowski/vanilla](https://github.com/rosszurowski/vanilla), a browser-wide reset meant for functional css
 
 In use:
 
