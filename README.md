@@ -8,7 +8,7 @@ npm install lhcss --save
 
 ## Getting Started
 
-For a quick start, use the bundled rule kit, [hadron](#hadron):
+For a quick start use the [hadron](#hadron) rule kit:
 
 ```js
 import lhcss from 'lhcss';
@@ -16,19 +16,19 @@ import hadron from 'lhcss/hadron';
 
 const css = lhcss(hadron());
 
-// Pipe the css out to a file
+// pipe the css out to a file, perhaps?
 process.stdout.write(css);
 ```
 
-And use the classes like so:
+Then you can use the classes like so:
 
 ```html
-<div class="c-blue mh-2 mh-4-m fw-regular">Hello world!</div>
+<div class="c-blue mh-2 mh-4-m">Hello world!</div>
 ```
 
 **Customization**
 
-Hadron was built to be flexible. Using rule kits, you can pass in options to define a visual language:
+`lhcss` was built to be flexible. Using rule kits, you can pass in options to define a visual language:
 
 ```js
 const config = {
@@ -48,7 +48,7 @@ const css = lhcss(hadron(config));
 <div class="c-pink ff-work">Work Sans in Pink!</div>
 ```
 
-You can find [options for hadron below](#).
+You can find [options for hadron below](#hadron).
 
 If you’re familiar with tachyons, use the (mostly) compatible [tachyons rule kit](#tachyons), or [check out the examples](https://github.com/rosszurowski/lhcss/tree/master/examples) for more!
 
@@ -56,29 +56,40 @@ If you’re familiar with tachyons, use the (mostly) compatible [tachyons rule k
 
 `lhcss` comes with two built-in kits for generating styles: [`hadron`](#hadron) and [`tachyons`](#tachyons).
 
-Kits are functions that return [css rules](#), configuring the output with options. Hadron, for instance, lets you customize colours, typefaces, and the spacing scale:
+Kits are presets of css you can customize. Hadron, for instance, lets you customize colours, typefaces, the spacing scale, and more:
 
 ```js
 import lhcss from 'lhcss';
 import hadron from from 'lhcss/hadron';
 
-const colors = { blue: '#00f', red: '#f00' };
-const spacing = [0, 4, 8, 16, 32, 64];
-const fontFamily = { sans: 'Work Sans, -apple-system, sans-serif' };
+const colors = { rausch: '#ff5a5f', foggy: '#767676' };
+const spacing = [0, 8, 16, 24, 48, 64];
 const fontWeight = { light: 300, regular: 400, semibold: 600 };
+const fontSize = { title: 44, large: 24, regular: 19 };
 
-console.log(lhcss(hadron({ colors, spacing, fontFamily, fontWeight })));
+const css = lhcss(hadron({ colors, spacing, fontSize, fontWeight }));
 ```
 
-For classes like:
+Which gives you classes like:
 
 ```html
-<div class="c-blue mh-2 mh-4-m fw-semibold">Hello world!</div>
+<div class="c-foggy mh-2 mh-4-m fs-title fw-semibold">Semibold and large</div>
 ```
+
+Think of kits as the css classes, and the configuration as the visual language you want. Kits let you customize everything whether you can adjust line heights to how verbose the class names should be (eg. `mh-2` vs. `marginHorizontal-2`).
 
 ### Hadron
 
-To be written...
+Options to document…
+
+* `color: object`
+* `fontFamily: object`
+* `fontWeight: object`
+* `fontSize: object`
+* `lineHeight: object`
+* `opacity: array`
+* `sizes: array`
+* `spacing: array`
 
 ### Tachyons
 
@@ -117,7 +128,7 @@ Check out [the custom kit example](https://github.com/rosszurowski/lhc/blob/mast
  ▼                         ▼                       ▼
 .u-             fontSize-  5   {   font-size   :   1.5   rem   }
                 ▲                  ▲                      ▲
-                └─ property name   └─ property           └─ unit
+                └─ property name   └─ property            └─ unit
 ```
 
 
@@ -129,14 +140,14 @@ import lhcss, { rule } from 'lhcss';
 const colors = { ... };
 const spacing = [ ... ];
 
-function kit (options) {
+function myCustomKit (options) {
   return [
     rule('bc', 'background-color', colors),
     rule('c', 'color', colors),
   ];
 }
 
-const styles = lhcss(kit());
+const css = lhcss(myCustomKit());
 ```
 
 ## Motivation
