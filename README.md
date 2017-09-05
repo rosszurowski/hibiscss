@@ -30,7 +30,7 @@ And use the classes like so:
 
 Hadron was built to be flexible. Using rule kits, you can pass in options to define a visual language:
 
-```css
+```js
 const config = {
   colors: {
     pink: '#ffb7b3',
