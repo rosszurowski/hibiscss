@@ -84,7 +84,7 @@ Think of kits as the css classes, and the configuration as the visual language y
 
 Options to document…
 
-* `color: object`
+* `colors: object`
 * `fontFamily: object`
 * `fontWeight: object`
 * `fontSize: object`
@@ -96,6 +96,11 @@ Options to document…
 ### Tachyons
 
 The bundled tachyons kit generates a set of rules very similar to the [tachyons](http://tachyons.io/docs/) framework.
+
+Options to document…
+
+* `colors: object`
+* `spacing: array`
 
 The main difference to be aware of is that values are separated by a `-`, like so:
 
@@ -121,7 +126,7 @@ You can also define a full rule-set from scratch if you'd like fine-grained cont
 
 Check out [the custom kit example](https://github.com/rosszurowski/lhc/blob/master/examples/custom-kit.js) to see more, or read [the API docs](#api).
 
-## API
+## Docs
 
 ### Anatomy of a Rule
 
@@ -133,23 +138,26 @@ Check out [the custom kit example](https://github.com/rosszurowski/lhc/blob/mast
                 └─ name            └─ property            └─ unit
 ```
 
+## API
 
-### `rule(name: string, property: string | string[], values: mixed, [options])`
+### `lhcss(rules: Rule[], ?breakpoints): string`
 
-Returns a `Rule` with the properties and values mapped out.
+Returns a css stylesheet from the given rules and breakpoints.
 
-`name` refers to the selector name, and `property` is the css property/properties it should apply to. `values` is a string, number, array, or object of values to use. The format of this variable determines the keys of the rule.
+### `rule(name: string, property: string, values: mixed, ?options)`
+
+Returns a `Rule` with the properties and values mapped out. `name` refers to the selector name, and `property` is the css property/properties it should apply to. `values` is a string, number, array, or object of values to use. The format of this variable determines the keys of the rule.
 
 #### `values`
 
-When `values` is an object like this `{ a: 'relative', b: 'absolute' }`, lhcss returns a set of selectors like this:
+When `values` is an object (`{ yo: 'relative', dawg: 'absolute' }`), lhcss returns a set of selectors like this:
 
 ```css
-.name-a { property: relative; }
-.name-b { property: absolute; }
+.name-yo { property: relative; }
+.name-dawg { property: absolute; }
 ```
 
-When `values` is an array like `[0, 4, 8, 16]`, lhcss returns a set of selectors like this:
+When `values` is an array (`[0, 4, 8, 16]`), lhcss returns a set of selectors like this:
 
 ```css
 .name-0 { property: 0; }
@@ -166,11 +174,11 @@ When `values` is a string or number like `block`, lhcss returns a single selecto
 
 #### `options`
 
-`options` are a set of flags you can use that changes how lhcss interprets the rule. The allowed values are:
+The `options` argument takes a set of flags that change how lhcss interprets the rule. Allowed values are:
 
 * `prefix: string`, an optional prefix to add to the selector. Useful when working with third party css or following naming conventions like [suitcss' utility classes](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md#u-utilityName)
 * `responsive: boolean`, whether or not to group this rule into breakpoints and add suffixes (ie. `.name-a-{s,m,l}`)
-* `unit: string`, when passing numbers as `values`, this unit will be applied. Setting `{ unit: 'rem' }` will cause an array like `[0, 1, 2]` to become `0, 1rem, 2rem`
+* `unit: string`, when passing numbers as `values`, this unit will be applied. Setting `{ unit: 'rem' }` will cause an array like `[0, 1, 2]` to become `['0', '1rem', '2rem']`
 
 
 ## Motivation
