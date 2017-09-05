@@ -62,12 +62,14 @@ Kits are presets of css you can customize. Hadron, for instance, lets you custom
 import lhcss from 'lhcss';
 import hadron from from 'lhcss/hadron';
 
-const colors = { rausch: '#ff5a5f', foggy: '#767676' };
-const spacing = [0, 8, 16, 24, 48, 64];
-const fontWeight = { light: 300, regular: 400, semibold: 600 };
-const fontSize = { title: 44, large: 24, regular: 19 };
+const config = {
+  spacing: [0, 8, 16, 24, 48, 64],
+  colors: { rausch: '#ff5a5f', foggy: '#767676' },
+  fontSize: { title: 44, large: 24, regular: 19 },
+  fontWeight: { light: 300, regular: 400, semibold: 600 }
+};
 
-const css = lhcss(hadron({ colors, spacing, fontSize, fontWeight }));
+const css = lhcss(hadron(config));
 ```
 
 Which gives you classes like:
