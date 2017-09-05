@@ -126,31 +126,52 @@ Check out [the custom kit example](https://github.com/rosszurowski/lhc/blob/mast
 ### Anatomy of a Rule
 
 ```
- ┌─ prefix (optional)      ┌─ property key         ┌─ value
+ ┌─ prefix (optional)      ┌─ key                  ┌─ value
  ▼                         ▼                       ▼
 .u-             fontSize-  5   {   font-size   :   1.5   rem   }
                 ▲                  ▲                      ▲
-                └─ property name   └─ property            └─ unit
+                └─ name            └─ property            └─ unit
 ```
 
 
-### `rule(name: string, property: string, values, [options])`
+### `rule(name: string, property: string | string[], values: mixed, [options])`
 
-```js
-import lhcss, { rule } from 'lhcss';
+Returns a `Rule` with the properties and values mapped out.
 
-const colors = { ... };
-const spacing = [ ... ];
+`name` refers to the selector name, and `property` is the css property/properties it should apply to. `values` is a string, number, array, or object of values to use. The format of this variable determines the keys of the rule.
 
-function myCustomKit (options) {
-  return [
-    rule('bc', 'background-color', colors),
-    rule('c', 'color', colors),
-  ];
-}
+#### `values`
 
-const css = lhcss(myCustomKit());
+When `values` is an object like this `{ a: 'relative', b: 'absolute' }`, lhcss returns a set of selectors like this:
+
+```css
+.name-a { property: relative; }
+.name-b { property: absolute; }
 ```
+
+When `values` is an array like `[0, 4, 8, 16]`, lhcss returns a set of selectors like this:
+
+```css
+.name-0 { property: 0; }
+.name-1 { property: 4px; }
+.name-2 { property: 8px; }
+.name-3 { property: 16px; }
+```
+
+When `values` is a string or number like `block`, lhcss returns a single selector _without a key_:
+
+```css
+.name { property: block; }
+```
+
+#### `options`
+
+`options` are a set of flags you can use that changes how lhcss interprets the rule. The allowed values are:
+
+* `prefix: string`, an optional prefix to add to the selector. Useful when working with third party css or following naming conventions like [suitcss' utility classes](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md#u-utilityName)
+* `responsive: boolean`, whether or not to group this rule into breakpoints and add suffixes (ie. `.name-a-{s,m,l}`)
+* `unit: string`, when passing numbers as `values`, this unit will be applied. Setting `{ unit: 'rem' }` will cause an array like `[0, 1, 2]` to become `0, 1rem, 2rem`
+
 
 ## Motivation
 
@@ -183,3 +204,8 @@ Pairs nicely with:
 In use:
 
 * [watsi.org](https://watsi.org)
+
+
+## License
+
+MIT
