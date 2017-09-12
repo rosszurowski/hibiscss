@@ -35,6 +35,8 @@ const generateRule = (
   ruleValues: RuleValue | RuleValue[] | { [string]: RuleValue },
   opts: RuleOptions = {},
 ): Rule | Rule[] => {
+  const { unit, startIndexAtOne, ...unusedOpts } = opts;
+
   const getRuleAST = (val: RuleValue, key: ?string): Rule => {
     const ruleValue = getPropertyValue(val, opts.unit);
     const wrappedProperty: RuleProperty[] = Array.isArray(ruleProperty) ? ruleProperty : [ruleProperty];
@@ -42,11 +44,14 @@ const generateRule = (
 
     const selector = getSelector(ruleName, getPropertyKey(ruleValues, key), opts.prefix);
 
-    return r.merge(opts, { selector, properties });
+    return r.merge(unusedOpts, { selector, properties });
   };
 
   if (Array.isArray(ruleValues)) {
-    return ruleValues.map(v => getRuleAST(v));
+    const getArrayRuleKey = startIndexAtOne === true
+      ? i => (i + 1).toString()
+      : i => i.toString();
+    return ruleValues.map((v, i) => getRuleAST(v, getArrayRuleKey(i)));
   } else if (typeof ruleValues === 'object') {
     return r.toPairs(ruleValues).map(([k, v]) => getRuleAST(v, k));
   }

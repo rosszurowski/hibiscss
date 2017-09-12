@@ -4,7 +4,8 @@ export type RuleValue = number | string;
 export type RuleOptions = {
   prefix?: string,
   unit?: string,
-  responsive?: boolean
+  responsive?: boolean,
+  startIndexAtOne?: boolean,
 };
 
 export type Rule = {

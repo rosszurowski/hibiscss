@@ -25,6 +25,27 @@ describe('generateRule', () => {
     expect(rules[1]).toEqual({ selector: 'o-25p', properties: { 'opacity': '0.25' } });
   });
 
+  it('accepts an array of values (zero-based)', () => {
+    const scale = [0, 4, 8, 16, 32, 64];
+    const rules = generateRule('pl', 'padding-left', scale, { unit: 'px' });
+
+    expect(rules.length).toEqual(scale.length);
+    expect(rules[0]).toEqual({ selector: 'pl-0', properties: { 'padding-left': '0' } });
+    expect(rules[1]).toEqual({ selector: 'pl-1', properties: { 'padding-left': '4px' } });
+    expect(rules[2]).toEqual({ selector: 'pl-2', properties: { 'padding-left': '8px' } });
+  });
+
+  it('accepts an array of values (one-based)', () => {
+    const scale = [0, 4, 8, 16, 32, 64];
+    const rules = generateRule('pl', 'padding-left', scale, { unit: 'px', startIndexAtOne: true });
+
+    expect(rules.length).toEqual(scale.length);
+    expect(rules[0]).toEqual({ selector: 'pl-1', properties: { 'padding-left': '0' } });
+    expect(rules[1]).toEqual({ selector: 'pl-2', properties: { 'padding-left': '4px' } });
+    expect(rules[2]).toEqual({ selector: 'pl-3', properties: { 'padding-left': '8px' } });
+  });
+
+
   it('accepts multiple properties', () => {
     const rules = generateRule('mh', ['margin-left', 'margin-right'], { auto: 'auto' });
 
