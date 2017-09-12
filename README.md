@@ -93,6 +93,7 @@ Options to document…
 * `opacity: array`
 * `sizes: array`
 * `spacing: array`
+* `verboseClasses: boolean`
 
 ### Tachyons
 
