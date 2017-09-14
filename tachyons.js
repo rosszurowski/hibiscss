@@ -143,24 +143,22 @@ const getRules = (opts) => {
   const config = r.merge(defaults, opts);
   const opt = obj => r.merge({ responsive: true }, obj);
 
-  // to be added...
-  return r.flatten([
+  return [
     aspectRatio(config),
     rule(null, 'background-size', { cover: 'cover', contain: 'contain' }, opt()),
-    rule('outline', 'outline', '1px solid', opt()),
+    rule('outline', 'outline', '1px solid'),
     rule('outline', 'outline', { transparent: '1px solid transparent', '0': 0 }, opt()),
-    // TODO: border
+    // TODO: borders
     rule('b', 'border-style', { dotted: 'dotted', dashed: 'dashed', solid: 'solid', none: 'none' }, opt()),
+    rule('b', 'border-color', config.colors),
     rule('bw', 'border-width', [0, 0.125, 0.25, 0.5, 1, 2], opt({ unit: 'rem' })),
-    // TODO: border color
     rule('br', 'border-radius', [0, 0.125, 0.25, 0.5, 1], opt({ unit: 'rem' })),
     rule('br', 'border-radius', { '100': '100%', pill: '9999px' }, opt()),
 
     flex(),
 
     rule('f', 'float', { l: 'left', r: 'right', n: 'none' }, opt()),
-    // NOTE: should skip first array item
-    rule('f', 'font-size', [0, 3, 2.25, 1.5, 1.25, 1, 0.875, 0.75], opt({ unit: 'rem' })),
+    rule('f', 'font-size', [3, 2.25, 1.5, 1.25, 1, 0.875, 0.75], opt({ unit: 'rem', startIndexAtOne: true })),
     rule(null, 'font-family', {
       'sans-serif': `-apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif`,
       serif: `georgia, times, serif`,
@@ -178,8 +176,7 @@ const getRules = (opts) => {
       baskerville: `baskerville, serif`,
     }),
     rule('fs', 'font-style', { i: 'italic', normal: 'normal' }),
-    // NOTE: should skip first array item
-    rule('fw', 'font-weight', [0, 100, 200, 300, 400, 500, 600, 700, 800, 900]),
+    rule('fw', 'font-weight', [100, 200, 300, 400, 500, 600, 700, 800, 900], opt({ startIndexAtOne: true })),
     rule('fw', 'font-weight', { normal: 'normal', b: 'bold' }),
     rule('t', 'text-align', { l: 'left', r: 'right', c: 'center', j: 'justify' }),
     // HACK: I'm using 'null' as the key here because it'll be filtered out. We
@@ -188,16 +185,14 @@ const getRules = (opts) => {
     rule('lh', 'line-height', { solid: 1, title: 1.25, copy: 1.5 }),
     rule('tt', 'text-transform', { c: 'capitalize', l: 'lowercase', u: 'uppercase', n: 'none' }),
 
-    // NOTE: should skip first array item
-    rule('h', 'height', [0, 1, 2, 4, 8, 16], opt({ unit: 'rem' })),
+    rule('h', 'height', [1, 2, 4, 8, 16], opt({ unit: 'rem', startIndexAtOne: true })),
     rule('h', 'height', { '25': '25%', '50': '50%', '75': '75%', '100': '100%', auto: 'auto', inherit: 'inherit' }, opt()),
     rule('vh', 'height', { '25': 25, '50': 50, '75': 75, '100': 100 }, opt({ unit: 'vh' })),
 
     // TODO: link
 
     rule('mw', 'max-width', { none: 'none', 100: '100%' }, opt()),
-    // NOTE: should skip first array item
-    rule('mw', 'max-width', [0, 1, 2, 4, 8, 16, 32, 48, 64, 96], opt({ unit: 'rem' })),
+    rule('mw', 'max-width', [1, 2, 4, 8, 16, 32, 48, 64, 96], opt({ unit: 'rem', startIndexAtOne: true })),
 
     // TODO: width
     overflow({ visible: 'visible', hidden: 'hidden', scroll: 'scroll', auto: 'auto' }, opt()),
@@ -211,7 +206,7 @@ const getRules = (opts) => {
 
     spacing(config.spacing, opt({ unit: 'rem' })),
     // TODO: negative margins
-  ]);
+  ];
 };
 
 module.exports = getRules;

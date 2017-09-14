@@ -1,15 +1,16 @@
-import lhcss, { rule } from 'lhcss';
-import csso from 'csso';
+const hibiscss = require('..').default;
+const rule = require('..').rule;
+const csso = require('csso');
 
 const colors = { blue: '#00f', red: '#f00' };
 
 function myCustomKit () {
   return [
-    rule('bc', 'background-color', colors),
+    rule('bgc', 'background-color', colors),
     rule('c', 'color', colors),
   ];
 }
 
-const styles = lhcss(myCustomKit());
+const styles = hibiscss(myCustomKit());
 
 console.log(csso.minify(styles).css);

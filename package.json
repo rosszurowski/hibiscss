@@ -1,6 +1,6 @@
 {
-  "name": "lhcss",
-  "description": "Toolkit for generating functional css",
+  "name": "hibiscss",
+  "description": "Tool for making functional css stylesheets",
   "version": "0.0.4",
   "main": "lib/index.js",
   "scripts": {
@@ -26,7 +26,7 @@
     "jest": "^20.0.4"
   },
   "files": [
-    "hadron.js",
+    "default.js",
     "tachyons.js",
     "README.md",
     "examples",

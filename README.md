@@ -1,23 +1,23 @@
-# lhcss 🚉
+# hibiscss 🌸
 
-A composable toolkit for generating functional CSS.
+A tool for making functional CSS stylesheets.
 
 ```bash
-npm install lhcss --save
+npm install hibiscss --save
 ```
 
 ## Getting Started
 
-For a quick start use the [hadron](#hadron) rule kit:
+For a quick start and a similar API use the [tachyons](#tachyons) rule kit:
 
 ```js
-import lhcss from 'lhcss';
-import hadron from 'lhcss/hadron';
+import hibiscss from 'hibiscss';
+import tachyons from 'hibiscss/tachyons';
 
-const css = lhcss(hadron());
+const styles = hibiscss(tachyons());
 
 // pipe the css out to a file, perhaps?
-process.stdout.write(css);
+process.stdout.write(styles);
 ```
 
 Then you can use the classes like so:
@@ -30,7 +30,7 @@ Yay! :tada:
 
 ### Customization
 
-`lhcss` was built to be flexible. You can pass options to define your project's visual language:
+The real power of `hibiscss` is its flexiblity. You can pass options to define your project's visual language:
 
 ```js
 const config = {
@@ -42,26 +42,26 @@ const config = {
   fontSize: [36, 24, 19, 17, 15, 12]
 }
 
-const css = lhcss(hadron(config));
+const css = hibiscss(tachyons(config));
 ```
 
 ```html
 <div class="c-pink ff-work fs-2">Work Sans in pink at 24px!</div>
 ```
 
-You can find [options for hadron below](#hadron).
+You can find [options for the default kit below](#kit).
 
-If you’re familiar with tachyons, use the (mostly) compatible [tachyons rule kit](#tachyons), or [check out the examples](https://github.com/rosszurowski/lhcss/tree/master/examples) for more!
+If you’re familiar with tachyons, use the (mostly) compatible [tachyons rule kit](#tachyons), or [check out the examples](https://github.com/rosszurowski/lhc/tree/master/examples) for more!
 
 ## Kits
 
-`lhcss` comes with two built-in kits for generating styles: [`hadron`](#hadron) and [`tachyons`](#tachyons).
+`hibiscss` comes with two built-in kits for generating styles: a [`default` kit](#default-kit) and [`tachyons`](#tachyons).
 
-Kits are presets of css you can customize. Hadron, for instance, lets you customize colours, typefaces, the spacing scale, and more:
+Kits are presets of css you can customize. The default kit (`hibiscss/default`), for instance, lets you customize colours, typefaces, the spacing scale, and more:
 
 ```js
-import lhcss from 'lhcss';
-import hadron from from 'lhcss/hadron';
+import hibiscss from 'hibiscss';
+import kit from from 'hibiscss/default';
 
 const config = {
   spacing: [0, 8, 16, 24, 48, 64],
@@ -70,7 +70,7 @@ const config = {
   fontWeight: { light: 300, regular: 400, semibold: 600 }
 };
 
-const css = lhcss(hadron(config));
+const css = hibiscss(kit(config));
 ```
 
 Which gives you classes like:
@@ -81,7 +81,7 @@ Which gives you classes like:
 
 Think of kits as css classes, and think of the configuration you use as your visual language. Kits let you customize everything whether you can adjust line heights to how verbose the class names should be (eg. `mh-2` vs. `marginHorizontal-2`).
 
-### Hadron
+### Default Kit
 
 Options to document…
 
@@ -113,7 +113,7 @@ The main difference to be aware of is that values are separated by a `-`, like s
 .ttc { ... }
 .georgia { ... }
 
-/* lhcss */
+/* hibiscss */
 .f-1 { ... }
 .fw-4 { ... }
 .tt-c { ... }
@@ -126,7 +126,7 @@ This kit is still in progress. If you find a bug, [submit an issue!](https://git
 
 You can also define a full rule-set from scratch if you'd like fine-grained control over all the CSS that gets generated. Kits are simply a function that returns a set of rules, created with the `rule` helper function.
 
-Check out [the custom kit example](https://github.com/rosszurowski/lhc/blob/master/examples/custom-kit.js) to see more, or read [the API docs](#api).
+Check out [the custom kit example](https://github.com/rosszurowski/hibiscss/blob/master/examples/custom-kit.js) to see more, or read [the API docs](#api).
 
 ## Docs
 
@@ -142,7 +142,7 @@ Check out [the custom kit example](https://github.com/rosszurowski/lhc/blob/mast
 
 ## API
 
-### `lhcss(rules: Rule[], ?breakpoints): string`
+### `hibiscss(rules: Rule[], ?breakpoints): string`
 
 Returns a css stylesheet from the given rules and breakpoints.
 
@@ -152,14 +152,14 @@ Returns a `Rule` with the properties and values mapped out. `name` refers to the
 
 #### `values`
 
-When `values` is an object (`{ yo: 'relative', dawg: 'absolute' }`), lhcss returns a set of selectors like this:
+When `values` is an object (`{ yo: 'relative', dawg: 'absolute' }`), hibiscss returns a set of selectors like this:
 
 ```css
 .name-yo { property: relative; }
 .name-dawg { property: absolute; }
 ```
 
-When `values` is an array (`[0, 4, 8, 16]`), lhcss returns a set of selectors like this:
+When `values` is an array (`[0, 4, 8, 16]`), hibiscss returns a set of selectors like this:
 
 ```css
 .name-0 { property: 0; }
@@ -168,7 +168,7 @@ When `values` is an array (`[0, 4, 8, 16]`), lhcss returns a set of selectors li
 .name-3 { property: 16px; }
 ```
 
-When `values` is a string or number like `block`, lhcss returns a single selector _without a key_:
+When `values` is a string or number like `block`, hibiscss returns a single selector _without a key_:
 
 ```css
 .name { property: block; }
@@ -176,7 +176,7 @@ When `values` is a string or number like `block`, lhcss returns a single selecto
 
 #### `options`
 
-The `options` argument takes a set of flags that change how lhcss interprets the rule. Allowed values are:
+The `options` argument takes a set of flags that change how hibiscss interprets the rule. Allowed values are:
 
 * `prefix: string`, an optional prefix to add to the selector. Useful when working with third party css or following naming conventions like [suitcss' utility classes](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md#u-utilityName)
 * `responsive: boolean`, whether or not to group this rule into breakpoints and add suffixes (ie. `.name-a-{s,m,l}`)
@@ -187,9 +187,9 @@ The `options` argument takes a set of flags that change how lhcss interprets the
 
 [f(css)](http://www.jon.gold/2015/07/functional-css/) makes CSS a lot of fun, but many of the toolkits out there are difficult to customize.
 
-For each project, I found myself manually spitting out the tachyons css, adjust colour and typefaces, removing unused rules, tweaking breakpoints, etc. I’ve also found myself in situations with other devs who aren’t comfortable with tachyons’ concise class names.
+For each project, I found myself manually spitting out the tachyons css, adjusting colour and typefaces, removing unused rules, tweaking breakpoints, etc. I’ve also customized class names to mesh better with other devs who aren’t comfortable with tachyons’ inconsistent and super-concise class names.
 
-I got tired of doing this, so I build  `lhcss` to provide a simple structure for quickly generating f(css) frameworks in js.
+I got tired of doing this, so I build  `hibiscss` to provide a simple structure for quickly generating f(css) frameworks in js.
 
 ### Goals
 
@@ -214,7 +214,6 @@ In use:
 
 * [watsi.org](https://watsi.org)
 * [rosszurowski.com](https://rosszurowski.com)
-
 
 ## License
 

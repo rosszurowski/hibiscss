@@ -98,7 +98,7 @@ const getRules = (opts) => {
   const { verboseClasses } = config;
 
   const getKey = verboseClasses
-    ? key => typeof verboseKeyNames[key] !== 'undefined' ? verboseKeyNames[key] : key
+    ? key => verboseKeyNames[key] ? verboseKeyNames[key] : key
     : key => key;
   const getRule = (key, properties, values, options) => rule(getKey(key), properties, values, options);
 

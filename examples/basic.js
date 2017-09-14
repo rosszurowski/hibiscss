@@ -1,8 +1,8 @@
+const hibiscss = require('..').default;
+const kit = require('../default');
 const csso = require('csso');
-const lhc = require('..').default;
-const hadron = require('../hadron');
 
-const styles = lhc(hadron({
+const styles = hibiscss(kit({
   colors: {
     pink: '#ffb7b3',
     black: '#141414',
@@ -10,6 +10,6 @@ const styles = lhc(hadron({
   fontFamily: {
     sans: 'Calibre, sans-serif',
   },
-}), hadron.breakpoints);
+}), kit.breakpoints);
 
 console.log(csso.minify(styles).css);
