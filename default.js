@@ -151,8 +151,8 @@ const getRules = (opts) => {
       getRule('pl', 'padding-left', values, withUnit),
       getRule('pr', 'padding-right', values, withUnit),
       getRule('pb', 'padding-bottom', values, withUnit),
-      getRule('ph', ['padding-top', 'padding-bottom'], values, withUnit),
-      getRule('pv', ['padding-left', 'padding-right'], values, withUnit),
+      getRule('ph', ['padding-left', 'padding-right'], values, withUnit),
+      getRule('pv', ['padding-top', 'padding-bottom'], values, withUnit),
     ];
   }
 
