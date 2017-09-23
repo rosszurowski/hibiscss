@@ -36,6 +36,10 @@ const defaults = {
     '27': '27px',
     '33': '33px',
   },
+  fontWeight: {
+    'normal': 'normal',
+    'bold': 'bold',
+  },
   letterSpacing: { '1': '1px' },
   lineHeight: { '1.2': 1.2, '1.6': 1.6 },
   opacity: {
@@ -83,6 +87,7 @@ const verboseKeyNames = {
   c: 'color',
   ff: 'fontFamily',
   fs: 'fontSize',
+  fw: 'fontWeight',
   lh: 'lineHeight',
   ls: 'letterSpacing',
   ta: 'textAlign',
@@ -147,7 +152,7 @@ const getRules = (opts) => {
       getRule('pr', 'padding-right', values, withUnit),
       getRule('pb', 'padding-bottom', values, withUnit),
       getRule('ph', ['padding-top', 'padding-bottom'], values, withUnit),
-      getRule('pv', ['padding-top', 'padding-bottom'], values, withUnit),
+      getRule('pv', ['padding-left', 'padding-right'], values, withUnit),
     ];
   }
 
@@ -197,6 +202,7 @@ const getRules = (opts) => {
       getRule('tt', 'text-transform', { none: 'none', uppercase: 'uppercase', lowercase: 'lowercase' }),
       // responsive
       getRule('fs', 'font-size', config.fontSize, { responsive: true }),
+      getRule('fw', 'font-weight', config.fontWeight),
       getRule('ta', 'text-align', { left: 'left', center: 'center', right: 'right' }, { responsive: true }),
     ];
   }
