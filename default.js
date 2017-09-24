@@ -8,7 +8,6 @@ const breakpoints = {
 };
 
 const defaults = {
-  breakpoints,
   colors: {
     black: '#000',
     midGray: '#555',
@@ -49,6 +48,7 @@ const defaults = {
     '75%': 0.75,
     '100%': 1.0,
   },
+  maxWidths: [],
   spacing: [0, 4, 8, 16, 32, 64, 128],
 };
 
@@ -120,6 +120,7 @@ const getRules = (opts) => {
     position(),
     flex(),
     sizes(config.sizes),
+    getRule('mw', 'max-width', config.maxWidths),
     spacing(config.spacing),
     typography(),
 
@@ -202,6 +203,7 @@ const getRules = (opts) => {
       getRule('tt', 'text-transform', { none: 'none', uppercase: 'uppercase', lowercase: 'lowercase' }),
       // responsive
       getRule('fs', 'font-size', config.fontSize, { responsive: true }),
+      getRule('fs', 'font-style', { normal: 'normal', italic: 'italic' }),
       getRule('fw', 'font-weight', config.fontWeight),
       getRule('ta', 'text-align', { left: 'left', center: 'center', right: 'right' }, { responsive: true }),
     ];
