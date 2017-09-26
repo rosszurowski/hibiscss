@@ -1,63 +1,75 @@
 # hibiscss 🌸
 
-A tool for making functional CSS stylesheets.
+A tool for making functional CSS stylesheets. Think [tachyons](http://tachyons.io), but customizable.
+
+## Getting Started
+
+Install it:
 
 ```bash
 npm install hibiscss --save
 ```
 
-## Getting Started
-
-For a quick start and a similar API use the [tachyons](#tachyons) rule kit:
+For a quick start, use the [tachyons](#tachyons) rule kit. You can pass in options to define your project’s visual language:
 
 ```js
 import hibiscss from 'hibiscss';
 import tachyons from 'hibiscss/tachyons';
 
-const styles = hibiscss(tachyons());
-
-// pipe the css out to a file, perhaps?
-process.stdout.write(styles);
-```
-
-Then you can use the classes like so:
-
-```html
-<div class="c-blue mh-2 mh-4-m">Hello world!</div>
-```
-
-Yay! :tada:
-
-### Customization
-
-The real power of `hibiscss` is its flexiblity. You can pass options to define your project's visual language:
-
-```js
-const config = {
+const styles = hibiscss(tachyons({
   colors: {
     pink: '#ffb7b3',
     black: '#141414'
   },
-  fontFamily: { work: 'Work Sans, -apple-system, sans-serif' },
+  fontFamily: {
+    work: 'Work Sans, -apple-system, sans-serif'
+  },
   fontSize: [36, 24, 19, 17, 15, 12]
-}
-
-const css = hibiscss(tachyons(config));
+}));
 ```
+
+Then use the classes like so:
 
 ```html
 <div class="c-pink ff-work fs-2">Work Sans in pink at 24px!</div>
 ```
 
-You can find [options for the default kit below](#kit).
+Yay! :tada:
 
-If you’re familiar with tachyons, use the (mostly) compatible [tachyons rule kit](#tachyons), or [check out the examples](https://github.com/rosszurowski/lhc/tree/master/examples) for more!
+Check out [the examples](https://github.com/rosszurowski/hibiscss/tree/master/examples) for more!
+
+### Configuration
+
+Hibiscss just outputs a string of CSS. To use the CSS, you could make use of [insert-css](https://github.com/substack/insert-css) or a similar tool. Or, what I prefer, is to make a static CSS file.
+
+To do this, I make a js file with my config, like so:
+
+```js
+// css.js
+
+import hibiscss from 'hibscss';
+import tachyons from 'hibscss/tachyons';
+
+const styles = hibiscss(tachyons());
+
+console.log(styles)
+```
+
+Then add a `package.json` script to generate the styles, and re-run it whenever I change my project’s visual language.
+
+```json
+{
+  "scripts": {
+    "build-css": "node css.js > /path/to/styles.css"
+  }
+}
+```
 
 ## Kits
 
 `hibiscss` comes with two built-in kits for generating styles: a [`default` kit](#default-kit) and [`tachyons`](#tachyons).
 
-Kits are presets of css you can customize. The default kit (`hibiscss/default`), for instance, lets you customize colours, typefaces, the spacing scale, and more:
+Kits are presets of css you can customize. For example, the default kit (`hibiscss/default`) allows customizing colours, typefaces, the spacing scale, and more:
 
 ```js
 import hibiscss from 'hibiscss';
@@ -83,17 +95,48 @@ Think of kits as css classes, and think of the configuration you use as your vis
 
 ### Default Kit
 
-Options to document…
+Documentation is still in progress.
 
-* `colors: object`
-* `fontFamily: object`
-* `fontWeight: object`
-* `fontSize: object`
-* `lineHeight: object`
-* `opacity: array`
-* `sizes: array`
-* `spacing: array`
-* `verboseClasses: boolean`
+#### `colors` (object)
+
+```css
+.c-black
+.c-midGray
+.c-moonGray
+```
+
+#### `fontFamily` (object)
+#### `fontWeight` (object)
+
+Defaults to `fw-normal` and `fw-bold`.
+
+#### `fontSize` (object or array)
+
+Defaults to `fs-13`, `fs-15`, `fs-18`, `fs-22`, `fs-27`, `fs-33`.
+
+#### `letterSpacing` (object or array)
+#### `lineHeight` (object or array)
+#### `opacity` (object or array)
+
+Defaults to 0%, 25%, 50%, 75%, and 100%
+
+#### `maxWidths`
+#### `spacing`
+#### `borderRadius`
+
+#### `verboseClasses` (boolean)
+
+Whether to provide more verbose class names. This is helpful when working on a team that is less familiar with f(css).
+
+Verbose class names are camel-cased versions of properties. Values are not affected.
+
+```
+.c-blue     →   .color-blue
+.fs-22      →   .fontSize-22
+.mh-auto    →   .marginHorizontal-auto
+.xd-column  →   .flexDirection-column
+.xa-center  →   .flexAlign-center
+```
 
 ### Tachyons
 
@@ -120,7 +163,7 @@ The main difference to be aware of is that values are separated by a `-`, like s
 .georgia { ... }
 ```
 
-This kit is still in progress. If you find a bug, [submit an issue!](https://github.com/rosszurowski/lhc/issues/new)
+This kit is still in progress. If you find a bug or an incompatability, [submit an issue!](https://github.com/rosszurowski/hibiscss/issues/new)
 
 ### Making a custom kit
 
@@ -187,9 +230,7 @@ The `options` argument takes a set of flags that change how hibiscss interprets 
 
 [f(css)](http://www.jon.gold/2015/07/functional-css/) makes CSS a lot of fun, but many of the toolkits out there are difficult to customize.
 
-For each project, I found myself manually spitting out the tachyons css, adjusting colour and typefaces, removing unused rules, tweaking breakpoints, etc. I’ve also customized class names to mesh better with other devs who aren’t comfortable with tachyons’ inconsistent and super-concise class names.
-
-I got tired of doing this, so I build  `hibiscss` to provide a simple structure for quickly generating f(css) frameworks in js.
+I found myself manually editing tachyons colours, typefaces, and breakpoints more times than I’d like. So I built  `hibiscss` to provide a simple structure for quickly generating f(css) frameworks.
 
 ### Goals
 
