@@ -40,9 +40,9 @@ Check out [the examples](https://github.com/rosszurowski/hibiscss/tree/master/ex
 
 ### Configuration
 
-Hibiscss just outputs a string of CSS. To use the CSS, you could make use of [insert-css](https://github.com/substack/insert-css) or a similar tool. Or, what I prefer, is to make a static CSS file.
+Hibiscss just outputs a string of CSS. To use the CSS, you could make use of [insert-css](https://github.com/substack/insert-css) or a similar tool. I prefer making a static CSS file.
 
-To do this, I make a js file with my config, like so:
+Make a file with your config and output it to `console.log`, like so:
 
 ```js
 // css.js
@@ -52,7 +52,7 @@ import tachyons from 'hibscss/tachyons';
 
 const styles = hibiscss(tachyons());
 
-console.log(styles)
+console.log(styles);
 ```
 
 Then add a `package.json` script to generate the styles, and re-run it whenever I change my project’s visual language.
