@@ -1,6 +1,8 @@
 const r = require('ramda');
 const rule = require('./lib').rule;
 
+const toCamelCase = str => str.replace(/[-_]([a-z])/g, m => m[1].toUpperCase());
+
 const breakpoints = {
   s: '479px',
   m: '767px',
@@ -52,60 +54,35 @@ const defaults = {
   spacing: [0, 4, 8, 16, 32, 64, 128],
 };
 
-const verboseKeyNames = {
-  d: 'display',
-  ma: 'margin',
-  mt: 'marginTop',
-  ml: 'marginLeft',
-  mr: 'marginRight',
-  mb: 'marginBottom',
-  mh: 'marginHorizontal',
-  mv: 'marginVertical',
-  pa: 'padding',
-  pt: 'paddingTop',
-  pl: 'paddingLeft',
-  pr: 'paddingRight',
-  pb: 'paddingBottom',
-  ph: 'paddingHorizontal',
-  pv: 'paddingVertical',
-  x: 'flex',
-  xa: 'flexAlign',
-  xd: 'flexDirection',
-  xj: 'flexJustify',
-  xo: 'flexOrder',
-  xw: 'flexWrap',
-  o: 'opacity',
-  of: 'overflow',
-  bgc: 'backgroundColor',
-  bgp: 'backgroundPosition',
-  bgs: 'backgroundSize',
-  bgr: 'backgroundRepeat',
-  p: 'position',
-  z: 'zIndex',
-  w: 'width',
-  h: 'height',
-  c: 'color',
-  ff: 'fontFamily',
-  fs: 'fontSize',
-  fw: 'fontWeight',
-  lh: 'lineHeight',
-  ls: 'letterSpacing',
-  ta: 'textAlign',
-  td: 'textDecoration',
-  tt: 'textTransform',
-  to: 'textOverflow',
-  pe: 'pointerEvents',
-  us: 'userSelect',
-};
+const verboseKeys = new Map();
 
-const getRules = (opts) => {
+const marginHorizontalProperties = ['margin-left', 'margin-right'];
+const marginVerticalProperties = ['margin-top', 'margin-bottom'];
+const paddingHorizontalProperties = ['padding-left', 'padding-right'];
+const paddingVerticalProperties = ['padding-top', 'padding-bottom'];
+
+verboseKeys.set(marginHorizontalProperties, 'marginHorizontal');
+verboseKeys.set(marginVerticalProperties, 'marginVertical');
+verboseKeys.set(paddingHorizontalProperties, 'paddingHorizontal');
+verboseKeys.set(paddingVerticalProperties, 'paddingVertical');
+
+verboseKeys.set('align-items', 'flexAlign');
+verboseKeys.set('justify-content', 'flexJustify');
+verboseKeys.set('order', 'flexOrder');
+
+const getConciseKey = key => key;
+const getVerboseKey = (_, properties) =>
+  verboseKeys.has(properties)
+    ? verboseKeys.get(properties)
+    : toCamelCase(properties);
+
+function getRules (opts) {
   const config = r.merge(defaults, opts);
   const { verboseClasses } = config;
 
-  const getKey = verboseClasses
-    ? key => verboseKeyNames[key] ? verboseKeyNames[key] : key
-    : key => key;
-  const getRule = (key, properties, values, options) => rule(getKey(key), properties, values, options);
+  const getKey = verboseClasses ? getVerboseKey : getConciseKey;
+  const getRule = (key, properties, values, options) =>
+    rule(getKey(key, properties), properties, values, options);
 
   return r.flatten([
     getRule('d', 'display', { inline: 'inline', inlineBlock: 'inline-block', block: 'block', none: 'none' }, { responsive: true }),
@@ -139,21 +116,21 @@ const getRules = (opts) => {
       getRule('ml', 'margin-left', values, withUnit),
       getRule('mr', 'margin-right', values, withUnit),
       getRule('mb', 'margin-bottom', values, withUnit),
-      getRule('mh', ['margin-left', 'margin-right'], values, withUnit),
-      getRule('mv', ['margin-top', 'margin-bottom'], values, withUnit),
+      getRule('mh', marginHorizontalProperties, values, withUnit),
+      getRule('mv', marginVerticalProperties, values, withUnit),
 
       getRule('ml', 'margin-left', { auto: 'auto' }, withResponsive),
       getRule('mr', 'margin-right', { auto: 'auto' }, withResponsive),
-      getRule('mh', ['margin-left', 'margin-right'], { auto: 'auto' }, withResponsive),
-      getRule('mv', ['margin-top', 'margin-bottom'], { auto: 'auto' }, withResponsive),
+      getRule('mh', marginHorizontalProperties, { auto: 'auto' }, withResponsive),
+      getRule('mv', marginVerticalProperties, { auto: 'auto' }, withResponsive),
 
       getRule('pa', 'padding', values, withUnit),
       getRule('pt', 'padding-top', values, withUnit),
       getRule('pl', 'padding-left', values, withUnit),
       getRule('pr', 'padding-right', values, withUnit),
       getRule('pb', 'padding-bottom', values, withUnit),
-      getRule('ph', ['padding-left', 'padding-right'], values, withUnit),
-      getRule('pv', ['padding-top', 'padding-bottom'], values, withUnit),
+      getRule('ph', paddingHorizontalProperties, values, withUnit),
+      getRule('pv', paddingVerticalProperties, values, withUnit),
     ];
   }
 
@@ -208,7 +185,7 @@ const getRules = (opts) => {
       getRule('ta', 'text-align', { left: 'left', center: 'center', right: 'right' }, { responsive: true }),
     ];
   }
-};
+}
 
 module.exports = getRules;
 module.exports.breakpoints = breakpoints;

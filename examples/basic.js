@@ -8,7 +8,7 @@ const styles = hibiscss(kit({
     black: '#141414',
   },
   fontFamily: {
-    sans: 'Calibre, sans-serif',
+    sans: 'Work Sans, sans-serif',
   },
 }), kit.breakpoints);
 
