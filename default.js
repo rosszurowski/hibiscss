@@ -15,8 +15,9 @@ const defaults = {
     midGray: '#555',
     moonGray: '#ccc',
     yellow: '#ffff00',
-    navy: '#001B44',
+    navy: '#001b44',
   },
+  borderRadius: {},
   sizes: {
     '1': '1rem',
     '2': '2rem',
@@ -30,18 +31,21 @@ const defaults = {
     serif: `Georgia, Times, serif`,
   },
   fontSize: {
-    '13': '13px',
-    '15': '15px',
-    '18': '18px',
-    '22': '22px',
-    '27': '27px',
-    '33': '33px',
+    13: '13px',
+    15: '15px',
+    18: '18px',
+    22: '22px',
+    27: '27px',
+    33: '33px',
   },
   fontWeight: {
-    'normal': 'normal',
-    'bold': 'bold',
+    normal: 'normal',
+    bold: 'bold',
   },
-  letterSpacing: { '1': '1px' },
+  letterSpacing: {
+    '0.1': '0.1px',
+    '1': '1px',
+  },
   lineHeight: { '1.2': 1.2, '1.6': 1.6 },
   opacity: {
     '0%': 0.0,
@@ -93,6 +97,8 @@ function getRules (opts) {
     getRule('bgs', 'background-size', { cover: 'cover', contain: 'contain' }),
     getRule('bgp', 'background-position', { center: 'center', top: 'top', right: 'right', left: 'left', bottom: 'bottom' }),
     getRule('bgr', 'background-repeat', { noRepeat: 'no-repeat', x: 'repeat-x', y: 'repeat-y' }),
+
+    getRule('br', 'border-radius', config.borderRadius),
 
     position(),
     flex(),
