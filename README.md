@@ -1,6 +1,6 @@
-# hibiscss 🌸
+# hibiscss [![Build Status](https://travis-ci.org/rosszurowski/hibiscss.svg?branch=master)](https://travis-ci.org/rosszurowski/hibiscss)
 
-A tool for making functional CSS stylesheets. Think [tachyons](http://tachyons.io), but customizable.
+A tool for making functional CSS stylesheets. Think [tachyons](http://tachyons.io), but customizable 🌸
 
 ## Getting Started
 
