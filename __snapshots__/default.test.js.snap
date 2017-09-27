@@ -1,0 +1,2975 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default generates classes correctly 1`] = `
+Array [
+  Object {
+    "properties": Object {
+      "display": "inline",
+    },
+    "responsive": true,
+    "selector": "d-inline",
+  },
+  Object {
+    "properties": Object {
+      "display": "inline-block",
+    },
+    "responsive": true,
+    "selector": "d-inlineBlock",
+  },
+  Object {
+    "properties": Object {
+      "display": "block",
+    },
+    "responsive": true,
+    "selector": "d-block",
+  },
+  Object {
+    "properties": Object {
+      "display": "none",
+    },
+    "responsive": true,
+    "selector": "d-none",
+  },
+  Object {
+    "properties": Object {
+      "opacity": "0",
+    },
+    "selector": "o-0p",
+  },
+  Object {
+    "properties": Object {
+      "opacity": "0.25",
+    },
+    "selector": "o-25p",
+  },
+  Object {
+    "properties": Object {
+      "opacity": "0.5",
+    },
+    "selector": "o-50p",
+  },
+  Object {
+    "properties": Object {
+      "opacity": "0.75",
+    },
+    "selector": "o-75p",
+  },
+  Object {
+    "properties": Object {
+      "opacity": "1",
+    },
+    "selector": "o-100p",
+  },
+  Object {
+    "properties": Object {
+      "overflow": "hidden",
+    },
+    "selector": "of-hidden",
+  },
+  Object {
+    "properties": Object {
+      "overflow": "scroll",
+    },
+    "selector": "of-scroll",
+  },
+  Object {
+    "properties": Object {
+      "overflow": "visible",
+    },
+    "selector": "of-visible",
+  },
+  Object {
+    "properties": Object {
+      "background-color": "#000",
+    },
+    "selector": "bgc-black",
+  },
+  Object {
+    "properties": Object {
+      "background-color": "#555",
+    },
+    "selector": "bgc-midGray",
+  },
+  Object {
+    "properties": Object {
+      "background-color": "#ccc",
+    },
+    "selector": "bgc-moonGray",
+  },
+  Object {
+    "properties": Object {
+      "background-color": "#ffff00",
+    },
+    "selector": "bgc-yellow",
+  },
+  Object {
+    "properties": Object {
+      "background-color": "#001b44",
+    },
+    "selector": "bgc-navy",
+  },
+  Object {
+    "properties": Object {
+      "background-size": "cover",
+    },
+    "selector": "bgs-cover",
+  },
+  Object {
+    "properties": Object {
+      "background-size": "contain",
+    },
+    "selector": "bgs-contain",
+  },
+  Object {
+    "properties": Object {
+      "background-position": "center",
+    },
+    "selector": "bgp-center",
+  },
+  Object {
+    "properties": Object {
+      "background-position": "top",
+    },
+    "selector": "bgp-top",
+  },
+  Object {
+    "properties": Object {
+      "background-position": "right",
+    },
+    "selector": "bgp-right",
+  },
+  Object {
+    "properties": Object {
+      "background-position": "left",
+    },
+    "selector": "bgp-left",
+  },
+  Object {
+    "properties": Object {
+      "background-position": "bottom",
+    },
+    "selector": "bgp-bottom",
+  },
+  Object {
+    "properties": Object {
+      "background-repeat": "no-repeat",
+    },
+    "selector": "bgr-noRepeat",
+  },
+  Object {
+    "properties": Object {
+      "background-repeat": "repeat-x",
+    },
+    "selector": "bgr-x",
+  },
+  Object {
+    "properties": Object {
+      "background-repeat": "repeat-y",
+    },
+    "selector": "bgr-y",
+  },
+  Object {
+    "properties": Object {
+      "position": "absolute",
+    },
+    "selector": "p-absolute",
+  },
+  Object {
+    "properties": Object {
+      "position": "relative",
+    },
+    "selector": "p-relative",
+  },
+  Object {
+    "properties": Object {
+      "top": "0",
+    },
+    "selector": "top-0",
+  },
+  Object {
+    "properties": Object {
+      "left": "0",
+    },
+    "selector": "left-0",
+  },
+  Object {
+    "properties": Object {
+      "right": "0",
+    },
+    "selector": "right-0",
+  },
+  Object {
+    "properties": Object {
+      "bottom": "0",
+    },
+    "selector": "bottom-0",
+  },
+  Object {
+    "properties": Object {
+      "z-index": "0",
+    },
+    "selector": "z-0",
+  },
+  Object {
+    "properties": Object {
+      "z-index": "1",
+    },
+    "selector": "z-1",
+  },
+  Object {
+    "properties": Object {
+      "z-index": "2",
+    },
+    "selector": "z-2",
+  },
+  Object {
+    "properties": Object {
+      "z-index": "3",
+    },
+    "selector": "z-3",
+  },
+  Object {
+    "properties": Object {
+      "z-index": "4",
+    },
+    "selector": "z-4",
+  },
+  Object {
+    "properties": Object {
+      "z-index": "-1",
+    },
+    "selector": "z-bottom",
+  },
+  Object {
+    "properties": Object {
+      "z-index": "99",
+    },
+    "selector": "z-top",
+  },
+  Object {
+    "properties": Object {
+      "display": "flex",
+    },
+    "responsive": true,
+    "selector": "x",
+  },
+  Object {
+    "properties": Object {
+      "flex": "1",
+    },
+    "responsive": true,
+    "selector": "x-1",
+  },
+  Object {
+    "properties": Object {
+      "flex": "auto",
+    },
+    "responsive": true,
+    "selector": "x-auto",
+  },
+  Object {
+    "properties": Object {
+      "flex": "none",
+    },
+    "responsive": true,
+    "selector": "x-none",
+  },
+  Object {
+    "properties": Object {
+      "align-items": "center",
+    },
+    "responsive": true,
+    "selector": "xa-center",
+  },
+  Object {
+    "properties": Object {
+      "align-items": "baseline",
+    },
+    "responsive": true,
+    "selector": "xa-baseline",
+  },
+  Object {
+    "properties": Object {
+      "align-items": "stretch",
+    },
+    "responsive": true,
+    "selector": "xa-stretch",
+  },
+  Object {
+    "properties": Object {
+      "align-items": "flex-start",
+    },
+    "responsive": true,
+    "selector": "xa-start",
+  },
+  Object {
+    "properties": Object {
+      "align-items": "flex-end",
+    },
+    "responsive": true,
+    "selector": "xa-end",
+  },
+  Object {
+    "properties": Object {
+      "flex-direction": "row",
+    },
+    "responsive": true,
+    "selector": "xd-row",
+  },
+  Object {
+    "properties": Object {
+      "flex-direction": "row-reverse",
+    },
+    "responsive": true,
+    "selector": "xd-rowReverse",
+  },
+  Object {
+    "properties": Object {
+      "flex-direction": "column",
+    },
+    "responsive": true,
+    "selector": "xd-column",
+  },
+  Object {
+    "properties": Object {
+      "flex-direction": "column-reverse",
+    },
+    "responsive": true,
+    "selector": "xd-columnReverse",
+  },
+  Object {
+    "properties": Object {
+      "flex-wrap": "wrap",
+    },
+    "selector": "xw-wrap",
+  },
+  Object {
+    "properties": Object {
+      "flex-wrap": "no-wrap",
+    },
+    "selector": "xw-noWrap",
+  },
+  Object {
+    "properties": Object {
+      "justify-content": "flex-start",
+    },
+    "responsive": true,
+    "selector": "xj-start",
+  },
+  Object {
+    "properties": Object {
+      "justify-content": "space-around",
+    },
+    "responsive": true,
+    "selector": "xj-spaceAround",
+  },
+  Object {
+    "properties": Object {
+      "justify-content": "space-between",
+    },
+    "responsive": true,
+    "selector": "xj-spaceBetween",
+  },
+  Object {
+    "properties": Object {
+      "justify-content": "center",
+    },
+    "responsive": true,
+    "selector": "xj-center",
+  },
+  Object {
+    "properties": Object {
+      "justify-content": "flex-end",
+    },
+    "responsive": true,
+    "selector": "xj-end",
+  },
+  Object {
+    "properties": Object {
+      "order": "0",
+    },
+    "responsive": true,
+    "selector": "xo-0",
+  },
+  Object {
+    "properties": Object {
+      "order": "1",
+    },
+    "responsive": true,
+    "selector": "xo-1",
+  },
+  Object {
+    "properties": Object {
+      "order": "2",
+    },
+    "responsive": true,
+    "selector": "xo-2",
+  },
+  Object {
+    "properties": Object {
+      "order": "3",
+    },
+    "responsive": true,
+    "selector": "xo-3",
+  },
+  Object {
+    "properties": Object {
+      "order": "4",
+    },
+    "responsive": true,
+    "selector": "xo-4",
+  },
+  Object {
+    "properties": Object {
+      "width": "1rem",
+    },
+    "responsive": true,
+    "selector": "w-1",
+  },
+  Object {
+    "properties": Object {
+      "width": "2rem",
+    },
+    "responsive": true,
+    "selector": "w-2",
+  },
+  Object {
+    "properties": Object {
+      "width": "3rem",
+    },
+    "responsive": true,
+    "selector": "w-3",
+  },
+  Object {
+    "properties": Object {
+      "width": "4rem",
+    },
+    "responsive": true,
+    "selector": "w-4",
+  },
+  Object {
+    "properties": Object {
+      "width": "5rem",
+    },
+    "responsive": true,
+    "selector": "w-5",
+  },
+  Object {
+    "properties": Object {
+      "width": "100%",
+    },
+    "responsive": true,
+    "selector": "w-100p",
+  },
+  Object {
+    "properties": Object {
+      "height": "1rem",
+    },
+    "responsive": true,
+    "selector": "h-1",
+  },
+  Object {
+    "properties": Object {
+      "height": "2rem",
+    },
+    "responsive": true,
+    "selector": "h-2",
+  },
+  Object {
+    "properties": Object {
+      "height": "3rem",
+    },
+    "responsive": true,
+    "selector": "h-3",
+  },
+  Object {
+    "properties": Object {
+      "height": "4rem",
+    },
+    "responsive": true,
+    "selector": "h-4",
+  },
+  Object {
+    "properties": Object {
+      "height": "5rem",
+    },
+    "responsive": true,
+    "selector": "h-5",
+  },
+  Object {
+    "properties": Object {
+      "height": "100%",
+    },
+    "responsive": true,
+    "selector": "h-100p",
+  },
+  Object {
+    "properties": Object {
+      "margin": "0",
+    },
+    "responsive": true,
+    "selector": "ma-0",
+  },
+  Object {
+    "properties": Object {
+      "margin": "4px",
+    },
+    "responsive": true,
+    "selector": "ma-1",
+  },
+  Object {
+    "properties": Object {
+      "margin": "8px",
+    },
+    "responsive": true,
+    "selector": "ma-2",
+  },
+  Object {
+    "properties": Object {
+      "margin": "16px",
+    },
+    "responsive": true,
+    "selector": "ma-3",
+  },
+  Object {
+    "properties": Object {
+      "margin": "32px",
+    },
+    "responsive": true,
+    "selector": "ma-4",
+  },
+  Object {
+    "properties": Object {
+      "margin": "64px",
+    },
+    "responsive": true,
+    "selector": "ma-5",
+  },
+  Object {
+    "properties": Object {
+      "margin": "128px",
+    },
+    "responsive": true,
+    "selector": "ma-6",
+  },
+  Object {
+    "properties": Object {
+      "margin-top": "0",
+    },
+    "responsive": true,
+    "selector": "mt-0",
+  },
+  Object {
+    "properties": Object {
+      "margin-top": "4px",
+    },
+    "responsive": true,
+    "selector": "mt-1",
+  },
+  Object {
+    "properties": Object {
+      "margin-top": "8px",
+    },
+    "responsive": true,
+    "selector": "mt-2",
+  },
+  Object {
+    "properties": Object {
+      "margin-top": "16px",
+    },
+    "responsive": true,
+    "selector": "mt-3",
+  },
+  Object {
+    "properties": Object {
+      "margin-top": "32px",
+    },
+    "responsive": true,
+    "selector": "mt-4",
+  },
+  Object {
+    "properties": Object {
+      "margin-top": "64px",
+    },
+    "responsive": true,
+    "selector": "mt-5",
+  },
+  Object {
+    "properties": Object {
+      "margin-top": "128px",
+    },
+    "responsive": true,
+    "selector": "mt-6",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "0",
+    },
+    "responsive": true,
+    "selector": "ml-0",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "4px",
+    },
+    "responsive": true,
+    "selector": "ml-1",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "8px",
+    },
+    "responsive": true,
+    "selector": "ml-2",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "16px",
+    },
+    "responsive": true,
+    "selector": "ml-3",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "32px",
+    },
+    "responsive": true,
+    "selector": "ml-4",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "64px",
+    },
+    "responsive": true,
+    "selector": "ml-5",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "128px",
+    },
+    "responsive": true,
+    "selector": "ml-6",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "0",
+    },
+    "responsive": true,
+    "selector": "mr-0",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "4px",
+    },
+    "responsive": true,
+    "selector": "mr-1",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "8px",
+    },
+    "responsive": true,
+    "selector": "mr-2",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "16px",
+    },
+    "responsive": true,
+    "selector": "mr-3",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "32px",
+    },
+    "responsive": true,
+    "selector": "mr-4",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "64px",
+    },
+    "responsive": true,
+    "selector": "mr-5",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "128px",
+    },
+    "responsive": true,
+    "selector": "mr-6",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "0",
+    },
+    "responsive": true,
+    "selector": "mb-0",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "4px",
+    },
+    "responsive": true,
+    "selector": "mb-1",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "8px",
+    },
+    "responsive": true,
+    "selector": "mb-2",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "16px",
+    },
+    "responsive": true,
+    "selector": "mb-3",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "32px",
+    },
+    "responsive": true,
+    "selector": "mb-4",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "64px",
+    },
+    "responsive": true,
+    "selector": "mb-5",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "128px",
+    },
+    "responsive": true,
+    "selector": "mb-6",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "0",
+      "margin-right": "0",
+    },
+    "responsive": true,
+    "selector": "mh-0",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "4px",
+      "margin-right": "4px",
+    },
+    "responsive": true,
+    "selector": "mh-1",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "8px",
+      "margin-right": "8px",
+    },
+    "responsive": true,
+    "selector": "mh-2",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "16px",
+      "margin-right": "16px",
+    },
+    "responsive": true,
+    "selector": "mh-3",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "32px",
+      "margin-right": "32px",
+    },
+    "responsive": true,
+    "selector": "mh-4",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "64px",
+      "margin-right": "64px",
+    },
+    "responsive": true,
+    "selector": "mh-5",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "128px",
+      "margin-right": "128px",
+    },
+    "responsive": true,
+    "selector": "mh-6",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "0",
+      "margin-top": "0",
+    },
+    "responsive": true,
+    "selector": "mv-0",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "4px",
+      "margin-top": "4px",
+    },
+    "responsive": true,
+    "selector": "mv-1",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "8px",
+      "margin-top": "8px",
+    },
+    "responsive": true,
+    "selector": "mv-2",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "16px",
+      "margin-top": "16px",
+    },
+    "responsive": true,
+    "selector": "mv-3",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "32px",
+      "margin-top": "32px",
+    },
+    "responsive": true,
+    "selector": "mv-4",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "64px",
+      "margin-top": "64px",
+    },
+    "responsive": true,
+    "selector": "mv-5",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "128px",
+      "margin-top": "128px",
+    },
+    "responsive": true,
+    "selector": "mv-6",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "auto",
+    },
+    "responsive": true,
+    "selector": "ml-auto",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "auto",
+    },
+    "responsive": true,
+    "selector": "mr-auto",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "auto",
+      "margin-right": "auto",
+    },
+    "responsive": true,
+    "selector": "mh-auto",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "auto",
+      "margin-top": "auto",
+    },
+    "responsive": true,
+    "selector": "mv-auto",
+  },
+  Object {
+    "properties": Object {
+      "padding": "0",
+    },
+    "responsive": true,
+    "selector": "pa-0",
+  },
+  Object {
+    "properties": Object {
+      "padding": "4px",
+    },
+    "responsive": true,
+    "selector": "pa-1",
+  },
+  Object {
+    "properties": Object {
+      "padding": "8px",
+    },
+    "responsive": true,
+    "selector": "pa-2",
+  },
+  Object {
+    "properties": Object {
+      "padding": "16px",
+    },
+    "responsive": true,
+    "selector": "pa-3",
+  },
+  Object {
+    "properties": Object {
+      "padding": "32px",
+    },
+    "responsive": true,
+    "selector": "pa-4",
+  },
+  Object {
+    "properties": Object {
+      "padding": "64px",
+    },
+    "responsive": true,
+    "selector": "pa-5",
+  },
+  Object {
+    "properties": Object {
+      "padding": "128px",
+    },
+    "responsive": true,
+    "selector": "pa-6",
+  },
+  Object {
+    "properties": Object {
+      "padding-top": "0",
+    },
+    "responsive": true,
+    "selector": "pt-0",
+  },
+  Object {
+    "properties": Object {
+      "padding-top": "4px",
+    },
+    "responsive": true,
+    "selector": "pt-1",
+  },
+  Object {
+    "properties": Object {
+      "padding-top": "8px",
+    },
+    "responsive": true,
+    "selector": "pt-2",
+  },
+  Object {
+    "properties": Object {
+      "padding-top": "16px",
+    },
+    "responsive": true,
+    "selector": "pt-3",
+  },
+  Object {
+    "properties": Object {
+      "padding-top": "32px",
+    },
+    "responsive": true,
+    "selector": "pt-4",
+  },
+  Object {
+    "properties": Object {
+      "padding-top": "64px",
+    },
+    "responsive": true,
+    "selector": "pt-5",
+  },
+  Object {
+    "properties": Object {
+      "padding-top": "128px",
+    },
+    "responsive": true,
+    "selector": "pt-6",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "0",
+    },
+    "responsive": true,
+    "selector": "pl-0",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "4px",
+    },
+    "responsive": true,
+    "selector": "pl-1",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "8px",
+    },
+    "responsive": true,
+    "selector": "pl-2",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "16px",
+    },
+    "responsive": true,
+    "selector": "pl-3",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "32px",
+    },
+    "responsive": true,
+    "selector": "pl-4",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "64px",
+    },
+    "responsive": true,
+    "selector": "pl-5",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "128px",
+    },
+    "responsive": true,
+    "selector": "pl-6",
+  },
+  Object {
+    "properties": Object {
+      "padding-right": "0",
+    },
+    "responsive": true,
+    "selector": "pr-0",
+  },
+  Object {
+    "properties": Object {
+      "padding-right": "4px",
+    },
+    "responsive": true,
+    "selector": "pr-1",
+  },
+  Object {
+    "properties": Object {
+      "padding-right": "8px",
+    },
+    "responsive": true,
+    "selector": "pr-2",
+  },
+  Object {
+    "properties": Object {
+      "padding-right": "16px",
+    },
+    "responsive": true,
+    "selector": "pr-3",
+  },
+  Object {
+    "properties": Object {
+      "padding-right": "32px",
+    },
+    "responsive": true,
+    "selector": "pr-4",
+  },
+  Object {
+    "properties": Object {
+      "padding-right": "64px",
+    },
+    "responsive": true,
+    "selector": "pr-5",
+  },
+  Object {
+    "properties": Object {
+      "padding-right": "128px",
+    },
+    "responsive": true,
+    "selector": "pr-6",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "0",
+    },
+    "responsive": true,
+    "selector": "pb-0",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "4px",
+    },
+    "responsive": true,
+    "selector": "pb-1",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "8px",
+    },
+    "responsive": true,
+    "selector": "pb-2",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "16px",
+    },
+    "responsive": true,
+    "selector": "pb-3",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "32px",
+    },
+    "responsive": true,
+    "selector": "pb-4",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "64px",
+    },
+    "responsive": true,
+    "selector": "pb-5",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "128px",
+    },
+    "responsive": true,
+    "selector": "pb-6",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "0",
+      "padding-right": "0",
+    },
+    "responsive": true,
+    "selector": "ph-0",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "4px",
+      "padding-right": "4px",
+    },
+    "responsive": true,
+    "selector": "ph-1",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "8px",
+      "padding-right": "8px",
+    },
+    "responsive": true,
+    "selector": "ph-2",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "16px",
+      "padding-right": "16px",
+    },
+    "responsive": true,
+    "selector": "ph-3",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "32px",
+      "padding-right": "32px",
+    },
+    "responsive": true,
+    "selector": "ph-4",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "64px",
+      "padding-right": "64px",
+    },
+    "responsive": true,
+    "selector": "ph-5",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "128px",
+      "padding-right": "128px",
+    },
+    "responsive": true,
+    "selector": "ph-6",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "0",
+      "padding-top": "0",
+    },
+    "responsive": true,
+    "selector": "pv-0",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "4px",
+      "padding-top": "4px",
+    },
+    "responsive": true,
+    "selector": "pv-1",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "8px",
+      "padding-top": "8px",
+    },
+    "responsive": true,
+    "selector": "pv-2",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "16px",
+      "padding-top": "16px",
+    },
+    "responsive": true,
+    "selector": "pv-3",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "32px",
+      "padding-top": "32px",
+    },
+    "responsive": true,
+    "selector": "pv-4",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "64px",
+      "padding-top": "64px",
+    },
+    "responsive": true,
+    "selector": "pv-5",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "128px",
+      "padding-top": "128px",
+    },
+    "responsive": true,
+    "selector": "pv-6",
+  },
+  Object {
+    "properties": Object {
+      "color": "#000",
+    },
+    "selector": "c-black",
+  },
+  Object {
+    "properties": Object {
+      "color": "#555",
+    },
+    "selector": "c-midGray",
+  },
+  Object {
+    "properties": Object {
+      "color": "#ccc",
+    },
+    "selector": "c-moonGray",
+  },
+  Object {
+    "properties": Object {
+      "color": "#ffff00",
+    },
+    "selector": "c-yellow",
+  },
+  Object {
+    "properties": Object {
+      "color": "#001b44",
+    },
+    "selector": "c-navy",
+  },
+  Object {
+    "properties": Object {
+      "font-family": "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif",
+    },
+    "selector": "ff-sans",
+  },
+  Object {
+    "properties": Object {
+      "font-family": "Georgia, Times, serif",
+    },
+    "selector": "ff-serif",
+  },
+  Object {
+    "properties": Object {
+      "letter-spacing": "1px",
+    },
+    "selector": "ls-1",
+  },
+  Object {
+    "properties": Object {
+      "letter-spacing": "0.1px",
+    },
+    "selector": "ls-0d1",
+  },
+  Object {
+    "properties": Object {
+      "line-height": "1.2",
+    },
+    "selector": "lh-1d2",
+  },
+  Object {
+    "properties": Object {
+      "line-height": "1.6",
+    },
+    "selector": "lh-1d6",
+  },
+  Object {
+    "properties": Object {
+      "text-decoration": "none",
+    },
+    "selector": "td-none",
+  },
+  Object {
+    "properties": Object {
+      "text-decoration": "underline",
+    },
+    "selector": "td-underline",
+  },
+  Object {
+    "properties": Object {
+      "text-overflow": "initial",
+    },
+    "selector": "to-initial",
+  },
+  Object {
+    "properties": Object {
+      "text-overflow": "clip",
+    },
+    "selector": "to-clip",
+  },
+  Object {
+    "properties": Object {
+      "text-overflow": "ellipsis",
+    },
+    "selector": "to-ellipsis",
+  },
+  Object {
+    "properties": Object {
+      "text-transform": "none",
+    },
+    "selector": "tt-none",
+  },
+  Object {
+    "properties": Object {
+      "text-transform": "uppercase",
+    },
+    "selector": "tt-uppercase",
+  },
+  Object {
+    "properties": Object {
+      "text-transform": "lowercase",
+    },
+    "selector": "tt-lowercase",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "13px",
+    },
+    "responsive": true,
+    "selector": "fs-13",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "15px",
+    },
+    "responsive": true,
+    "selector": "fs-15",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "18px",
+    },
+    "responsive": true,
+    "selector": "fs-18",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "22px",
+    },
+    "responsive": true,
+    "selector": "fs-22",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "27px",
+    },
+    "responsive": true,
+    "selector": "fs-27",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "33px",
+    },
+    "responsive": true,
+    "selector": "fs-33",
+  },
+  Object {
+    "properties": Object {
+      "font-style": "normal",
+    },
+    "selector": "fs-normal",
+  },
+  Object {
+    "properties": Object {
+      "font-style": "italic",
+    },
+    "selector": "fs-italic",
+  },
+  Object {
+    "properties": Object {
+      "font-weight": "normal",
+    },
+    "selector": "fw-normal",
+  },
+  Object {
+    "properties": Object {
+      "font-weight": "bold",
+    },
+    "selector": "fw-bold",
+  },
+  Object {
+    "properties": Object {
+      "text-align": "left",
+    },
+    "responsive": true,
+    "selector": "ta-left",
+  },
+  Object {
+    "properties": Object {
+      "text-align": "center",
+    },
+    "responsive": true,
+    "selector": "ta-center",
+  },
+  Object {
+    "properties": Object {
+      "text-align": "right",
+    },
+    "responsive": true,
+    "selector": "ta-right",
+  },
+  Object {
+    "properties": Object {
+      "cursor": "pointer",
+    },
+    "selector": "c-pointer",
+  },
+  Object {
+    "properties": Object {
+      "cursor": "default",
+    },
+    "selector": "c-default",
+  },
+  Object {
+    "properties": Object {
+      "pointer-events": "none",
+    },
+    "selector": "pe-none",
+  },
+  Object {
+    "properties": Object {
+      "pointer-events": "auto",
+    },
+    "selector": "pe-auto",
+  },
+  Object {
+    "properties": Object {
+      "user-select": "none",
+    },
+    "selector": "us-none",
+  },
+  Object {
+    "properties": Object {
+      "user-select": "auto",
+    },
+    "selector": "us-auto",
+  },
+]
+`;
+
+exports[`default generates verbose classes correctly 1`] = `
+Array [
+  Object {
+    "properties": Object {
+      "display": "inline",
+    },
+    "responsive": true,
+    "selector": "display-inline",
+  },
+  Object {
+    "properties": Object {
+      "display": "inline-block",
+    },
+    "responsive": true,
+    "selector": "display-inlineBlock",
+  },
+  Object {
+    "properties": Object {
+      "display": "block",
+    },
+    "responsive": true,
+    "selector": "display-block",
+  },
+  Object {
+    "properties": Object {
+      "display": "none",
+    },
+    "responsive": true,
+    "selector": "display-none",
+  },
+  Object {
+    "properties": Object {
+      "opacity": "0",
+    },
+    "selector": "opacity-0p",
+  },
+  Object {
+    "properties": Object {
+      "opacity": "0.25",
+    },
+    "selector": "opacity-25p",
+  },
+  Object {
+    "properties": Object {
+      "opacity": "0.5",
+    },
+    "selector": "opacity-50p",
+  },
+  Object {
+    "properties": Object {
+      "opacity": "0.75",
+    },
+    "selector": "opacity-75p",
+  },
+  Object {
+    "properties": Object {
+      "opacity": "1",
+    },
+    "selector": "opacity-100p",
+  },
+  Object {
+    "properties": Object {
+      "overflow": "hidden",
+    },
+    "selector": "overflow-hidden",
+  },
+  Object {
+    "properties": Object {
+      "overflow": "scroll",
+    },
+    "selector": "overflow-scroll",
+  },
+  Object {
+    "properties": Object {
+      "overflow": "visible",
+    },
+    "selector": "overflow-visible",
+  },
+  Object {
+    "properties": Object {
+      "background-color": "#000",
+    },
+    "selector": "backgroundColor-black",
+  },
+  Object {
+    "properties": Object {
+      "background-color": "#555",
+    },
+    "selector": "backgroundColor-midGray",
+  },
+  Object {
+    "properties": Object {
+      "background-color": "#ccc",
+    },
+    "selector": "backgroundColor-moonGray",
+  },
+  Object {
+    "properties": Object {
+      "background-color": "#ffff00",
+    },
+    "selector": "backgroundColor-yellow",
+  },
+  Object {
+    "properties": Object {
+      "background-color": "#001b44",
+    },
+    "selector": "backgroundColor-navy",
+  },
+  Object {
+    "properties": Object {
+      "background-size": "cover",
+    },
+    "selector": "backgroundSize-cover",
+  },
+  Object {
+    "properties": Object {
+      "background-size": "contain",
+    },
+    "selector": "backgroundSize-contain",
+  },
+  Object {
+    "properties": Object {
+      "background-position": "center",
+    },
+    "selector": "backgroundPosition-center",
+  },
+  Object {
+    "properties": Object {
+      "background-position": "top",
+    },
+    "selector": "backgroundPosition-top",
+  },
+  Object {
+    "properties": Object {
+      "background-position": "right",
+    },
+    "selector": "backgroundPosition-right",
+  },
+  Object {
+    "properties": Object {
+      "background-position": "left",
+    },
+    "selector": "backgroundPosition-left",
+  },
+  Object {
+    "properties": Object {
+      "background-position": "bottom",
+    },
+    "selector": "backgroundPosition-bottom",
+  },
+  Object {
+    "properties": Object {
+      "background-repeat": "no-repeat",
+    },
+    "selector": "backgroundRepeat-noRepeat",
+  },
+  Object {
+    "properties": Object {
+      "background-repeat": "repeat-x",
+    },
+    "selector": "backgroundRepeat-x",
+  },
+  Object {
+    "properties": Object {
+      "background-repeat": "repeat-y",
+    },
+    "selector": "backgroundRepeat-y",
+  },
+  Object {
+    "properties": Object {
+      "position": "absolute",
+    },
+    "selector": "position-absolute",
+  },
+  Object {
+    "properties": Object {
+      "position": "relative",
+    },
+    "selector": "position-relative",
+  },
+  Object {
+    "properties": Object {
+      "top": "0",
+    },
+    "selector": "top-0",
+  },
+  Object {
+    "properties": Object {
+      "left": "0",
+    },
+    "selector": "left-0",
+  },
+  Object {
+    "properties": Object {
+      "right": "0",
+    },
+    "selector": "right-0",
+  },
+  Object {
+    "properties": Object {
+      "bottom": "0",
+    },
+    "selector": "bottom-0",
+  },
+  Object {
+    "properties": Object {
+      "z-index": "0",
+    },
+    "selector": "zIndex-0",
+  },
+  Object {
+    "properties": Object {
+      "z-index": "1",
+    },
+    "selector": "zIndex-1",
+  },
+  Object {
+    "properties": Object {
+      "z-index": "2",
+    },
+    "selector": "zIndex-2",
+  },
+  Object {
+    "properties": Object {
+      "z-index": "3",
+    },
+    "selector": "zIndex-3",
+  },
+  Object {
+    "properties": Object {
+      "z-index": "4",
+    },
+    "selector": "zIndex-4",
+  },
+  Object {
+    "properties": Object {
+      "z-index": "-1",
+    },
+    "selector": "zIndex-bottom",
+  },
+  Object {
+    "properties": Object {
+      "z-index": "99",
+    },
+    "selector": "zIndex-top",
+  },
+  Object {
+    "properties": Object {
+      "display": "flex",
+    },
+    "responsive": true,
+    "selector": "display",
+  },
+  Object {
+    "properties": Object {
+      "flex": "1",
+    },
+    "responsive": true,
+    "selector": "flex-1",
+  },
+  Object {
+    "properties": Object {
+      "flex": "auto",
+    },
+    "responsive": true,
+    "selector": "flex-auto",
+  },
+  Object {
+    "properties": Object {
+      "flex": "none",
+    },
+    "responsive": true,
+    "selector": "flex-none",
+  },
+  Object {
+    "properties": Object {
+      "align-items": "center",
+    },
+    "responsive": true,
+    "selector": "flexAlign-center",
+  },
+  Object {
+    "properties": Object {
+      "align-items": "baseline",
+    },
+    "responsive": true,
+    "selector": "flexAlign-baseline",
+  },
+  Object {
+    "properties": Object {
+      "align-items": "stretch",
+    },
+    "responsive": true,
+    "selector": "flexAlign-stretch",
+  },
+  Object {
+    "properties": Object {
+      "align-items": "flex-start",
+    },
+    "responsive": true,
+    "selector": "flexAlign-start",
+  },
+  Object {
+    "properties": Object {
+      "align-items": "flex-end",
+    },
+    "responsive": true,
+    "selector": "flexAlign-end",
+  },
+  Object {
+    "properties": Object {
+      "flex-direction": "row",
+    },
+    "responsive": true,
+    "selector": "flexDirection-row",
+  },
+  Object {
+    "properties": Object {
+      "flex-direction": "row-reverse",
+    },
+    "responsive": true,
+    "selector": "flexDirection-rowReverse",
+  },
+  Object {
+    "properties": Object {
+      "flex-direction": "column",
+    },
+    "responsive": true,
+    "selector": "flexDirection-column",
+  },
+  Object {
+    "properties": Object {
+      "flex-direction": "column-reverse",
+    },
+    "responsive": true,
+    "selector": "flexDirection-columnReverse",
+  },
+  Object {
+    "properties": Object {
+      "flex-wrap": "wrap",
+    },
+    "selector": "flexWrap-wrap",
+  },
+  Object {
+    "properties": Object {
+      "flex-wrap": "no-wrap",
+    },
+    "selector": "flexWrap-noWrap",
+  },
+  Object {
+    "properties": Object {
+      "justify-content": "flex-start",
+    },
+    "responsive": true,
+    "selector": "flexJustify-start",
+  },
+  Object {
+    "properties": Object {
+      "justify-content": "space-around",
+    },
+    "responsive": true,
+    "selector": "flexJustify-spaceAround",
+  },
+  Object {
+    "properties": Object {
+      "justify-content": "space-between",
+    },
+    "responsive": true,
+    "selector": "flexJustify-spaceBetween",
+  },
+  Object {
+    "properties": Object {
+      "justify-content": "center",
+    },
+    "responsive": true,
+    "selector": "flexJustify-center",
+  },
+  Object {
+    "properties": Object {
+      "justify-content": "flex-end",
+    },
+    "responsive": true,
+    "selector": "flexJustify-end",
+  },
+  Object {
+    "properties": Object {
+      "order": "0",
+    },
+    "responsive": true,
+    "selector": "flexOrder-0",
+  },
+  Object {
+    "properties": Object {
+      "order": "1",
+    },
+    "responsive": true,
+    "selector": "flexOrder-1",
+  },
+  Object {
+    "properties": Object {
+      "order": "2",
+    },
+    "responsive": true,
+    "selector": "flexOrder-2",
+  },
+  Object {
+    "properties": Object {
+      "order": "3",
+    },
+    "responsive": true,
+    "selector": "flexOrder-3",
+  },
+  Object {
+    "properties": Object {
+      "order": "4",
+    },
+    "responsive": true,
+    "selector": "flexOrder-4",
+  },
+  Object {
+    "properties": Object {
+      "width": "1rem",
+    },
+    "responsive": true,
+    "selector": "width-1",
+  },
+  Object {
+    "properties": Object {
+      "width": "2rem",
+    },
+    "responsive": true,
+    "selector": "width-2",
+  },
+  Object {
+    "properties": Object {
+      "width": "3rem",
+    },
+    "responsive": true,
+    "selector": "width-3",
+  },
+  Object {
+    "properties": Object {
+      "width": "4rem",
+    },
+    "responsive": true,
+    "selector": "width-4",
+  },
+  Object {
+    "properties": Object {
+      "width": "5rem",
+    },
+    "responsive": true,
+    "selector": "width-5",
+  },
+  Object {
+    "properties": Object {
+      "width": "100%",
+    },
+    "responsive": true,
+    "selector": "width-100p",
+  },
+  Object {
+    "properties": Object {
+      "height": "1rem",
+    },
+    "responsive": true,
+    "selector": "height-1",
+  },
+  Object {
+    "properties": Object {
+      "height": "2rem",
+    },
+    "responsive": true,
+    "selector": "height-2",
+  },
+  Object {
+    "properties": Object {
+      "height": "3rem",
+    },
+    "responsive": true,
+    "selector": "height-3",
+  },
+  Object {
+    "properties": Object {
+      "height": "4rem",
+    },
+    "responsive": true,
+    "selector": "height-4",
+  },
+  Object {
+    "properties": Object {
+      "height": "5rem",
+    },
+    "responsive": true,
+    "selector": "height-5",
+  },
+  Object {
+    "properties": Object {
+      "height": "100%",
+    },
+    "responsive": true,
+    "selector": "height-100p",
+  },
+  Object {
+    "properties": Object {
+      "margin": "0",
+    },
+    "responsive": true,
+    "selector": "margin-0",
+  },
+  Object {
+    "properties": Object {
+      "margin": "4px",
+    },
+    "responsive": true,
+    "selector": "margin-1",
+  },
+  Object {
+    "properties": Object {
+      "margin": "8px",
+    },
+    "responsive": true,
+    "selector": "margin-2",
+  },
+  Object {
+    "properties": Object {
+      "margin": "16px",
+    },
+    "responsive": true,
+    "selector": "margin-3",
+  },
+  Object {
+    "properties": Object {
+      "margin": "32px",
+    },
+    "responsive": true,
+    "selector": "margin-4",
+  },
+  Object {
+    "properties": Object {
+      "margin": "64px",
+    },
+    "responsive": true,
+    "selector": "margin-5",
+  },
+  Object {
+    "properties": Object {
+      "margin": "128px",
+    },
+    "responsive": true,
+    "selector": "margin-6",
+  },
+  Object {
+    "properties": Object {
+      "margin-top": "0",
+    },
+    "responsive": true,
+    "selector": "marginTop-0",
+  },
+  Object {
+    "properties": Object {
+      "margin-top": "4px",
+    },
+    "responsive": true,
+    "selector": "marginTop-1",
+  },
+  Object {
+    "properties": Object {
+      "margin-top": "8px",
+    },
+    "responsive": true,
+    "selector": "marginTop-2",
+  },
+  Object {
+    "properties": Object {
+      "margin-top": "16px",
+    },
+    "responsive": true,
+    "selector": "marginTop-3",
+  },
+  Object {
+    "properties": Object {
+      "margin-top": "32px",
+    },
+    "responsive": true,
+    "selector": "marginTop-4",
+  },
+  Object {
+    "properties": Object {
+      "margin-top": "64px",
+    },
+    "responsive": true,
+    "selector": "marginTop-5",
+  },
+  Object {
+    "properties": Object {
+      "margin-top": "128px",
+    },
+    "responsive": true,
+    "selector": "marginTop-6",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "0",
+    },
+    "responsive": true,
+    "selector": "marginLeft-0",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "4px",
+    },
+    "responsive": true,
+    "selector": "marginLeft-1",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "8px",
+    },
+    "responsive": true,
+    "selector": "marginLeft-2",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "16px",
+    },
+    "responsive": true,
+    "selector": "marginLeft-3",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "32px",
+    },
+    "responsive": true,
+    "selector": "marginLeft-4",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "64px",
+    },
+    "responsive": true,
+    "selector": "marginLeft-5",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "128px",
+    },
+    "responsive": true,
+    "selector": "marginLeft-6",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "0",
+    },
+    "responsive": true,
+    "selector": "marginRight-0",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "4px",
+    },
+    "responsive": true,
+    "selector": "marginRight-1",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "8px",
+    },
+    "responsive": true,
+    "selector": "marginRight-2",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "16px",
+    },
+    "responsive": true,
+    "selector": "marginRight-3",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "32px",
+    },
+    "responsive": true,
+    "selector": "marginRight-4",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "64px",
+    },
+    "responsive": true,
+    "selector": "marginRight-5",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "128px",
+    },
+    "responsive": true,
+    "selector": "marginRight-6",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "0",
+    },
+    "responsive": true,
+    "selector": "marginBottom-0",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "4px",
+    },
+    "responsive": true,
+    "selector": "marginBottom-1",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "8px",
+    },
+    "responsive": true,
+    "selector": "marginBottom-2",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "16px",
+    },
+    "responsive": true,
+    "selector": "marginBottom-3",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "32px",
+    },
+    "responsive": true,
+    "selector": "marginBottom-4",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "64px",
+    },
+    "responsive": true,
+    "selector": "marginBottom-5",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "128px",
+    },
+    "responsive": true,
+    "selector": "marginBottom-6",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "0",
+      "margin-right": "0",
+    },
+    "responsive": true,
+    "selector": "marginHorizontal-0",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "4px",
+      "margin-right": "4px",
+    },
+    "responsive": true,
+    "selector": "marginHorizontal-1",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "8px",
+      "margin-right": "8px",
+    },
+    "responsive": true,
+    "selector": "marginHorizontal-2",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "16px",
+      "margin-right": "16px",
+    },
+    "responsive": true,
+    "selector": "marginHorizontal-3",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "32px",
+      "margin-right": "32px",
+    },
+    "responsive": true,
+    "selector": "marginHorizontal-4",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "64px",
+      "margin-right": "64px",
+    },
+    "responsive": true,
+    "selector": "marginHorizontal-5",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "128px",
+      "margin-right": "128px",
+    },
+    "responsive": true,
+    "selector": "marginHorizontal-6",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "0",
+      "margin-top": "0",
+    },
+    "responsive": true,
+    "selector": "marginVertical-0",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "4px",
+      "margin-top": "4px",
+    },
+    "responsive": true,
+    "selector": "marginVertical-1",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "8px",
+      "margin-top": "8px",
+    },
+    "responsive": true,
+    "selector": "marginVertical-2",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "16px",
+      "margin-top": "16px",
+    },
+    "responsive": true,
+    "selector": "marginVertical-3",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "32px",
+      "margin-top": "32px",
+    },
+    "responsive": true,
+    "selector": "marginVertical-4",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "64px",
+      "margin-top": "64px",
+    },
+    "responsive": true,
+    "selector": "marginVertical-5",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "128px",
+      "margin-top": "128px",
+    },
+    "responsive": true,
+    "selector": "marginVertical-6",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "auto",
+    },
+    "responsive": true,
+    "selector": "marginLeft-auto",
+  },
+  Object {
+    "properties": Object {
+      "margin-right": "auto",
+    },
+    "responsive": true,
+    "selector": "marginRight-auto",
+  },
+  Object {
+    "properties": Object {
+      "margin-left": "auto",
+      "margin-right": "auto",
+    },
+    "responsive": true,
+    "selector": "marginHorizontal-auto",
+  },
+  Object {
+    "properties": Object {
+      "margin-bottom": "auto",
+      "margin-top": "auto",
+    },
+    "responsive": true,
+    "selector": "marginVertical-auto",
+  },
+  Object {
+    "properties": Object {
+      "padding": "0",
+    },
+    "responsive": true,
+    "selector": "padding-0",
+  },
+  Object {
+    "properties": Object {
+      "padding": "4px",
+    },
+    "responsive": true,
+    "selector": "padding-1",
+  },
+  Object {
+    "properties": Object {
+      "padding": "8px",
+    },
+    "responsive": true,
+    "selector": "padding-2",
+  },
+  Object {
+    "properties": Object {
+      "padding": "16px",
+    },
+    "responsive": true,
+    "selector": "padding-3",
+  },
+  Object {
+    "properties": Object {
+      "padding": "32px",
+    },
+    "responsive": true,
+    "selector": "padding-4",
+  },
+  Object {
+    "properties": Object {
+      "padding": "64px",
+    },
+    "responsive": true,
+    "selector": "padding-5",
+  },
+  Object {
+    "properties": Object {
+      "padding": "128px",
+    },
+    "responsive": true,
+    "selector": "padding-6",
+  },
+  Object {
+    "properties": Object {
+      "padding-top": "0",
+    },
+    "responsive": true,
+    "selector": "paddingTop-0",
+  },
+  Object {
+    "properties": Object {
+      "padding-top": "4px",
+    },
+    "responsive": true,
+    "selector": "paddingTop-1",
+  },
+  Object {
+    "properties": Object {
+      "padding-top": "8px",
+    },
+    "responsive": true,
+    "selector": "paddingTop-2",
+  },
+  Object {
+    "properties": Object {
+      "padding-top": "16px",
+    },
+    "responsive": true,
+    "selector": "paddingTop-3",
+  },
+  Object {
+    "properties": Object {
+      "padding-top": "32px",
+    },
+    "responsive": true,
+    "selector": "paddingTop-4",
+  },
+  Object {
+    "properties": Object {
+      "padding-top": "64px",
+    },
+    "responsive": true,
+    "selector": "paddingTop-5",
+  },
+  Object {
+    "properties": Object {
+      "padding-top": "128px",
+    },
+    "responsive": true,
+    "selector": "paddingTop-6",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "0",
+    },
+    "responsive": true,
+    "selector": "paddingLeft-0",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "4px",
+    },
+    "responsive": true,
+    "selector": "paddingLeft-1",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "8px",
+    },
+    "responsive": true,
+    "selector": "paddingLeft-2",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "16px",
+    },
+    "responsive": true,
+    "selector": "paddingLeft-3",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "32px",
+    },
+    "responsive": true,
+    "selector": "paddingLeft-4",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "64px",
+    },
+    "responsive": true,
+    "selector": "paddingLeft-5",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "128px",
+    },
+    "responsive": true,
+    "selector": "paddingLeft-6",
+  },
+  Object {
+    "properties": Object {
+      "padding-right": "0",
+    },
+    "responsive": true,
+    "selector": "paddingRight-0",
+  },
+  Object {
+    "properties": Object {
+      "padding-right": "4px",
+    },
+    "responsive": true,
+    "selector": "paddingRight-1",
+  },
+  Object {
+    "properties": Object {
+      "padding-right": "8px",
+    },
+    "responsive": true,
+    "selector": "paddingRight-2",
+  },
+  Object {
+    "properties": Object {
+      "padding-right": "16px",
+    },
+    "responsive": true,
+    "selector": "paddingRight-3",
+  },
+  Object {
+    "properties": Object {
+      "padding-right": "32px",
+    },
+    "responsive": true,
+    "selector": "paddingRight-4",
+  },
+  Object {
+    "properties": Object {
+      "padding-right": "64px",
+    },
+    "responsive": true,
+    "selector": "paddingRight-5",
+  },
+  Object {
+    "properties": Object {
+      "padding-right": "128px",
+    },
+    "responsive": true,
+    "selector": "paddingRight-6",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "0",
+    },
+    "responsive": true,
+    "selector": "paddingBottom-0",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "4px",
+    },
+    "responsive": true,
+    "selector": "paddingBottom-1",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "8px",
+    },
+    "responsive": true,
+    "selector": "paddingBottom-2",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "16px",
+    },
+    "responsive": true,
+    "selector": "paddingBottom-3",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "32px",
+    },
+    "responsive": true,
+    "selector": "paddingBottom-4",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "64px",
+    },
+    "responsive": true,
+    "selector": "paddingBottom-5",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "128px",
+    },
+    "responsive": true,
+    "selector": "paddingBottom-6",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "0",
+      "padding-right": "0",
+    },
+    "responsive": true,
+    "selector": "paddingHorizontal-0",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "4px",
+      "padding-right": "4px",
+    },
+    "responsive": true,
+    "selector": "paddingHorizontal-1",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "8px",
+      "padding-right": "8px",
+    },
+    "responsive": true,
+    "selector": "paddingHorizontal-2",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "16px",
+      "padding-right": "16px",
+    },
+    "responsive": true,
+    "selector": "paddingHorizontal-3",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "32px",
+      "padding-right": "32px",
+    },
+    "responsive": true,
+    "selector": "paddingHorizontal-4",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "64px",
+      "padding-right": "64px",
+    },
+    "responsive": true,
+    "selector": "paddingHorizontal-5",
+  },
+  Object {
+    "properties": Object {
+      "padding-left": "128px",
+      "padding-right": "128px",
+    },
+    "responsive": true,
+    "selector": "paddingHorizontal-6",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "0",
+      "padding-top": "0",
+    },
+    "responsive": true,
+    "selector": "paddingVertical-0",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "4px",
+      "padding-top": "4px",
+    },
+    "responsive": true,
+    "selector": "paddingVertical-1",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "8px",
+      "padding-top": "8px",
+    },
+    "responsive": true,
+    "selector": "paddingVertical-2",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "16px",
+      "padding-top": "16px",
+    },
+    "responsive": true,
+    "selector": "paddingVertical-3",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "32px",
+      "padding-top": "32px",
+    },
+    "responsive": true,
+    "selector": "paddingVertical-4",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "64px",
+      "padding-top": "64px",
+    },
+    "responsive": true,
+    "selector": "paddingVertical-5",
+  },
+  Object {
+    "properties": Object {
+      "padding-bottom": "128px",
+      "padding-top": "128px",
+    },
+    "responsive": true,
+    "selector": "paddingVertical-6",
+  },
+  Object {
+    "properties": Object {
+      "color": "#000",
+    },
+    "selector": "color-black",
+  },
+  Object {
+    "properties": Object {
+      "color": "#555",
+    },
+    "selector": "color-midGray",
+  },
+  Object {
+    "properties": Object {
+      "color": "#ccc",
+    },
+    "selector": "color-moonGray",
+  },
+  Object {
+    "properties": Object {
+      "color": "#ffff00",
+    },
+    "selector": "color-yellow",
+  },
+  Object {
+    "properties": Object {
+      "color": "#001b44",
+    },
+    "selector": "color-navy",
+  },
+  Object {
+    "properties": Object {
+      "font-family": "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif",
+    },
+    "selector": "fontFamily-sans",
+  },
+  Object {
+    "properties": Object {
+      "font-family": "Georgia, Times, serif",
+    },
+    "selector": "fontFamily-serif",
+  },
+  Object {
+    "properties": Object {
+      "letter-spacing": "1px",
+    },
+    "selector": "letterSpacing-1",
+  },
+  Object {
+    "properties": Object {
+      "letter-spacing": "0.1px",
+    },
+    "selector": "letterSpacing-0d1",
+  },
+  Object {
+    "properties": Object {
+      "line-height": "1.2",
+    },
+    "selector": "lineHeight-1d2",
+  },
+  Object {
+    "properties": Object {
+      "line-height": "1.6",
+    },
+    "selector": "lineHeight-1d6",
+  },
+  Object {
+    "properties": Object {
+      "text-decoration": "none",
+    },
+    "selector": "textDecoration-none",
+  },
+  Object {
+    "properties": Object {
+      "text-decoration": "underline",
+    },
+    "selector": "textDecoration-underline",
+  },
+  Object {
+    "properties": Object {
+      "text-overflow": "initial",
+    },
+    "selector": "textOverflow-initial",
+  },
+  Object {
+    "properties": Object {
+      "text-overflow": "clip",
+    },
+    "selector": "textOverflow-clip",
+  },
+  Object {
+    "properties": Object {
+      "text-overflow": "ellipsis",
+    },
+    "selector": "textOverflow-ellipsis",
+  },
+  Object {
+    "properties": Object {
+      "text-transform": "none",
+    },
+    "selector": "textTransform-none",
+  },
+  Object {
+    "properties": Object {
+      "text-transform": "uppercase",
+    },
+    "selector": "textTransform-uppercase",
+  },
+  Object {
+    "properties": Object {
+      "text-transform": "lowercase",
+    },
+    "selector": "textTransform-lowercase",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "13px",
+    },
+    "responsive": true,
+    "selector": "fontSize-13",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "15px",
+    },
+    "responsive": true,
+    "selector": "fontSize-15",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "18px",
+    },
+    "responsive": true,
+    "selector": "fontSize-18",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "22px",
+    },
+    "responsive": true,
+    "selector": "fontSize-22",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "27px",
+    },
+    "responsive": true,
+    "selector": "fontSize-27",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "33px",
+    },
+    "responsive": true,
+    "selector": "fontSize-33",
+  },
+  Object {
+    "properties": Object {
+      "font-style": "normal",
+    },
+    "selector": "fontStyle-normal",
+  },
+  Object {
+    "properties": Object {
+      "font-style": "italic",
+    },
+    "selector": "fontStyle-italic",
+  },
+  Object {
+    "properties": Object {
+      "font-weight": "normal",
+    },
+    "selector": "fontWeight-normal",
+  },
+  Object {
+    "properties": Object {
+      "font-weight": "bold",
+    },
+    "selector": "fontWeight-bold",
+  },
+  Object {
+    "properties": Object {
+      "text-align": "left",
+    },
+    "responsive": true,
+    "selector": "textAlign-left",
+  },
+  Object {
+    "properties": Object {
+      "text-align": "center",
+    },
+    "responsive": true,
+    "selector": "textAlign-center",
+  },
+  Object {
+    "properties": Object {
+      "text-align": "right",
+    },
+    "responsive": true,
+    "selector": "textAlign-right",
+  },
+  Object {
+    "properties": Object {
+      "cursor": "pointer",
+    },
+    "selector": "cursor-pointer",
+  },
+  Object {
+    "properties": Object {
+      "cursor": "default",
+    },
+    "selector": "cursor-default",
+  },
+  Object {
+    "properties": Object {
+      "pointer-events": "none",
+    },
+    "selector": "pointerEvents-none",
+  },
+  Object {
+    "properties": Object {
+      "pointer-events": "auto",
+    },
+    "selector": "pointerEvents-auto",
+  },
+  Object {
+    "properties": Object {
+      "user-select": "none",
+    },
+    "selector": "userSelect-none",
+  },
+  Object {
+    "properties": Object {
+      "user-select": "auto",
+    },
+    "selector": "userSelect-auto",
+  },
+]
+`;

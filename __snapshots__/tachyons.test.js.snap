@@ -1,0 +1,3638 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tachyons generates classes correctly 1`] = `
+Array [
+  Array [],
+  Array [
+    Object {
+      "properties": Object {
+        "background-size": "cover",
+      },
+      "responsive": true,
+      "selector": "cover",
+    },
+    Object {
+      "properties": Object {
+        "background-size": "contain",
+      },
+      "responsive": true,
+      "selector": "contain",
+    },
+  ],
+  Object {
+    "properties": Object {
+      "outline": "1px solid",
+    },
+    "selector": "outline",
+  },
+  Array [
+    Object {
+      "properties": Object {
+        "outline": "0",
+      },
+      "responsive": true,
+      "selector": "outline-0",
+    },
+    Object {
+      "properties": Object {
+        "outline": "1px solid transparent",
+      },
+      "responsive": true,
+      "selector": "outline-transparent",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "border-style": "dotted",
+      },
+      "responsive": true,
+      "selector": "b-dotted",
+    },
+    Object {
+      "properties": Object {
+        "border-style": "dashed",
+      },
+      "responsive": true,
+      "selector": "b-dashed",
+    },
+    Object {
+      "properties": Object {
+        "border-style": "solid",
+      },
+      "responsive": true,
+      "selector": "b-solid",
+    },
+    Object {
+      "properties": Object {
+        "border-style": "none",
+      },
+      "responsive": true,
+      "selector": "b-none",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "border-color": "#000",
+      },
+      "selector": "b-black",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#111",
+      },
+      "selector": "b-near-black",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#333",
+      },
+      "selector": "b-dark-gray",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#555",
+      },
+      "selector": "b-mid-gray",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#777",
+      },
+      "selector": "b-gray",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#999",
+      },
+      "selector": "b-silver",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#aaa",
+      },
+      "selector": "b-light-silver",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ccc",
+      },
+      "selector": "b-moon-gray",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#eee",
+      },
+      "selector": "b-light-gray",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#f4f4f4",
+      },
+      "selector": "b-near-white",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#fff",
+      },
+      "selector": "b-white",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "transparent",
+      },
+      "selector": "b-transparent",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.9)",
+      },
+      "selector": "b-black-90",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.8)",
+      },
+      "selector": "b-black-80",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.7)",
+      },
+      "selector": "b-black-70",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.6)",
+      },
+      "selector": "b-black-60",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.5)",
+      },
+      "selector": "b-black-50",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.4)",
+      },
+      "selector": "b-black-40",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.3)",
+      },
+      "selector": "b-black-30",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.2)",
+      },
+      "selector": "b-black-20",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.1)",
+      },
+      "selector": "b-black-10",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.05)",
+      },
+      "selector": "b-black-05",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.025)",
+      },
+      "selector": "b-black-025",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.0125)",
+      },
+      "selector": "b-black-0125",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.9)",
+      },
+      "selector": "b-white-90",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.8)",
+      },
+      "selector": "b-white-80",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.7)",
+      },
+      "selector": "b-white-70",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.6)",
+      },
+      "selector": "b-white-60",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.5)",
+      },
+      "selector": "b-white-50",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.4)",
+      },
+      "selector": "b-white-40",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.3)",
+      },
+      "selector": "b-white-30",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.2)",
+      },
+      "selector": "b-white-20",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.1)",
+      },
+      "selector": "b-white-10",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.05)",
+      },
+      "selector": "b-white-05",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.025)",
+      },
+      "selector": "b-white-025",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.0125)",
+      },
+      "selector": "b-white-0125",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#e7040f",
+      },
+      "selector": "b-dark-red",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ff4136",
+      },
+      "selector": "b-red",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ff725c",
+      },
+      "selector": "b-light-red",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ff6300",
+      },
+      "selector": "b-orange",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ffb700",
+      },
+      "selector": "b-gold",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ffd700",
+      },
+      "selector": "b-yellow",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#fbf1a9",
+      },
+      "selector": "b-light-yellow",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#5e2ca5",
+      },
+      "selector": "b-purple",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#a463f2",
+      },
+      "selector": "b-light-purple",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#d5008f",
+      },
+      "selector": "b-dark-pink",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ff41b4",
+      },
+      "selector": "b-hot-pink",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ff80cc",
+      },
+      "selector": "b-pink",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ffa3d7",
+      },
+      "selector": "b-light-pink",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#137752",
+      },
+      "selector": "b-dark-green",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#19a974",
+      },
+      "selector": "b-green",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#9eebcf",
+      },
+      "selector": "b-light-green",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#001b44",
+      },
+      "selector": "b-navy",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#00449e",
+      },
+      "selector": "b-dark-blue",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#357edd",
+      },
+      "selector": "b-blue",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#96ccff",
+      },
+      "selector": "b-light-blue",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#cdecff",
+      },
+      "selector": "b-lightest-blue",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#f6fffe",
+      },
+      "selector": "b-washed-blue",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#e8fdf5",
+      },
+      "selector": "b-washed-green",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#fffceb",
+      },
+      "selector": "b-washed-yellow",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ffdfdf",
+      },
+      "selector": "b-washed-red",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "border-width": "0",
+      },
+      "responsive": true,
+      "selector": "bw-0",
+    },
+    Object {
+      "properties": Object {
+        "border-width": "0.125rem",
+      },
+      "responsive": true,
+      "selector": "bw-1",
+    },
+    Object {
+      "properties": Object {
+        "border-width": "0.25rem",
+      },
+      "responsive": true,
+      "selector": "bw-2",
+    },
+    Object {
+      "properties": Object {
+        "border-width": "0.5rem",
+      },
+      "responsive": true,
+      "selector": "bw-3",
+    },
+    Object {
+      "properties": Object {
+        "border-width": "1rem",
+      },
+      "responsive": true,
+      "selector": "bw-4",
+    },
+    Object {
+      "properties": Object {
+        "border-width": "2rem",
+      },
+      "responsive": true,
+      "selector": "bw-5",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "border-radius": "0",
+      },
+      "responsive": true,
+      "selector": "br-0",
+    },
+    Object {
+      "properties": Object {
+        "border-radius": "0.125rem",
+      },
+      "responsive": true,
+      "selector": "br-1",
+    },
+    Object {
+      "properties": Object {
+        "border-radius": "0.25rem",
+      },
+      "responsive": true,
+      "selector": "br-2",
+    },
+    Object {
+      "properties": Object {
+        "border-radius": "0.5rem",
+      },
+      "responsive": true,
+      "selector": "br-3",
+    },
+    Object {
+      "properties": Object {
+        "border-radius": "1rem",
+      },
+      "responsive": true,
+      "selector": "br-4",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "border-radius": "100%",
+      },
+      "responsive": true,
+      "selector": "br-100",
+    },
+    Object {
+      "properties": Object {
+        "border-radius": "9999px",
+      },
+      "responsive": true,
+      "selector": "br-pill",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "display": "flex",
+      },
+      "responsive": true,
+      "selector": "flex",
+    },
+    Object {
+      "properties": Object {
+        "display": "inline-flex",
+      },
+      "responsive": true,
+      "selector": "inline-flex",
+    },
+    Array [
+      Object {
+        "properties": Object {
+          "flex": "1 1 auto",
+        },
+        "responsive": true,
+        "selector": "flex-auto",
+      },
+      Object {
+        "properties": Object {
+          "flex": "none",
+        },
+        "responsive": true,
+        "selector": "flex-none",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "flex-direction": "column",
+        },
+        "responsive": true,
+        "selector": "flex-column",
+      },
+      Object {
+        "properties": Object {
+          "flex-direction": "row",
+        },
+        "responsive": true,
+        "selector": "flex-row",
+      },
+      Object {
+        "properties": Object {
+          "flex-direction": "column-reverse",
+        },
+        "responsive": true,
+        "selector": "flex-column-reverse",
+      },
+      Object {
+        "properties": Object {
+          "flex-direction": "row-reverse",
+        },
+        "responsive": true,
+        "selector": "flex-row-reverse",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "flex-wrap": "wrap",
+        },
+        "responsive": true,
+        "selector": "flex-wrap",
+      },
+      Object {
+        "properties": Object {
+          "flex-wrap": "nowrap",
+        },
+        "responsive": true,
+        "selector": "flex-nowrap",
+      },
+      Object {
+        "properties": Object {
+          "flex-wrap": "wrap-reverse",
+        },
+        "responsive": true,
+        "selector": "flex-wrap-reverse",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "align-items": "flex-start",
+        },
+        "responsive": true,
+        "selector": "items-start",
+      },
+      Object {
+        "properties": Object {
+          "align-items": "flex-end",
+        },
+        "responsive": true,
+        "selector": "items-end",
+      },
+      Object {
+        "properties": Object {
+          "align-items": "center",
+        },
+        "responsive": true,
+        "selector": "items-center",
+      },
+      Object {
+        "properties": Object {
+          "align-items": "baseline",
+        },
+        "responsive": true,
+        "selector": "items-baseline",
+      },
+      Object {
+        "properties": Object {
+          "align-items": "stretch",
+        },
+        "responsive": true,
+        "selector": "items-stretch",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "align-self": "flex-start",
+        },
+        "responsive": true,
+        "selector": "self-start",
+      },
+      Object {
+        "properties": Object {
+          "align-self": "flex-end",
+        },
+        "responsive": true,
+        "selector": "self-end",
+      },
+      Object {
+        "properties": Object {
+          "align-self": "center",
+        },
+        "responsive": true,
+        "selector": "self-center",
+      },
+      Object {
+        "properties": Object {
+          "align-self": "baseline",
+        },
+        "responsive": true,
+        "selector": "self-baseline",
+      },
+      Object {
+        "properties": Object {
+          "align-self": "stretch",
+        },
+        "responsive": true,
+        "selector": "self-stretch",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "justify-content": "flex-start",
+        },
+        "responsive": true,
+        "selector": "justify-start",
+      },
+      Object {
+        "properties": Object {
+          "justify-content": "flex-end",
+        },
+        "responsive": true,
+        "selector": "justify-end",
+      },
+      Object {
+        "properties": Object {
+          "justify-content": "center",
+        },
+        "responsive": true,
+        "selector": "justify-center",
+      },
+      Object {
+        "properties": Object {
+          "justify-content": "baseline",
+        },
+        "responsive": true,
+        "selector": "justify-baseline",
+      },
+      Object {
+        "properties": Object {
+          "justify-content": "stretch",
+        },
+        "responsive": true,
+        "selector": "justify-stretch",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "align-content": "flex-start",
+        },
+        "responsive": true,
+        "selector": "content-start",
+      },
+      Object {
+        "properties": Object {
+          "align-content": "flex-end",
+        },
+        "responsive": true,
+        "selector": "content-end",
+      },
+      Object {
+        "properties": Object {
+          "align-content": "center",
+        },
+        "responsive": true,
+        "selector": "content-center",
+      },
+      Object {
+        "properties": Object {
+          "align-content": "baseline",
+        },
+        "responsive": true,
+        "selector": "content-baseline",
+      },
+      Object {
+        "properties": Object {
+          "align-content": "stretch",
+        },
+        "responsive": true,
+        "selector": "content-stretch",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "order": "0",
+        },
+        "responsive": true,
+        "selector": "order-0",
+      },
+      Object {
+        "properties": Object {
+          "order": "1",
+        },
+        "responsive": true,
+        "selector": "order-1",
+      },
+      Object {
+        "properties": Object {
+          "order": "2",
+        },
+        "responsive": true,
+        "selector": "order-2",
+      },
+      Object {
+        "properties": Object {
+          "order": "3",
+        },
+        "responsive": true,
+        "selector": "order-3",
+      },
+      Object {
+        "properties": Object {
+          "order": "4",
+        },
+        "responsive": true,
+        "selector": "order-4",
+      },
+      Object {
+        "properties": Object {
+          "order": "5",
+        },
+        "responsive": true,
+        "selector": "order-5",
+      },
+      Object {
+        "properties": Object {
+          "order": "6",
+        },
+        "responsive": true,
+        "selector": "order-6",
+      },
+      Object {
+        "properties": Object {
+          "order": "7",
+        },
+        "responsive": true,
+        "selector": "order-7",
+      },
+      Object {
+        "properties": Object {
+          "order": "8",
+        },
+        "responsive": true,
+        "selector": "order-8",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "order": "99999",
+        },
+        "responsive": true,
+        "selector": "order-last",
+      },
+    ],
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "float": "left",
+      },
+      "responsive": true,
+      "selector": "f-l",
+    },
+    Object {
+      "properties": Object {
+        "float": "right",
+      },
+      "responsive": true,
+      "selector": "f-r",
+    },
+    Object {
+      "properties": Object {
+        "float": "none",
+      },
+      "responsive": true,
+      "selector": "f-n",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "font-size": "3rem",
+      },
+      "responsive": true,
+      "selector": "f-1",
+    },
+    Object {
+      "properties": Object {
+        "font-size": "2.25rem",
+      },
+      "responsive": true,
+      "selector": "f-2",
+    },
+    Object {
+      "properties": Object {
+        "font-size": "1.5rem",
+      },
+      "responsive": true,
+      "selector": "f-3",
+    },
+    Object {
+      "properties": Object {
+        "font-size": "1.25rem",
+      },
+      "responsive": true,
+      "selector": "f-4",
+    },
+    Object {
+      "properties": Object {
+        "font-size": "1rem",
+      },
+      "responsive": true,
+      "selector": "f-5",
+    },
+    Object {
+      "properties": Object {
+        "font-size": "0.875rem",
+      },
+      "responsive": true,
+      "selector": "f-6",
+    },
+    Object {
+      "properties": Object {
+        "font-size": "0.75rem",
+      },
+      "responsive": true,
+      "selector": "f-7",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "font-family": "-apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif",
+      },
+      "selector": "sans-serif",
+    },
+    Object {
+      "properties": Object {
+        "font-family": "georgia, times, serif",
+      },
+      "selector": "serif",
+    },
+    Object {
+      "properties": Object {
+        "font-family": "sans-serif",
+      },
+      "selector": "system-sans-serif",
+    },
+    Object {
+      "properties": Object {
+        "font-family": "serif",
+      },
+      "selector": "system-serif",
+    },
+    Object {
+      "properties": Object {
+        "font-family": "'Courier Next', courier, monospace",
+      },
+      "selector": "courier",
+    },
+    Object {
+      "properties": Object {
+        "font-family": "'helvetica neue', helvetica, sans-serif",
+      },
+      "selector": "helvetica",
+    },
+    Object {
+      "properties": Object {
+        "font-family": "'avenir next', avenir, sans-serif",
+      },
+      "selector": "avenir",
+    },
+    Object {
+      "properties": Object {
+        "font-family": "athelas, georgia, serif",
+      },
+      "selector": "athelas",
+    },
+    Object {
+      "properties": Object {
+        "font-family": "georgia, serif",
+      },
+      "selector": "georgia",
+    },
+    Object {
+      "properties": Object {
+        "font-family": "times, serif",
+      },
+      "selector": "times",
+    },
+    Object {
+      "properties": Object {
+        "font-family": "'Bodoni MT', serif",
+      },
+      "selector": "bodoni",
+    },
+    Object {
+      "properties": Object {
+        "font-family": "'Calisto MT', serif",
+      },
+      "selector": "calisto",
+    },
+    Object {
+      "properties": Object {
+        "font-family": "garamond, serif",
+      },
+      "selector": "garamond",
+    },
+    Object {
+      "properties": Object {
+        "font-family": "baskerville, serif",
+      },
+      "selector": "baskerville",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "font-style": "italic",
+      },
+      "selector": "fs-i",
+    },
+    Object {
+      "properties": Object {
+        "font-style": "normal",
+      },
+      "selector": "fs-normal",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "font-weight": "100",
+      },
+      "responsive": true,
+      "selector": "fw-1",
+    },
+    Object {
+      "properties": Object {
+        "font-weight": "200",
+      },
+      "responsive": true,
+      "selector": "fw-2",
+    },
+    Object {
+      "properties": Object {
+        "font-weight": "300",
+      },
+      "responsive": true,
+      "selector": "fw-3",
+    },
+    Object {
+      "properties": Object {
+        "font-weight": "400",
+      },
+      "responsive": true,
+      "selector": "fw-4",
+    },
+    Object {
+      "properties": Object {
+        "font-weight": "500",
+      },
+      "responsive": true,
+      "selector": "fw-5",
+    },
+    Object {
+      "properties": Object {
+        "font-weight": "600",
+      },
+      "responsive": true,
+      "selector": "fw-6",
+    },
+    Object {
+      "properties": Object {
+        "font-weight": "700",
+      },
+      "responsive": true,
+      "selector": "fw-7",
+    },
+    Object {
+      "properties": Object {
+        "font-weight": "800",
+      },
+      "responsive": true,
+      "selector": "fw-8",
+    },
+    Object {
+      "properties": Object {
+        "font-weight": "900",
+      },
+      "responsive": true,
+      "selector": "fw-9",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "font-weight": "normal",
+      },
+      "selector": "fw-normal",
+    },
+    Object {
+      "properties": Object {
+        "font-weight": "bold",
+      },
+      "selector": "fw-b",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "text-align": "left",
+      },
+      "selector": "t-l",
+    },
+    Object {
+      "properties": Object {
+        "text-align": "right",
+      },
+      "selector": "t-r",
+    },
+    Object {
+      "properties": Object {
+        "text-align": "center",
+      },
+      "selector": "t-c",
+    },
+    Object {
+      "properties": Object {
+        "text-align": "justify",
+      },
+      "selector": "t-j",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "letter-spacing": "0.1em",
+      },
+      "selector": "tracked-null",
+    },
+    Object {
+      "properties": Object {
+        "letter-spacing": "-0.05em",
+      },
+      "selector": "tracked-tight",
+    },
+    Object {
+      "properties": Object {
+        "letter-spacing": "0.25em",
+      },
+      "selector": "tracked-mega",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "line-height": "1",
+      },
+      "selector": "lh-solid",
+    },
+    Object {
+      "properties": Object {
+        "line-height": "1.25",
+      },
+      "selector": "lh-title",
+    },
+    Object {
+      "properties": Object {
+        "line-height": "1.5",
+      },
+      "selector": "lh-copy",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "text-transform": "capitalize",
+      },
+      "selector": "tt-c",
+    },
+    Object {
+      "properties": Object {
+        "text-transform": "lowercase",
+      },
+      "selector": "tt-l",
+    },
+    Object {
+      "properties": Object {
+        "text-transform": "uppercase",
+      },
+      "selector": "tt-u",
+    },
+    Object {
+      "properties": Object {
+        "text-transform": "none",
+      },
+      "selector": "tt-n",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "height": "1rem",
+      },
+      "responsive": true,
+      "selector": "h-1",
+    },
+    Object {
+      "properties": Object {
+        "height": "2rem",
+      },
+      "responsive": true,
+      "selector": "h-2",
+    },
+    Object {
+      "properties": Object {
+        "height": "4rem",
+      },
+      "responsive": true,
+      "selector": "h-3",
+    },
+    Object {
+      "properties": Object {
+        "height": "8rem",
+      },
+      "responsive": true,
+      "selector": "h-4",
+    },
+    Object {
+      "properties": Object {
+        "height": "16rem",
+      },
+      "responsive": true,
+      "selector": "h-5",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "height": "25%",
+      },
+      "responsive": true,
+      "selector": "h-25",
+    },
+    Object {
+      "properties": Object {
+        "height": "50%",
+      },
+      "responsive": true,
+      "selector": "h-50",
+    },
+    Object {
+      "properties": Object {
+        "height": "75%",
+      },
+      "responsive": true,
+      "selector": "h-75",
+    },
+    Object {
+      "properties": Object {
+        "height": "100%",
+      },
+      "responsive": true,
+      "selector": "h-100",
+    },
+    Object {
+      "properties": Object {
+        "height": "auto",
+      },
+      "responsive": true,
+      "selector": "h-auto",
+    },
+    Object {
+      "properties": Object {
+        "height": "inherit",
+      },
+      "responsive": true,
+      "selector": "h-inherit",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "height": "25vh",
+      },
+      "responsive": true,
+      "selector": "vh-25",
+    },
+    Object {
+      "properties": Object {
+        "height": "50vh",
+      },
+      "responsive": true,
+      "selector": "vh-50",
+    },
+    Object {
+      "properties": Object {
+        "height": "75vh",
+      },
+      "responsive": true,
+      "selector": "vh-75",
+    },
+    Object {
+      "properties": Object {
+        "height": "100vh",
+      },
+      "responsive": true,
+      "selector": "vh-100",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "max-width": "100%",
+      },
+      "responsive": true,
+      "selector": "mw-100",
+    },
+    Object {
+      "properties": Object {
+        "max-width": "none",
+      },
+      "responsive": true,
+      "selector": "mw-none",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "max-width": "1rem",
+      },
+      "responsive": true,
+      "selector": "mw-1",
+    },
+    Object {
+      "properties": Object {
+        "max-width": "2rem",
+      },
+      "responsive": true,
+      "selector": "mw-2",
+    },
+    Object {
+      "properties": Object {
+        "max-width": "4rem",
+      },
+      "responsive": true,
+      "selector": "mw-3",
+    },
+    Object {
+      "properties": Object {
+        "max-width": "8rem",
+      },
+      "responsive": true,
+      "selector": "mw-4",
+    },
+    Object {
+      "properties": Object {
+        "max-width": "16rem",
+      },
+      "responsive": true,
+      "selector": "mw-5",
+    },
+    Object {
+      "properties": Object {
+        "max-width": "32rem",
+      },
+      "responsive": true,
+      "selector": "mw-6",
+    },
+    Object {
+      "properties": Object {
+        "max-width": "48rem",
+      },
+      "responsive": true,
+      "selector": "mw-7",
+    },
+    Object {
+      "properties": Object {
+        "max-width": "64rem",
+      },
+      "responsive": true,
+      "selector": "mw-8",
+    },
+    Object {
+      "properties": Object {
+        "max-width": "96rem",
+      },
+      "responsive": true,
+      "selector": "mw-9",
+    },
+  ],
+  Array [
+    Array [
+      Object {
+        "properties": Object {
+          "overflow": "visible",
+        },
+        "responsive": true,
+        "selector": "overflow-visible",
+      },
+      Object {
+        "properties": Object {
+          "overflow": "hidden",
+        },
+        "responsive": true,
+        "selector": "overflow-hidden",
+      },
+      Object {
+        "properties": Object {
+          "overflow": "scroll",
+        },
+        "responsive": true,
+        "selector": "overflow-scroll",
+      },
+      Object {
+        "properties": Object {
+          "overflow": "auto",
+        },
+        "responsive": true,
+        "selector": "overflow-auto",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "overflow-x": "visible",
+        },
+        "responsive": true,
+        "selector": "overflow-x-visible",
+      },
+      Object {
+        "properties": Object {
+          "overflow-x": "hidden",
+        },
+        "responsive": true,
+        "selector": "overflow-x-hidden",
+      },
+      Object {
+        "properties": Object {
+          "overflow-x": "scroll",
+        },
+        "responsive": true,
+        "selector": "overflow-x-scroll",
+      },
+      Object {
+        "properties": Object {
+          "overflow-x": "auto",
+        },
+        "responsive": true,
+        "selector": "overflow-x-auto",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "overflow-y": "visible",
+        },
+        "responsive": true,
+        "selector": "overflow-y-visible",
+      },
+      Object {
+        "properties": Object {
+          "overflow-y": "hidden",
+        },
+        "responsive": true,
+        "selector": "overflow-y-hidden",
+      },
+      Object {
+        "properties": Object {
+          "overflow-y": "scroll",
+        },
+        "responsive": true,
+        "selector": "overflow-y-scroll",
+      },
+      Object {
+        "properties": Object {
+          "overflow-y": "auto",
+        },
+        "responsive": true,
+        "selector": "overflow-y-auto",
+      },
+    ],
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "position": "static",
+      },
+      "responsive": true,
+      "selector": "static",
+    },
+    Object {
+      "properties": Object {
+        "position": "relative",
+      },
+      "responsive": true,
+      "selector": "relative",
+    },
+    Object {
+      "properties": Object {
+        "position": "absolute",
+      },
+      "responsive": true,
+      "selector": "absolute",
+    },
+    Object {
+      "properties": Object {
+        "position": "fixed",
+      },
+      "responsive": true,
+      "selector": "fixed",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "opacity": "0",
+      },
+      "responsive": true,
+      "selector": "o-0",
+    },
+    Object {
+      "properties": Object {
+        "opacity": "0.1",
+      },
+      "responsive": true,
+      "selector": "o-10",
+    },
+    Object {
+      "properties": Object {
+        "opacity": "0.2",
+      },
+      "responsive": true,
+      "selector": "o-20",
+    },
+    Object {
+      "properties": Object {
+        "opacity": "0.3",
+      },
+      "responsive": true,
+      "selector": "o-30",
+    },
+    Object {
+      "properties": Object {
+        "opacity": "0.4",
+      },
+      "responsive": true,
+      "selector": "o-40",
+    },
+    Object {
+      "properties": Object {
+        "opacity": "0.5",
+      },
+      "responsive": true,
+      "selector": "o-50",
+    },
+    Object {
+      "properties": Object {
+        "opacity": "0.6",
+      },
+      "responsive": true,
+      "selector": "o-60",
+    },
+    Object {
+      "properties": Object {
+        "opacity": "0.7",
+      },
+      "responsive": true,
+      "selector": "o-70",
+    },
+    Object {
+      "properties": Object {
+        "opacity": "0.8",
+      },
+      "responsive": true,
+      "selector": "o-80",
+    },
+    Object {
+      "properties": Object {
+        "opacity": "0.9",
+      },
+      "responsive": true,
+      "selector": "o-90",
+    },
+    Object {
+      "properties": Object {
+        "opacity": "1",
+      },
+      "responsive": true,
+      "selector": "o-100",
+    },
+    Object {
+      "properties": Object {
+        "opacity": "0.025",
+      },
+      "responsive": true,
+      "selector": "o-025",
+    },
+    Object {
+      "properties": Object {
+        "opacity": "0.05",
+      },
+      "responsive": true,
+      "selector": "o-05",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "transform": "rotate(45deg)",
+      },
+      "responsive": true,
+      "selector": "rotate-45",
+    },
+    Object {
+      "properties": Object {
+        "transform": "rotate(90deg)",
+      },
+      "responsive": true,
+      "selector": "rotate-90",
+    },
+    Object {
+      "properties": Object {
+        "transform": "rotate(135deg)",
+      },
+      "responsive": true,
+      "selector": "rotate-135",
+    },
+    Object {
+      "properties": Object {
+        "transform": "rotate(180deg)",
+      },
+      "responsive": true,
+      "selector": "rotate-180",
+    },
+    Object {
+      "properties": Object {
+        "transform": "rotate(225deg)",
+      },
+      "responsive": true,
+      "selector": "rotate-225",
+    },
+    Object {
+      "properties": Object {
+        "transform": "rotate(270deg)",
+      },
+      "responsive": true,
+      "selector": "rotate-270",
+    },
+    Object {
+      "properties": Object {
+        "transform": "rotate(315deg)",
+      },
+      "responsive": true,
+      "selector": "rotate-315",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "color": "#000",
+      },
+      "selector": "black",
+    },
+    Object {
+      "properties": Object {
+        "color": "#111",
+      },
+      "selector": "near-black",
+    },
+    Object {
+      "properties": Object {
+        "color": "#333",
+      },
+      "selector": "dark-gray",
+    },
+    Object {
+      "properties": Object {
+        "color": "#555",
+      },
+      "selector": "mid-gray",
+    },
+    Object {
+      "properties": Object {
+        "color": "#777",
+      },
+      "selector": "gray",
+    },
+    Object {
+      "properties": Object {
+        "color": "#999",
+      },
+      "selector": "silver",
+    },
+    Object {
+      "properties": Object {
+        "color": "#aaa",
+      },
+      "selector": "light-silver",
+    },
+    Object {
+      "properties": Object {
+        "color": "#ccc",
+      },
+      "selector": "moon-gray",
+    },
+    Object {
+      "properties": Object {
+        "color": "#eee",
+      },
+      "selector": "light-gray",
+    },
+    Object {
+      "properties": Object {
+        "color": "#f4f4f4",
+      },
+      "selector": "near-white",
+    },
+    Object {
+      "properties": Object {
+        "color": "#fff",
+      },
+      "selector": "white",
+    },
+    Object {
+      "properties": Object {
+        "color": "transparent",
+      },
+      "selector": "transparent",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(0,0,0,.9)",
+      },
+      "selector": "black-90",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(0,0,0,.8)",
+      },
+      "selector": "black-80",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(0,0,0,.7)",
+      },
+      "selector": "black-70",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(0,0,0,.6)",
+      },
+      "selector": "black-60",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(0,0,0,.5)",
+      },
+      "selector": "black-50",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(0,0,0,.4)",
+      },
+      "selector": "black-40",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(0,0,0,.3)",
+      },
+      "selector": "black-30",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(0,0,0,.2)",
+      },
+      "selector": "black-20",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(0,0,0,.1)",
+      },
+      "selector": "black-10",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(0,0,0,.05)",
+      },
+      "selector": "black-05",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(0,0,0,.025)",
+      },
+      "selector": "black-025",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(0,0,0,.0125)",
+      },
+      "selector": "black-0125",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(255,255,255,.9)",
+      },
+      "selector": "white-90",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(255,255,255,.8)",
+      },
+      "selector": "white-80",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(255,255,255,.7)",
+      },
+      "selector": "white-70",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(255,255,255,.6)",
+      },
+      "selector": "white-60",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(255,255,255,.5)",
+      },
+      "selector": "white-50",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(255,255,255,.4)",
+      },
+      "selector": "white-40",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(255,255,255,.3)",
+      },
+      "selector": "white-30",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(255,255,255,.2)",
+      },
+      "selector": "white-20",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(255,255,255,.1)",
+      },
+      "selector": "white-10",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(255,255,255,.05)",
+      },
+      "selector": "white-05",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(255,255,255,.025)",
+      },
+      "selector": "white-025",
+    },
+    Object {
+      "properties": Object {
+        "color": "rgba(255,255,255,.0125)",
+      },
+      "selector": "white-0125",
+    },
+    Object {
+      "properties": Object {
+        "color": "#e7040f",
+      },
+      "selector": "dark-red",
+    },
+    Object {
+      "properties": Object {
+        "color": "#ff4136",
+      },
+      "selector": "red",
+    },
+    Object {
+      "properties": Object {
+        "color": "#ff725c",
+      },
+      "selector": "light-red",
+    },
+    Object {
+      "properties": Object {
+        "color": "#ff6300",
+      },
+      "selector": "orange",
+    },
+    Object {
+      "properties": Object {
+        "color": "#ffb700",
+      },
+      "selector": "gold",
+    },
+    Object {
+      "properties": Object {
+        "color": "#ffd700",
+      },
+      "selector": "yellow",
+    },
+    Object {
+      "properties": Object {
+        "color": "#fbf1a9",
+      },
+      "selector": "light-yellow",
+    },
+    Object {
+      "properties": Object {
+        "color": "#5e2ca5",
+      },
+      "selector": "purple",
+    },
+    Object {
+      "properties": Object {
+        "color": "#a463f2",
+      },
+      "selector": "light-purple",
+    },
+    Object {
+      "properties": Object {
+        "color": "#d5008f",
+      },
+      "selector": "dark-pink",
+    },
+    Object {
+      "properties": Object {
+        "color": "#ff41b4",
+      },
+      "selector": "hot-pink",
+    },
+    Object {
+      "properties": Object {
+        "color": "#ff80cc",
+      },
+      "selector": "pink",
+    },
+    Object {
+      "properties": Object {
+        "color": "#ffa3d7",
+      },
+      "selector": "light-pink",
+    },
+    Object {
+      "properties": Object {
+        "color": "#137752",
+      },
+      "selector": "dark-green",
+    },
+    Object {
+      "properties": Object {
+        "color": "#19a974",
+      },
+      "selector": "green",
+    },
+    Object {
+      "properties": Object {
+        "color": "#9eebcf",
+      },
+      "selector": "light-green",
+    },
+    Object {
+      "properties": Object {
+        "color": "#001b44",
+      },
+      "selector": "navy",
+    },
+    Object {
+      "properties": Object {
+        "color": "#00449e",
+      },
+      "selector": "dark-blue",
+    },
+    Object {
+      "properties": Object {
+        "color": "#357edd",
+      },
+      "selector": "blue",
+    },
+    Object {
+      "properties": Object {
+        "color": "#96ccff",
+      },
+      "selector": "light-blue",
+    },
+    Object {
+      "properties": Object {
+        "color": "#cdecff",
+      },
+      "selector": "lightest-blue",
+    },
+    Object {
+      "properties": Object {
+        "color": "#f6fffe",
+      },
+      "selector": "washed-blue",
+    },
+    Object {
+      "properties": Object {
+        "color": "#e8fdf5",
+      },
+      "selector": "washed-green",
+    },
+    Object {
+      "properties": Object {
+        "color": "#fffceb",
+      },
+      "selector": "washed-yellow",
+    },
+    Object {
+      "properties": Object {
+        "color": "#ffdfdf",
+      },
+      "selector": "washed-red",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "background-color": "#000",
+      },
+      "selector": "bg-black",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#111",
+      },
+      "selector": "bg-near-black",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#333",
+      },
+      "selector": "bg-dark-gray",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#555",
+      },
+      "selector": "bg-mid-gray",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#777",
+      },
+      "selector": "bg-gray",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#999",
+      },
+      "selector": "bg-silver",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#aaa",
+      },
+      "selector": "bg-light-silver",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#ccc",
+      },
+      "selector": "bg-moon-gray",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#eee",
+      },
+      "selector": "bg-light-gray",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#f4f4f4",
+      },
+      "selector": "bg-near-white",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#fff",
+      },
+      "selector": "bg-white",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "transparent",
+      },
+      "selector": "bg-transparent",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(0,0,0,.9)",
+      },
+      "selector": "bg-black-90",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(0,0,0,.8)",
+      },
+      "selector": "bg-black-80",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(0,0,0,.7)",
+      },
+      "selector": "bg-black-70",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(0,0,0,.6)",
+      },
+      "selector": "bg-black-60",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(0,0,0,.5)",
+      },
+      "selector": "bg-black-50",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(0,0,0,.4)",
+      },
+      "selector": "bg-black-40",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(0,0,0,.3)",
+      },
+      "selector": "bg-black-30",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(0,0,0,.2)",
+      },
+      "selector": "bg-black-20",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(0,0,0,.1)",
+      },
+      "selector": "bg-black-10",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(0,0,0,.05)",
+      },
+      "selector": "bg-black-05",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(0,0,0,.025)",
+      },
+      "selector": "bg-black-025",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(0,0,0,.0125)",
+      },
+      "selector": "bg-black-0125",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(255,255,255,.9)",
+      },
+      "selector": "bg-white-90",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(255,255,255,.8)",
+      },
+      "selector": "bg-white-80",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(255,255,255,.7)",
+      },
+      "selector": "bg-white-70",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(255,255,255,.6)",
+      },
+      "selector": "bg-white-60",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(255,255,255,.5)",
+      },
+      "selector": "bg-white-50",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(255,255,255,.4)",
+      },
+      "selector": "bg-white-40",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(255,255,255,.3)",
+      },
+      "selector": "bg-white-30",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(255,255,255,.2)",
+      },
+      "selector": "bg-white-20",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(255,255,255,.1)",
+      },
+      "selector": "bg-white-10",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(255,255,255,.05)",
+      },
+      "selector": "bg-white-05",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(255,255,255,.025)",
+      },
+      "selector": "bg-white-025",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "rgba(255,255,255,.0125)",
+      },
+      "selector": "bg-white-0125",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#e7040f",
+      },
+      "selector": "bg-dark-red",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#ff4136",
+      },
+      "selector": "bg-red",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#ff725c",
+      },
+      "selector": "bg-light-red",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#ff6300",
+      },
+      "selector": "bg-orange",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#ffb700",
+      },
+      "selector": "bg-gold",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#ffd700",
+      },
+      "selector": "bg-yellow",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#fbf1a9",
+      },
+      "selector": "bg-light-yellow",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#5e2ca5",
+      },
+      "selector": "bg-purple",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#a463f2",
+      },
+      "selector": "bg-light-purple",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#d5008f",
+      },
+      "selector": "bg-dark-pink",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#ff41b4",
+      },
+      "selector": "bg-hot-pink",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#ff80cc",
+      },
+      "selector": "bg-pink",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#ffa3d7",
+      },
+      "selector": "bg-light-pink",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#137752",
+      },
+      "selector": "bg-dark-green",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#19a974",
+      },
+      "selector": "bg-green",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#9eebcf",
+      },
+      "selector": "bg-light-green",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#001b44",
+      },
+      "selector": "bg-navy",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#00449e",
+      },
+      "selector": "bg-dark-blue",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#357edd",
+      },
+      "selector": "bg-blue",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#96ccff",
+      },
+      "selector": "bg-light-blue",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#cdecff",
+      },
+      "selector": "bg-lightest-blue",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#f6fffe",
+      },
+      "selector": "bg-washed-blue",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#e8fdf5",
+      },
+      "selector": "bg-washed-green",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#fffceb",
+      },
+      "selector": "bg-washed-yellow",
+    },
+    Object {
+      "properties": Object {
+        "background-color": "#ffdfdf",
+      },
+      "selector": "bg-washed-red",
+    },
+  ],
+  Array [
+    Object {
+      "properties": Object {
+        "border-color": "#000",
+      },
+      "selector": "b-black",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#111",
+      },
+      "selector": "b-near-black",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#333",
+      },
+      "selector": "b-dark-gray",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#555",
+      },
+      "selector": "b-mid-gray",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#777",
+      },
+      "selector": "b-gray",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#999",
+      },
+      "selector": "b-silver",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#aaa",
+      },
+      "selector": "b-light-silver",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ccc",
+      },
+      "selector": "b-moon-gray",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#eee",
+      },
+      "selector": "b-light-gray",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#f4f4f4",
+      },
+      "selector": "b-near-white",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#fff",
+      },
+      "selector": "b-white",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "transparent",
+      },
+      "selector": "b-transparent",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.9)",
+      },
+      "selector": "b-black-90",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.8)",
+      },
+      "selector": "b-black-80",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.7)",
+      },
+      "selector": "b-black-70",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.6)",
+      },
+      "selector": "b-black-60",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.5)",
+      },
+      "selector": "b-black-50",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.4)",
+      },
+      "selector": "b-black-40",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.3)",
+      },
+      "selector": "b-black-30",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.2)",
+      },
+      "selector": "b-black-20",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.1)",
+      },
+      "selector": "b-black-10",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.05)",
+      },
+      "selector": "b-black-05",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.025)",
+      },
+      "selector": "b-black-025",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(0,0,0,.0125)",
+      },
+      "selector": "b-black-0125",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.9)",
+      },
+      "selector": "b-white-90",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.8)",
+      },
+      "selector": "b-white-80",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.7)",
+      },
+      "selector": "b-white-70",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.6)",
+      },
+      "selector": "b-white-60",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.5)",
+      },
+      "selector": "b-white-50",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.4)",
+      },
+      "selector": "b-white-40",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.3)",
+      },
+      "selector": "b-white-30",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.2)",
+      },
+      "selector": "b-white-20",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.1)",
+      },
+      "selector": "b-white-10",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.05)",
+      },
+      "selector": "b-white-05",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.025)",
+      },
+      "selector": "b-white-025",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "rgba(255,255,255,.0125)",
+      },
+      "selector": "b-white-0125",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#e7040f",
+      },
+      "selector": "b-dark-red",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ff4136",
+      },
+      "selector": "b-red",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ff725c",
+      },
+      "selector": "b-light-red",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ff6300",
+      },
+      "selector": "b-orange",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ffb700",
+      },
+      "selector": "b-gold",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ffd700",
+      },
+      "selector": "b-yellow",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#fbf1a9",
+      },
+      "selector": "b-light-yellow",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#5e2ca5",
+      },
+      "selector": "b-purple",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#a463f2",
+      },
+      "selector": "b-light-purple",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#d5008f",
+      },
+      "selector": "b-dark-pink",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ff41b4",
+      },
+      "selector": "b-hot-pink",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ff80cc",
+      },
+      "selector": "b-pink",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ffa3d7",
+      },
+      "selector": "b-light-pink",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#137752",
+      },
+      "selector": "b-dark-green",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#19a974",
+      },
+      "selector": "b-green",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#9eebcf",
+      },
+      "selector": "b-light-green",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#001b44",
+      },
+      "selector": "b-navy",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#00449e",
+      },
+      "selector": "b-dark-blue",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#357edd",
+      },
+      "selector": "b-blue",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#96ccff",
+      },
+      "selector": "b-light-blue",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#cdecff",
+      },
+      "selector": "b-lightest-blue",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#f6fffe",
+      },
+      "selector": "b-washed-blue",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#e8fdf5",
+      },
+      "selector": "b-washed-green",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#fffceb",
+      },
+      "selector": "b-washed-yellow",
+    },
+    Object {
+      "properties": Object {
+        "border-color": "#ffdfdf",
+      },
+      "selector": "b-washed-red",
+    },
+  ],
+  Array [
+    Array [
+      Object {
+        "properties": Object {
+          "margin": "0",
+        },
+        "responsive": true,
+        "selector": "ma-0",
+      },
+      Object {
+        "properties": Object {
+          "margin": "0.25rem",
+        },
+        "responsive": true,
+        "selector": "ma-1",
+      },
+      Object {
+        "properties": Object {
+          "margin": "0.5rem",
+        },
+        "responsive": true,
+        "selector": "ma-2",
+      },
+      Object {
+        "properties": Object {
+          "margin": "1rem",
+        },
+        "responsive": true,
+        "selector": "ma-3",
+      },
+      Object {
+        "properties": Object {
+          "margin": "2rem",
+        },
+        "responsive": true,
+        "selector": "ma-4",
+      },
+      Object {
+        "properties": Object {
+          "margin": "4rem",
+        },
+        "responsive": true,
+        "selector": "ma-5",
+      },
+      Object {
+        "properties": Object {
+          "margin": "8rem",
+        },
+        "responsive": true,
+        "selector": "ma-6",
+      },
+      Object {
+        "properties": Object {
+          "margin": "16rem",
+        },
+        "responsive": true,
+        "selector": "ma-7",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "margin-top": "0",
+        },
+        "responsive": true,
+        "selector": "mt-0",
+      },
+      Object {
+        "properties": Object {
+          "margin-top": "0.25rem",
+        },
+        "responsive": true,
+        "selector": "mt-1",
+      },
+      Object {
+        "properties": Object {
+          "margin-top": "0.5rem",
+        },
+        "responsive": true,
+        "selector": "mt-2",
+      },
+      Object {
+        "properties": Object {
+          "margin-top": "1rem",
+        },
+        "responsive": true,
+        "selector": "mt-3",
+      },
+      Object {
+        "properties": Object {
+          "margin-top": "2rem",
+        },
+        "responsive": true,
+        "selector": "mt-4",
+      },
+      Object {
+        "properties": Object {
+          "margin-top": "4rem",
+        },
+        "responsive": true,
+        "selector": "mt-5",
+      },
+      Object {
+        "properties": Object {
+          "margin-top": "8rem",
+        },
+        "responsive": true,
+        "selector": "mt-6",
+      },
+      Object {
+        "properties": Object {
+          "margin-top": "16rem",
+        },
+        "responsive": true,
+        "selector": "mt-7",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "margin-left": "0",
+        },
+        "responsive": true,
+        "selector": "ml-0",
+      },
+      Object {
+        "properties": Object {
+          "margin-left": "0.25rem",
+        },
+        "responsive": true,
+        "selector": "ml-1",
+      },
+      Object {
+        "properties": Object {
+          "margin-left": "0.5rem",
+        },
+        "responsive": true,
+        "selector": "ml-2",
+      },
+      Object {
+        "properties": Object {
+          "margin-left": "1rem",
+        },
+        "responsive": true,
+        "selector": "ml-3",
+      },
+      Object {
+        "properties": Object {
+          "margin-left": "2rem",
+        },
+        "responsive": true,
+        "selector": "ml-4",
+      },
+      Object {
+        "properties": Object {
+          "margin-left": "4rem",
+        },
+        "responsive": true,
+        "selector": "ml-5",
+      },
+      Object {
+        "properties": Object {
+          "margin-left": "8rem",
+        },
+        "responsive": true,
+        "selector": "ml-6",
+      },
+      Object {
+        "properties": Object {
+          "margin-left": "16rem",
+        },
+        "responsive": true,
+        "selector": "ml-7",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "margin-right": "0",
+        },
+        "responsive": true,
+        "selector": "mr-0",
+      },
+      Object {
+        "properties": Object {
+          "margin-right": "0.25rem",
+        },
+        "responsive": true,
+        "selector": "mr-1",
+      },
+      Object {
+        "properties": Object {
+          "margin-right": "0.5rem",
+        },
+        "responsive": true,
+        "selector": "mr-2",
+      },
+      Object {
+        "properties": Object {
+          "margin-right": "1rem",
+        },
+        "responsive": true,
+        "selector": "mr-3",
+      },
+      Object {
+        "properties": Object {
+          "margin-right": "2rem",
+        },
+        "responsive": true,
+        "selector": "mr-4",
+      },
+      Object {
+        "properties": Object {
+          "margin-right": "4rem",
+        },
+        "responsive": true,
+        "selector": "mr-5",
+      },
+      Object {
+        "properties": Object {
+          "margin-right": "8rem",
+        },
+        "responsive": true,
+        "selector": "mr-6",
+      },
+      Object {
+        "properties": Object {
+          "margin-right": "16rem",
+        },
+        "responsive": true,
+        "selector": "mr-7",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "margin-bottom": "0",
+        },
+        "responsive": true,
+        "selector": "mb-0",
+      },
+      Object {
+        "properties": Object {
+          "margin-bottom": "0.25rem",
+        },
+        "responsive": true,
+        "selector": "mb-1",
+      },
+      Object {
+        "properties": Object {
+          "margin-bottom": "0.5rem",
+        },
+        "responsive": true,
+        "selector": "mb-2",
+      },
+      Object {
+        "properties": Object {
+          "margin-bottom": "1rem",
+        },
+        "responsive": true,
+        "selector": "mb-3",
+      },
+      Object {
+        "properties": Object {
+          "margin-bottom": "2rem",
+        },
+        "responsive": true,
+        "selector": "mb-4",
+      },
+      Object {
+        "properties": Object {
+          "margin-bottom": "4rem",
+        },
+        "responsive": true,
+        "selector": "mb-5",
+      },
+      Object {
+        "properties": Object {
+          "margin-bottom": "8rem",
+        },
+        "responsive": true,
+        "selector": "mb-6",
+      },
+      Object {
+        "properties": Object {
+          "margin-bottom": "16rem",
+        },
+        "responsive": true,
+        "selector": "mb-7",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "margin-left": "0",
+          "margin-right": "0",
+        },
+        "responsive": true,
+        "selector": "mh-0",
+      },
+      Object {
+        "properties": Object {
+          "margin-left": "0.25rem",
+          "margin-right": "0.25rem",
+        },
+        "responsive": true,
+        "selector": "mh-1",
+      },
+      Object {
+        "properties": Object {
+          "margin-left": "0.5rem",
+          "margin-right": "0.5rem",
+        },
+        "responsive": true,
+        "selector": "mh-2",
+      },
+      Object {
+        "properties": Object {
+          "margin-left": "1rem",
+          "margin-right": "1rem",
+        },
+        "responsive": true,
+        "selector": "mh-3",
+      },
+      Object {
+        "properties": Object {
+          "margin-left": "2rem",
+          "margin-right": "2rem",
+        },
+        "responsive": true,
+        "selector": "mh-4",
+      },
+      Object {
+        "properties": Object {
+          "margin-left": "4rem",
+          "margin-right": "4rem",
+        },
+        "responsive": true,
+        "selector": "mh-5",
+      },
+      Object {
+        "properties": Object {
+          "margin-left": "8rem",
+          "margin-right": "8rem",
+        },
+        "responsive": true,
+        "selector": "mh-6",
+      },
+      Object {
+        "properties": Object {
+          "margin-left": "16rem",
+          "margin-right": "16rem",
+        },
+        "responsive": true,
+        "selector": "mh-7",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "margin-bottom": "0",
+          "margin-top": "0",
+        },
+        "responsive": true,
+        "selector": "mv-0",
+      },
+      Object {
+        "properties": Object {
+          "margin-bottom": "0.25rem",
+          "margin-top": "0.25rem",
+        },
+        "responsive": true,
+        "selector": "mv-1",
+      },
+      Object {
+        "properties": Object {
+          "margin-bottom": "0.5rem",
+          "margin-top": "0.5rem",
+        },
+        "responsive": true,
+        "selector": "mv-2",
+      },
+      Object {
+        "properties": Object {
+          "margin-bottom": "1rem",
+          "margin-top": "1rem",
+        },
+        "responsive": true,
+        "selector": "mv-3",
+      },
+      Object {
+        "properties": Object {
+          "margin-bottom": "2rem",
+          "margin-top": "2rem",
+        },
+        "responsive": true,
+        "selector": "mv-4",
+      },
+      Object {
+        "properties": Object {
+          "margin-bottom": "4rem",
+          "margin-top": "4rem",
+        },
+        "responsive": true,
+        "selector": "mv-5",
+      },
+      Object {
+        "properties": Object {
+          "margin-bottom": "8rem",
+          "margin-top": "8rem",
+        },
+        "responsive": true,
+        "selector": "mv-6",
+      },
+      Object {
+        "properties": Object {
+          "margin-bottom": "16rem",
+          "margin-top": "16rem",
+        },
+        "responsive": true,
+        "selector": "mv-7",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "margin-left": "autorem",
+        },
+        "responsive": true,
+        "selector": "ml-auto",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "margin-right": "autorem",
+        },
+        "responsive": true,
+        "selector": "mr-auto",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "margin-left": "autorem",
+          "margin-right": "autorem",
+        },
+        "responsive": true,
+        "selector": "mh-auto",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "margin-bottom": "autorem",
+          "margin-top": "autorem",
+        },
+        "responsive": true,
+        "selector": "mv-auto",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "padding": "0",
+        },
+        "responsive": true,
+        "selector": "pa-0",
+      },
+      Object {
+        "properties": Object {
+          "padding": "0.25rem",
+        },
+        "responsive": true,
+        "selector": "pa-1",
+      },
+      Object {
+        "properties": Object {
+          "padding": "0.5rem",
+        },
+        "responsive": true,
+        "selector": "pa-2",
+      },
+      Object {
+        "properties": Object {
+          "padding": "1rem",
+        },
+        "responsive": true,
+        "selector": "pa-3",
+      },
+      Object {
+        "properties": Object {
+          "padding": "2rem",
+        },
+        "responsive": true,
+        "selector": "pa-4",
+      },
+      Object {
+        "properties": Object {
+          "padding": "4rem",
+        },
+        "responsive": true,
+        "selector": "pa-5",
+      },
+      Object {
+        "properties": Object {
+          "padding": "8rem",
+        },
+        "responsive": true,
+        "selector": "pa-6",
+      },
+      Object {
+        "properties": Object {
+          "padding": "16rem",
+        },
+        "responsive": true,
+        "selector": "pa-7",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "padding-top": "0",
+        },
+        "responsive": true,
+        "selector": "pt-0",
+      },
+      Object {
+        "properties": Object {
+          "padding-top": "0.25rem",
+        },
+        "responsive": true,
+        "selector": "pt-1",
+      },
+      Object {
+        "properties": Object {
+          "padding-top": "0.5rem",
+        },
+        "responsive": true,
+        "selector": "pt-2",
+      },
+      Object {
+        "properties": Object {
+          "padding-top": "1rem",
+        },
+        "responsive": true,
+        "selector": "pt-3",
+      },
+      Object {
+        "properties": Object {
+          "padding-top": "2rem",
+        },
+        "responsive": true,
+        "selector": "pt-4",
+      },
+      Object {
+        "properties": Object {
+          "padding-top": "4rem",
+        },
+        "responsive": true,
+        "selector": "pt-5",
+      },
+      Object {
+        "properties": Object {
+          "padding-top": "8rem",
+        },
+        "responsive": true,
+        "selector": "pt-6",
+      },
+      Object {
+        "properties": Object {
+          "padding-top": "16rem",
+        },
+        "responsive": true,
+        "selector": "pt-7",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "padding-left": "0",
+        },
+        "responsive": true,
+        "selector": "pl-0",
+      },
+      Object {
+        "properties": Object {
+          "padding-left": "0.25rem",
+        },
+        "responsive": true,
+        "selector": "pl-1",
+      },
+      Object {
+        "properties": Object {
+          "padding-left": "0.5rem",
+        },
+        "responsive": true,
+        "selector": "pl-2",
+      },
+      Object {
+        "properties": Object {
+          "padding-left": "1rem",
+        },
+        "responsive": true,
+        "selector": "pl-3",
+      },
+      Object {
+        "properties": Object {
+          "padding-left": "2rem",
+        },
+        "responsive": true,
+        "selector": "pl-4",
+      },
+      Object {
+        "properties": Object {
+          "padding-left": "4rem",
+        },
+        "responsive": true,
+        "selector": "pl-5",
+      },
+      Object {
+        "properties": Object {
+          "padding-left": "8rem",
+        },
+        "responsive": true,
+        "selector": "pl-6",
+      },
+      Object {
+        "properties": Object {
+          "padding-left": "16rem",
+        },
+        "responsive": true,
+        "selector": "pl-7",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "padding-right": "0",
+        },
+        "responsive": true,
+        "selector": "pr-0",
+      },
+      Object {
+        "properties": Object {
+          "padding-right": "0.25rem",
+        },
+        "responsive": true,
+        "selector": "pr-1",
+      },
+      Object {
+        "properties": Object {
+          "padding-right": "0.5rem",
+        },
+        "responsive": true,
+        "selector": "pr-2",
+      },
+      Object {
+        "properties": Object {
+          "padding-right": "1rem",
+        },
+        "responsive": true,
+        "selector": "pr-3",
+      },
+      Object {
+        "properties": Object {
+          "padding-right": "2rem",
+        },
+        "responsive": true,
+        "selector": "pr-4",
+      },
+      Object {
+        "properties": Object {
+          "padding-right": "4rem",
+        },
+        "responsive": true,
+        "selector": "pr-5",
+      },
+      Object {
+        "properties": Object {
+          "padding-right": "8rem",
+        },
+        "responsive": true,
+        "selector": "pr-6",
+      },
+      Object {
+        "properties": Object {
+          "padding-right": "16rem",
+        },
+        "responsive": true,
+        "selector": "pr-7",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "padding-bottom": "0",
+        },
+        "responsive": true,
+        "selector": "pb-0",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "0.25rem",
+        },
+        "responsive": true,
+        "selector": "pb-1",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "0.5rem",
+        },
+        "responsive": true,
+        "selector": "pb-2",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "1rem",
+        },
+        "responsive": true,
+        "selector": "pb-3",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "2rem",
+        },
+        "responsive": true,
+        "selector": "pb-4",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "4rem",
+        },
+        "responsive": true,
+        "selector": "pb-5",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "8rem",
+        },
+        "responsive": true,
+        "selector": "pb-6",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "16rem",
+        },
+        "responsive": true,
+        "selector": "pb-7",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "padding-bottom": "0",
+          "padding-top": "0",
+        },
+        "responsive": true,
+        "selector": "ph-0",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "0.25rem",
+          "padding-top": "0.25rem",
+        },
+        "responsive": true,
+        "selector": "ph-1",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "0.5rem",
+          "padding-top": "0.5rem",
+        },
+        "responsive": true,
+        "selector": "ph-2",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "1rem",
+          "padding-top": "1rem",
+        },
+        "responsive": true,
+        "selector": "ph-3",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "2rem",
+          "padding-top": "2rem",
+        },
+        "responsive": true,
+        "selector": "ph-4",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "4rem",
+          "padding-top": "4rem",
+        },
+        "responsive": true,
+        "selector": "ph-5",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "8rem",
+          "padding-top": "8rem",
+        },
+        "responsive": true,
+        "selector": "ph-6",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "16rem",
+          "padding-top": "16rem",
+        },
+        "responsive": true,
+        "selector": "ph-7",
+      },
+    ],
+    Array [
+      Object {
+        "properties": Object {
+          "padding-bottom": "0",
+          "padding-top": "0",
+        },
+        "responsive": true,
+        "selector": "pv-0",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "0.25rem",
+          "padding-top": "0.25rem",
+        },
+        "responsive": true,
+        "selector": "pv-1",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "0.5rem",
+          "padding-top": "0.5rem",
+        },
+        "responsive": true,
+        "selector": "pv-2",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "1rem",
+          "padding-top": "1rem",
+        },
+        "responsive": true,
+        "selector": "pv-3",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "2rem",
+          "padding-top": "2rem",
+        },
+        "responsive": true,
+        "selector": "pv-4",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "4rem",
+          "padding-top": "4rem",
+        },
+        "responsive": true,
+        "selector": "pv-5",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "8rem",
+          "padding-top": "8rem",
+        },
+        "responsive": true,
+        "selector": "pv-6",
+      },
+      Object {
+        "properties": Object {
+          "padding-bottom": "16rem",
+          "padding-top": "16rem",
+        },
+        "responsive": true,
+        "selector": "pv-7",
+      },
+    ],
+  ],
+]
+`;
