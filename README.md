@@ -1,14 +1,18 @@
-# hibiscss [![Build Status](https://travis-ci.org/rosszurowski/hibiscss.svg?branch=master)](https://travis-ci.org/rosszurowski/hibiscss)
+# hibiscss
 
-A tool for making functional CSS stylesheets. Think [tachyons](http://tachyons.io), but customizable 🌸
+[![Build Status](https://travis-ci.org/rosszurowski/hibiscss.svg?branch=master)](https://travis-ci.org/rosszurowski/hibiscss)
 
-## Getting Started
+Functional CSS generator. Think [tachyons](http://tachyons.io), but customizable for your project's visual language 🌸
 
-Install it:
+No more rewriting tachyons to include your colors, typefaces, and spacing scale!
+
+## Install
 
 ```bash
 npm install hibiscss --save
 ```
+
+## Getting Started
 
 For a quick start, use the [tachyons](#tachyons) rule kit. You can pass in options to define your project’s visual language:
 
@@ -38,9 +42,9 @@ Yay! :tada:
 
 Check out [the examples](https://github.com/rosszurowski/hibiscss/tree/master/examples) for more!
 
-### Configuration
+## Configuration
 
-Hibiscss just outputs a string of CSS. To use the CSS, you could make use of [insert-css](https://github.com/substack/insert-css) or a similar tool. I prefer making a static CSS file.
+Hibiscss gives you a string of CSS. To use this CSS, you could add it at runtime (using [insert-css](https://github.com/substack/insert-css) or a similar tool), or write it to a CSS file. I prefer making a CSS file.
 
 Make a file with your config and output it to `console.log`, like so:
 
@@ -64,6 +68,8 @@ Then add a `package.json` script to generate the styles, and re-run it whenever 
   }
 }
 ```
+
+Just use `npm run build-css` when you make changes.
 
 ## Kits
 
