@@ -28,7 +28,6 @@
   "files": [
     "default.js",
     "tachyons.js",
-    "README.md",
     "examples",
     "lib",
     "src"
