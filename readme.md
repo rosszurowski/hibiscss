@@ -1,10 +1,13 @@
-# hibiscss
+<h1 align="center">
+	<img width="600" src="https://cdn.rawgit.com/rosszurowski/hibiscss/337654f1/media/logo.svg" alt="Hibiscss" />
+	<br />
+</h1>
+
+> Functional CSS generator
 
 [![Build Status](https://travis-ci.org/rosszurowski/hibiscss.svg?branch=master)](https://travis-ci.org/rosszurowski/hibiscss)
 
-Functional CSS generator. Think [tachyons](http://tachyons.io), but customizable for your project's visual language 🌸
-
-No more rewriting tachyons to include your colors, typefaces, and spacing scale!
+Think [tachyons](http://tachyons.io), but customizable for your project's visual language. No more rewriting tachyons to include your colors, typefaces, and spacing scale! 🌺
 
 ## Install
 
