@@ -51,7 +51,7 @@ Then use the classes like so:
 <div class="c-pink ff-work fs-2">Work Sans in pink at 24px!</div>
 ```
 
-Yay! :tada: Check out [the examples](https://github.com/rosszurowski/hibiscss/tree/master/examples) for more!
+Yay! :tada: Check out [the examples](https://github.com/rosszurowski/hibiscss/tree/master/examples) or [default kit docs](https://github.com/rosszurowski/hibiscss/blob/master/docs/default.md) for more!
 
 ## Configuration
 
@@ -178,19 +178,19 @@ The `options` argument takes a set of flags that change how hibiscss interprets 
 
 ## Motivation
 
-[f(css)](http://www.jon.gold/2015/07/functional-css/) makes css a lot of fun, but many of the toolkits out there are difficult to customize.
+[functional css](http://www.jon.gold/2015/07/functional-css/) makes css a lot of fun, but many of the toolkits out there are difficult to customize.
 
-I found myself manually editing tachyons colours, typefaces, and breakpoints more times than I’d like. So I built  `hibiscss` to provide a simple structure for quickly generating f(css) frameworks.
+I found myself manually editing tachyons colours, typefaces, and breakpoints more times than I’d like. So I built  `hibiscss` to provide a simple structure for quickly generating functional css frameworks.
 
 ## See also
 
-Lots of prior art in the f(css) area:
+Lots of prior art in the functional css area:
 
 * [tachyons](https://github.com/tachyons-css/tachyons/)
 * [jongacnik/gr8](https://github.com/jongacnik/gr8)
 * [basscss](https://github.com/basscss/basscss)
 
-Pairs nicely with:
+Hibiscss pairs nicely with:
 
 * [polished](https://github.com/styled-components/polished), a utility kit for css-in-js
 
