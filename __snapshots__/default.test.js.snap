@@ -80,36 +80,6 @@ Array [
   },
   Object {
     "properties": Object {
-      "background-color": "#000",
-    },
-    "selector": "bgc-black",
-  },
-  Object {
-    "properties": Object {
-      "background-color": "#555",
-    },
-    "selector": "bgc-midGray",
-  },
-  Object {
-    "properties": Object {
-      "background-color": "#ccc",
-    },
-    "selector": "bgc-moonGray",
-  },
-  Object {
-    "properties": Object {
-      "background-color": "#ffff00",
-    },
-    "selector": "bgc-yellow",
-  },
-  Object {
-    "properties": Object {
-      "background-color": "#001b44",
-    },
-    "selector": "bgc-navy",
-  },
-  Object {
-    "properties": Object {
       "background-size": "cover",
     },
     "selector": "bgs-cover",
@@ -418,90 +388,6 @@ Array [
     },
     "responsive": true,
     "selector": "xo-4",
-  },
-  Object {
-    "properties": Object {
-      "width": "1rem",
-    },
-    "responsive": true,
-    "selector": "w-1",
-  },
-  Object {
-    "properties": Object {
-      "width": "2rem",
-    },
-    "responsive": true,
-    "selector": "w-2",
-  },
-  Object {
-    "properties": Object {
-      "width": "3rem",
-    },
-    "responsive": true,
-    "selector": "w-3",
-  },
-  Object {
-    "properties": Object {
-      "width": "4rem",
-    },
-    "responsive": true,
-    "selector": "w-4",
-  },
-  Object {
-    "properties": Object {
-      "width": "5rem",
-    },
-    "responsive": true,
-    "selector": "w-5",
-  },
-  Object {
-    "properties": Object {
-      "width": "100%",
-    },
-    "responsive": true,
-    "selector": "w-100p",
-  },
-  Object {
-    "properties": Object {
-      "height": "1rem",
-    },
-    "responsive": true,
-    "selector": "h-1",
-  },
-  Object {
-    "properties": Object {
-      "height": "2rem",
-    },
-    "responsive": true,
-    "selector": "h-2",
-  },
-  Object {
-    "properties": Object {
-      "height": "3rem",
-    },
-    "responsive": true,
-    "selector": "h-3",
-  },
-  Object {
-    "properties": Object {
-      "height": "4rem",
-    },
-    "responsive": true,
-    "selector": "h-4",
-  },
-  Object {
-    "properties": Object {
-      "height": "5rem",
-    },
-    "responsive": true,
-    "selector": "h-5",
-  },
-  Object {
-    "properties": Object {
-      "height": "100%",
-    },
-    "responsive": true,
-    "selector": "h-100p",
   },
   Object {
     "properties": Object {
@@ -1249,36 +1135,6 @@ Array [
   },
   Object {
     "properties": Object {
-      "color": "#000",
-    },
-    "selector": "c-black",
-  },
-  Object {
-    "properties": Object {
-      "color": "#555",
-    },
-    "selector": "c-midGray",
-  },
-  Object {
-    "properties": Object {
-      "color": "#ccc",
-    },
-    "selector": "c-moonGray",
-  },
-  Object {
-    "properties": Object {
-      "color": "#ffff00",
-    },
-    "selector": "c-yellow",
-  },
-  Object {
-    "properties": Object {
-      "color": "#001b44",
-    },
-    "selector": "c-navy",
-  },
-  Object {
-    "properties": Object {
       "font-family": "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif",
     },
     "selector": "ff-sans",
@@ -1291,27 +1147,21 @@ Array [
   },
   Object {
     "properties": Object {
-      "letter-spacing": "1px",
+      "line-height": "1",
     },
-    "selector": "ls-1",
+    "selector": "lh-1d0",
   },
   Object {
     "properties": Object {
-      "letter-spacing": "0.1px",
+      "line-height": "1.25",
     },
-    "selector": "ls-0d1",
+    "selector": "lh-1d25",
   },
   Object {
     "properties": Object {
-      "line-height": "1.2",
+      "line-height": "1.5",
     },
-    "selector": "lh-1d2",
-  },
-  Object {
-    "properties": Object {
-      "line-height": "1.6",
-    },
-    "selector": "lh-1d6",
+    "selector": "lh-1d5",
   },
   Object {
     "properties": Object {
@@ -1363,45 +1213,59 @@ Array [
   },
   Object {
     "properties": Object {
-      "font-size": "13px",
+      "font-size": "12px",
     },
     "responsive": true,
-    "selector": "fs-13",
+    "selector": "fs-12",
   },
   Object {
     "properties": Object {
-      "font-size": "15px",
+      "font-size": "14px",
     },
     "responsive": true,
-    "selector": "fs-15",
+    "selector": "fs-14",
   },
   Object {
     "properties": Object {
-      "font-size": "18px",
+      "font-size": "16px",
     },
     "responsive": true,
-    "selector": "fs-18",
+    "selector": "fs-16",
   },
   Object {
     "properties": Object {
-      "font-size": "22px",
+      "font-size": "20px",
     },
     "responsive": true,
-    "selector": "fs-22",
+    "selector": "fs-20",
   },
   Object {
     "properties": Object {
-      "font-size": "27px",
+      "font-size": "36px",
     },
     "responsive": true,
-    "selector": "fs-27",
+    "selector": "fs-36",
   },
   Object {
     "properties": Object {
-      "font-size": "33px",
+      "font-size": "48px",
     },
     "responsive": true,
-    "selector": "fs-33",
+    "selector": "fs-48",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "80px",
+    },
+    "responsive": true,
+    "selector": "fs-80",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "96px",
+    },
+    "responsive": true,
+    "selector": "fs-96",
   },
   Object {
     "properties": Object {
@@ -1564,36 +1428,6 @@ Array [
       "overflow": "visible",
     },
     "selector": "overflow-visible",
-  },
-  Object {
-    "properties": Object {
-      "background-color": "#000",
-    },
-    "selector": "backgroundColor-black",
-  },
-  Object {
-    "properties": Object {
-      "background-color": "#555",
-    },
-    "selector": "backgroundColor-midGray",
-  },
-  Object {
-    "properties": Object {
-      "background-color": "#ccc",
-    },
-    "selector": "backgroundColor-moonGray",
-  },
-  Object {
-    "properties": Object {
-      "background-color": "#ffff00",
-    },
-    "selector": "backgroundColor-yellow",
-  },
-  Object {
-    "properties": Object {
-      "background-color": "#001b44",
-    },
-    "selector": "backgroundColor-navy",
   },
   Object {
     "properties": Object {
@@ -1905,90 +1739,6 @@ Array [
     },
     "responsive": true,
     "selector": "flexOrder-4",
-  },
-  Object {
-    "properties": Object {
-      "width": "1rem",
-    },
-    "responsive": true,
-    "selector": "width-1",
-  },
-  Object {
-    "properties": Object {
-      "width": "2rem",
-    },
-    "responsive": true,
-    "selector": "width-2",
-  },
-  Object {
-    "properties": Object {
-      "width": "3rem",
-    },
-    "responsive": true,
-    "selector": "width-3",
-  },
-  Object {
-    "properties": Object {
-      "width": "4rem",
-    },
-    "responsive": true,
-    "selector": "width-4",
-  },
-  Object {
-    "properties": Object {
-      "width": "5rem",
-    },
-    "responsive": true,
-    "selector": "width-5",
-  },
-  Object {
-    "properties": Object {
-      "width": "100%",
-    },
-    "responsive": true,
-    "selector": "width-100p",
-  },
-  Object {
-    "properties": Object {
-      "height": "1rem",
-    },
-    "responsive": true,
-    "selector": "height-1",
-  },
-  Object {
-    "properties": Object {
-      "height": "2rem",
-    },
-    "responsive": true,
-    "selector": "height-2",
-  },
-  Object {
-    "properties": Object {
-      "height": "3rem",
-    },
-    "responsive": true,
-    "selector": "height-3",
-  },
-  Object {
-    "properties": Object {
-      "height": "4rem",
-    },
-    "responsive": true,
-    "selector": "height-4",
-  },
-  Object {
-    "properties": Object {
-      "height": "5rem",
-    },
-    "responsive": true,
-    "selector": "height-5",
-  },
-  Object {
-    "properties": Object {
-      "height": "100%",
-    },
-    "responsive": true,
-    "selector": "height-100p",
   },
   Object {
     "properties": Object {
@@ -2736,36 +2486,6 @@ Array [
   },
   Object {
     "properties": Object {
-      "color": "#000",
-    },
-    "selector": "color-black",
-  },
-  Object {
-    "properties": Object {
-      "color": "#555",
-    },
-    "selector": "color-midGray",
-  },
-  Object {
-    "properties": Object {
-      "color": "#ccc",
-    },
-    "selector": "color-moonGray",
-  },
-  Object {
-    "properties": Object {
-      "color": "#ffff00",
-    },
-    "selector": "color-yellow",
-  },
-  Object {
-    "properties": Object {
-      "color": "#001b44",
-    },
-    "selector": "color-navy",
-  },
-  Object {
-    "properties": Object {
       "font-family": "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif",
     },
     "selector": "fontFamily-sans",
@@ -2778,27 +2498,21 @@ Array [
   },
   Object {
     "properties": Object {
-      "letter-spacing": "1px",
+      "line-height": "1",
     },
-    "selector": "letterSpacing-1",
+    "selector": "lineHeight-1d0",
   },
   Object {
     "properties": Object {
-      "letter-spacing": "0.1px",
+      "line-height": "1.25",
     },
-    "selector": "letterSpacing-0d1",
+    "selector": "lineHeight-1d25",
   },
   Object {
     "properties": Object {
-      "line-height": "1.2",
+      "line-height": "1.5",
     },
-    "selector": "lineHeight-1d2",
-  },
-  Object {
-    "properties": Object {
-      "line-height": "1.6",
-    },
-    "selector": "lineHeight-1d6",
+    "selector": "lineHeight-1d5",
   },
   Object {
     "properties": Object {
@@ -2850,45 +2564,59 @@ Array [
   },
   Object {
     "properties": Object {
-      "font-size": "13px",
+      "font-size": "12px",
     },
     "responsive": true,
-    "selector": "fontSize-13",
+    "selector": "fontSize-12",
   },
   Object {
     "properties": Object {
-      "font-size": "15px",
+      "font-size": "14px",
     },
     "responsive": true,
-    "selector": "fontSize-15",
+    "selector": "fontSize-14",
   },
   Object {
     "properties": Object {
-      "font-size": "18px",
+      "font-size": "16px",
     },
     "responsive": true,
-    "selector": "fontSize-18",
+    "selector": "fontSize-16",
   },
   Object {
     "properties": Object {
-      "font-size": "22px",
+      "font-size": "20px",
     },
     "responsive": true,
-    "selector": "fontSize-22",
+    "selector": "fontSize-20",
   },
   Object {
     "properties": Object {
-      "font-size": "27px",
+      "font-size": "36px",
     },
     "responsive": true,
-    "selector": "fontSize-27",
+    "selector": "fontSize-36",
   },
   Object {
     "properties": Object {
-      "font-size": "33px",
+      "font-size": "48px",
     },
     "responsive": true,
-    "selector": "fontSize-33",
+    "selector": "fontSize-48",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "80px",
+    },
+    "responsive": true,
+    "selector": "fontSize-80",
+  },
+  Object {
+    "properties": Object {
+      "font-size": "96px",
+    },
+    "responsive": true,
+    "selector": "fontSize-96",
   },
   Object {
     "properties": Object {

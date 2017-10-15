@@ -10,43 +10,32 @@ const breakpoints = {
 };
 
 const defaults = {
-  colors: {
-    black: '#000',
-    midGray: '#555',
-    moonGray: '#ccc',
-    yellow: '#ffff00',
-    navy: '#001b44',
-  },
+  colors: {},
   borderRadius: {},
-  sizes: {
-    '1': '1rem',
-    '2': '2rem',
-    '3': '3rem',
-    '4': '4rem',
-    '5': '5rem',
-    '100%': '100%',
-  },
   fontFamily: {
     sans: `-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif`,
     serif: `Georgia, Times, serif`,
   },
   fontSize: {
-    13: '13px',
-    15: '15px',
-    18: '18px',
-    22: '22px',
-    27: '27px',
-    33: '33px',
+    12: '12px',
+    14: '14px',
+    16: '16px',
+    20: '20px',
+    36: '36px',
+    48: '48px',
+    80: '80px',
+    96: '96px',
   },
   fontWeight: {
     normal: 'normal',
     bold: 'bold',
   },
-  letterSpacing: {
-    '0.1': '0.1px',
-    '1': '1px',
+  letterSpacing: {},
+  lineHeight: {
+    '1.0': 1.0,
+    '1.25': 1.25,
+    '1.5': 1.5,
   },
-  lineHeight: { '1.2': 1.2, '1.6': 1.6 },
   opacity: {
     '0%': 0.0,
     '25%': 0.25,
@@ -55,7 +44,9 @@ const defaults = {
     '100%': 1.0,
   },
   maxWidths: [],
+  sizes: {},
   spacing: [0, 4, 8, 16, 32, 64, 128],
+  verboseClassNames: false,
 };
 
 const verboseKeys = new Map();
