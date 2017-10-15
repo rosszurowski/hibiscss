@@ -86,10 +86,10 @@ Run `npm run build-css` to make the file or update it when you make changes to y
 
 `hibiscss` generates css using _kits_, presets that map a visual language you define to a bunch of css styles.
 
-`hibiscss` comes with two built-in kits:
+`hibiscss` comes with two kits bundled into the package:
 
-* [`hibiscss/default`](/rosszurowski/hibiscss/tree/master/docs/default.md), a small, highly customizable set of styles
-* [`hibiscss/tachyons`](#tachyons), a familiar tachyons-like set of classes
+* `hibiscss/default`: small, highly customizable kit ([docs](/rosszurowski/hibiscss/tree/master/docs/default.md))
+* `hibiscss/tachyons`: familiar tachyons-like classes ([docs](/rosszurowski/hibiscss/tree/master/docs/tachyons.md))
 
 Kits are just functions that take a bunch of options, returning rules for hibiscss to generate. For example, using the default kit:
 
@@ -115,37 +115,6 @@ Will give you classes like:
 
 Kits let you customize everything whether you can adjust line heights to how verbose the class names should be (eg. `mh-2` vs. `marginHorizontal-2`).
 
-### Default
-
-[Default kit docs.](/rosszurowski/hibiscss/blob/master/docs/default.md)
-
-### Tachyons
-
-The bundled tachyons kit generates a set of rules very similar to the [tachyons](http://tachyons.io/docs/) framework.
-
-Options to document…
-
-* `colors: object`
-* `spacing: array`
-
-The main difference to be aware of is that values are separated by a `-`, like so:
-
-```css
-/* tachyons */
-.f1 { ... }
-.fw4 { ... }
-.ttc { ... }
-.georgia { ... }
-
-/* hibiscss */
-.f-1 { ... }
-.fw-4 { ... }
-.tt-c { ... }
-.georgia { ... }
-```
-
-This kit is still in progress. If you find a bug or an incompatability, [submit an issue!](https://github.com/rosszurowski/hibiscss/issues/new)
-
 ### Making a custom kit
 
 You can also define a full rule-set from scratch if you'd like fine-grained control over all the css that gets generated. Kits are simply a function that returns a set of rules, created with the `rule` helper function.
@@ -155,6 +124,8 @@ Check out [the custom kit example](https://github.com/rosszurowski/hibiscss/blob
 ## Docs
 
 ### Anatomy of a Rule
+
+Hibiscss thinks about functional css rules in these terms:
 
 ```
  ┌─ prefix (optional)      ┌─ key                  ┌─ value
