@@ -84,12 +84,10 @@ Run `npm run build-css` to make the file or update it when you make changes to y
 
 ## Kits
 
-`hibiscss` generates css using _kits_, presets that map a visual language you define to a bunch of css styles.
+Hibiscss generates css using _kits_, presets that map a visual language you define to a bunch of css styles. Hibiscss comes with two kits bundled into the package:
 
-`hibiscss` comes with two kits bundled into the package:
-
-* `hibiscss/default`: small, highly customizable kit ([docs](/rosszurowski/hibiscss/tree/master/docs/default.md))
-* `hibiscss/tachyons`: familiar tachyons-like classes ([docs](/rosszurowski/hibiscss/tree/master/docs/tachyons.md))
+* **default** ([docs](/rosszurowski/hibiscss/tree/master/docs/default.md)): small, highly customizable kit
+* **tachyons** ([docs](/rosszurowski/hibiscss/tree/master/docs/tachyons.md)): familiar tachyons-like classes
 
 Kits are just functions that take a bunch of options, returning rules for hibiscss to generate. For example, using the default kit:
 
