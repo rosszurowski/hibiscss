@@ -7,6 +7,9 @@ yarn-error.log
 # Ignore dev files
 flow-typed/
 
+# Ignore design files
+*.sketch
+
 # Ignore temporary files
 .next/
 lib/
