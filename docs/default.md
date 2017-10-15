@@ -253,31 +253,64 @@ Spacing scale classes for `margin` and `padding` (top, left, bottom, right, hori
 ```
 </details>
 
+<details id="typography">
+<summary><strong>typography</strong></summary>
+
+Spacing scale classes for `margin` and `padding` (top, left, bottom, right, horizontal, vertical, all).
+
+```css
+.ff-sans { font-family: sans-serif; }
+.ff-serif { font-family: serif; }
+
+.fw-normal { font-weight: normal; }
+.fw-bold { font-weight: bold; }
+
+.fs-12 { font-size: 12px; }
+.fs-14 { font-size: 14px; }
+.fs-16 { font-size: 16px; }
+.fs-20 { font-size: 20px; }
+.fs-36 { font-size: 36px; }
+.fs-48 { font-size: 48px; }
+.fs-80 { font-size: 80px; }
+.fs-96 { font-size: 96px; }
+
+/* letter spacing not set by default, needs the `letterSpacing` prop to define, but selectors will look like this */
+.ls-0d1 { letter-spacing: 0.1px; }
+.ls-1 { letter-spacing: 1px; }
+
+.lh-1d0 { line-height: 1.0; }
+.lh-1d25 { line-height: 1.25; }
+.lh-1d5 { line-height: 1.5; }
 ```
 
+</details>
 
-#### `fontFamily` (object)
-#### `fontWeight` (object)
+<details id="appearance">
+<summary><strong>appearance</strong></summary>
 
-Defaults to `fw-normal` and `fw-bold`.
+Classes for `opacity` and `border-radius`.
 
-#### `fontSize` (object or array)
+```css
+.o-0p { opacity: 0.0; }
+.o-25p { opacity: 0.25; }
+.o-50p { opacity: 0.5; }
+.o-75p { opacity: 0.75; }
+.o-100p { opacity: 1.0; }
+```
 
-Defaults to `fs-13`, `fs-15`, `fs-18`, `fs-22`, `fs-27`, `fs-33`.
+```css
+/* border radius not set by default, needs the `borderRadius` prop to define, but selectors will can look like this */
+.br-0 { border-radius: 0; }
+.br-3 { border-radius: 3px; }
+.br-pill { border-radius: 9999px; }
+```
 
-#### `letterSpacing` (object or array)
-#### `lineHeight` (object or array)
-#### `opacity` (object or array)
+</details>
 
-Defaults to 0%, 25%, 50%, 75%, and 100%
-
-#### `maxWidths`
-#### `spacing`
-#### `borderRadius`
 
 ### Verbose classes
 
-An option to provide more verbose class names. This can helpful when working with others who may be less familiar with f(css) or uncomfortable with the concise approach.
+This kit provides a flag to use more verbose class names (eg. `margin-0` vs. `m-0`). This can help when working with others who may be less familiar with functional css and find the concise approach confusing.
 
 Verbose class names are camel-cased versions of properties. Values are not affected.
 
