@@ -3,11 +3,21 @@
 	<br />
 </h1>
 
-> Functional CSS generator
+> Functional css generator
 
 [![Build Status](https://travis-ci.org/rosszurowski/hibiscss.svg?branch=master)](https://travis-ci.org/rosszurowski/hibiscss)
 
-Think [tachyons](http://tachyons.io), but customizable for your project's visual language. No more rewriting tachyons to include your colors, typefaces, and spacing scale! 🌺
+Functional css (ie. [tachyons](http://tachyons.io)), but easily customizable for your project's visual language. No more rewriting long stylesheets to include your colors, typefaces, and spacing scale! 🌺
+
+
+#### Features
+
+* **flexible**: easily define colors, type styles, spacing scales
+* **performant**: only generates the breakpoints/variables you need (default kit is 3kb, compared to 14kb+ for tachyons)
+* **simple**: spits out a css string, no fancy client-side work needed
+* **just javascript**: integrates well with css-in-js, easy to extend, automate documentation, etc.
+
+:construction: This project is still `v0.x.x` and the API is subject to change.
 
 ## Install
 
@@ -41,13 +51,11 @@ Then use the classes like so:
 <div class="c-pink ff-work fs-2">Work Sans in pink at 24px!</div>
 ```
 
-Yay! :tada:
-
-Check out [the examples](https://github.com/rosszurowski/hibiscss/tree/master/examples) for more!
+Yay! :tada: Check out [the examples](https://github.com/rosszurowski/hibiscss/tree/master/examples) for more!
 
 ## Configuration
 
-Hibiscss gives you a string of CSS. To use this CSS, you could add it at runtime (using [insert-css](https://github.com/substack/insert-css) or a similar tool), or write it to a CSS file. I prefer making a CSS file.
+Hibiscss only gives you a string of css. You can integrate it with your build system however, but the easiest is to spit out a static css file, like so:
 
 Make a file with your config and output it to `console.log`, like so:
 
@@ -72,17 +80,22 @@ Then add a `package.json` script to generate the styles, and re-run it whenever 
 }
 ```
 
-Just use `npm run build-css` when you make changes.
+Run `npm run build-css` to make the file or update it when you make changes to your kit.
 
 ## Kits
 
-`hibiscss` comes with two built-in kits for generating styles: a [`default` kit](#default-kit) and [`tachyons`](#tachyons).
+`hibiscss` generates css using _kits_, presets that map a visual language you define to a bunch of css styles.
 
-Kits are presets of css you can customize. For example, the default kit (`hibiscss/default`) allows customizing colours, typefaces, the spacing scale, and more:
+`hibiscss` comes with two built-in kits:
+
+* [`hibiscss/default`](/rosszurowski/hibiscss/tree/master/docs/default.md), a small, highly customizable set of styles
+* [`hibiscss/tachyons`](#tachyons), a familiar tachyons-like set of classes
+
+Kits are just functions that take a bunch of options, returning rules for hibiscss to generate. For example, using the default kit:
 
 ```js
 import hibiscss from 'hibiscss';
-import kit from from 'hibiscss/default';
+import kit from 'hibiscss/default';
 
 const config = {
   spacing: [0, 8, 16, 24, 48, 64],
@@ -94,58 +107,17 @@ const config = {
 const css = hibiscss(kit(config));
 ```
 
-Which gives you classes like:
+Will give you classes like:
 
 ```html
 <div class="c-foggy mh-2 mh-4-m fs-title fw-semibold">Semibold and large</div>
 ```
 
-Think of kits as css classes, and think of the configuration you use as your visual language. Kits let you customize everything whether you can adjust line heights to how verbose the class names should be (eg. `mh-2` vs. `marginHorizontal-2`).
+Kits let you customize everything whether you can adjust line heights to how verbose the class names should be (eg. `mh-2` vs. `marginHorizontal-2`).
 
-### Default Kit
+### Default
 
-Documentation is still in progress.
-
-#### `colors` (object)
-
-```css
-.c-black
-.c-midGray
-.c-moonGray
-```
-
-#### `fontFamily` (object)
-#### `fontWeight` (object)
-
-Defaults to `fw-normal` and `fw-bold`.
-
-#### `fontSize` (object or array)
-
-Defaults to `fs-13`, `fs-15`, `fs-18`, `fs-22`, `fs-27`, `fs-33`.
-
-#### `letterSpacing` (object or array)
-#### `lineHeight` (object or array)
-#### `opacity` (object or array)
-
-Defaults to 0%, 25%, 50%, 75%, and 100%
-
-#### `maxWidths`
-#### `spacing`
-#### `borderRadius`
-
-#### `verboseClasses` (boolean)
-
-Whether to provide more verbose class names. This is helpful when working on a team that is less familiar with f(css).
-
-Verbose class names are camel-cased versions of properties. Values are not affected.
-
-```
-.c-blue     →   .color-blue
-.fs-22      →   .fontSize-22
-.mh-auto    →   .marginHorizontal-auto
-.xd-column  →   .flexDirection-column
-.xa-center  →   .flexAlign-center
-```
+[Default kit docs.](/rosszurowski/hibiscss/blob/master/docs/default.md)
 
 ### Tachyons
 
@@ -176,7 +148,7 @@ This kit is still in progress. If you find a bug or an incompatability, [submit 
 
 ### Making a custom kit
 
-You can also define a full rule-set from scratch if you'd like fine-grained control over all the CSS that gets generated. Kits are simply a function that returns a set of rules, created with the `rule` helper function.
+You can also define a full rule-set from scratch if you'd like fine-grained control over all the css that gets generated. Kits are simply a function that returns a set of rules, created with the `rule` helper function.
 
 Check out [the custom kit example](https://github.com/rosszurowski/hibiscss/blob/master/examples/custom-kit.js) to see more, or read [the API docs](#api).
 
@@ -194,15 +166,15 @@ Check out [the custom kit example](https://github.com/rosszurowski/hibiscss/blob
 
 ## API
 
-### `hibiscss(rules: Rule[], ?breakpoints): string`
+#### `hibiscss(rules: Rule[], ?breakpoints): string`
 
 Returns a css stylesheet from the given rules and breakpoints.
 
-### `rule(name: string, property: string, values: mixed, ?options)`
+#### `rule(name: string, property: string, values: mixed, ?options)`
 
 Returns a `Rule` with the properties and values mapped out. `name` refers to the selector name, and `property` is the css property/properties it should apply to. `values` is a string, number, array, or object of values to use. The format of this variable determines the keys of the rule.
 
-#### `values`
+##### `values`
 
 When `values` is an object (`{ yo: 'relative', dawg: 'absolute' }`), hibiscss returns a set of selectors like this:
 
@@ -226,7 +198,7 @@ When `values` is a string or number like `block`, hibiscss returns a single sele
 .name { property: block; }
 ```
 
-#### `options`
+##### `options`
 
 The `options` argument takes a set of flags that change how hibiscss interprets the rule. Allowed values are:
 
@@ -237,16 +209,9 @@ The `options` argument takes a set of flags that change how hibiscss interprets 
 
 ## Motivation
 
-[f(css)](http://www.jon.gold/2015/07/functional-css/) makes CSS a lot of fun, but many of the toolkits out there are difficult to customize.
+[f(css)](http://www.jon.gold/2015/07/functional-css/) makes css a lot of fun, but many of the toolkits out there are difficult to customize.
 
 I found myself manually editing tachyons colours, typefaces, and breakpoints more times than I’d like. So I built  `hibiscss` to provide a simple structure for quickly generating f(css) frameworks.
-
-### Goals
-
-1. **Quick**. This should work for a quick prototype or a complex system. Starting should be simple as a copy-paste, be it a `<link />` or a whole file), and easy to refine the visual system as you go.
-2. **Extensible**. One should be able to express the pieces of a complex design system in here. It should mesh into team philosophies and opinions (concise naming vs. full naming).
-3. **Collaborative**. Customizable selectors means language can be shared between designers and engineers (“headline”, “coral red”). Writing it in js leaves room for atomic styleguides to be generated from the rules.
-4. **Performant**. Not 87kB of CSS. Drop the code you don’t need.
 
 ## See also
 
@@ -259,11 +224,6 @@ Lots of prior art in the f(css) area:
 Pairs nicely with:
 
 * [polished](https://github.com/styled-components/polished), a utility kit for css-in-js
-
-In use:
-
-* [watsi.org](https://watsi.org)
-* [rosszurowski.com](https://rosszurowski.com)
 
 ## License
 
