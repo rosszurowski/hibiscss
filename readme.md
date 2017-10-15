@@ -27,13 +27,13 @@ npm install hibiscss --save
 
 ## Getting Started
 
-For a quick start, use the [tachyons](#tachyons) rule kit. You can pass in options to define your project’s visual language:
+For a quick start, use the [default rule kit](https://github.com/rosszurowski/hibiscss/blob/master/docs/default.md). You can pass in options to define your project’s visual language:
 
 ```js
 import hibiscss from 'hibiscss';
-import tachyons from 'hibiscss/tachyons';
+import kit from 'hibiscss/default';
 
-const styles = hibiscss(tachyons({
+const styles = hibiscss(kkit({
   colors: {
     pink: '#ffb7b3',
     black: '#141414'
