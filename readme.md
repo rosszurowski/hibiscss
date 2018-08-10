@@ -145,11 +145,11 @@ Returns a `Rule` with the properties and values mapped out. `name` refers to the
 
 ##### `values`
 
-When `values` is an object (`{ yo: 'relative', dawg: 'absolute' }`), hibiscss returns a set of selectors like this:
+When `values` is an object (`{ r: 'relative', a: 'absolute' }`), hibiscss returns a set of selectors like this:
 
 ```css
-.name-yo { property: relative; }
-.name-dawg { property: absolute; }
+.name-r { property: relative; }
+.name-a { property: absolute; }
 ```
 
 When `values` is an array (`[0, 4, 8, 16]`), hibiscss returns a set of selectors like this:

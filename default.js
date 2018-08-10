@@ -146,21 +146,23 @@ function getRules (opts) {
 
   function flex () {
     const withResponsive = { responsive: true };
+    const flexAttributes = { start: 'flex-start', spaceAround: 'space-around', spaceBetween: 'space-between', center: 'center', end: 'flex-end' };
 
     return [
       getRule('x', 'display', 'flex', withResponsive),
       getRule('x', 'flex', { '1': '1', auto: 'auto', none: 'none' }, withResponsive),
-      getRule('xa', 'align-items', { center: 'center', baseline: 'baseline', stretch: 'stretch', start: 'flex-start', end: 'flex-end' }, withResponsive),
+      getRule('xa', 'align-items', flexAttributes, withResponsive),
+      getRule('xs', 'align-self', flexAttributes, withResponsive),
+      getRule('xj', 'justify-content', flexAttributes, withResponsive),
       getRule('xd', 'flex-direction', { row: 'row', rowReverse: 'row-reverse', column: 'column', columnReverse: 'column-reverse' }, withResponsive),
       getRule('xw', 'flex-wrap', { wrap: 'wrap', noWrap: 'no-wrap' }),
-      getRule('xj', 'justify-content', { start: 'flex-start', spaceAround: 'space-around', spaceBetween: 'space-between', center: 'center', end: 'flex-end' }, withResponsive),
       getRule('xo', 'order', [0, 1, 2, 3, 4], withResponsive),
     ];
   }
 
   function position () {
     return [
-      getRule('p', 'position', { absolute: 'absolute', relative: 'relative' }),
+      getRule('p', 'position', { absolute: 'absolute', relative: 'relative', fixed: 'fixed', sticky: 'sticky' }),
       getRule('top', 'top', [0]),
       getRule('left', 'left', [0]),
       getRule('right', 'right', [0]),
