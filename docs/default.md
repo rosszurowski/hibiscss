@@ -322,3 +322,12 @@ Verbose class names are camel-cased versions of properties. Values are not affec
 .xd-column  →   .flexDirection-column
 .xa-center  →   .flexAlign-center
 ```
+
+You can use this flag like so:
+
+```jsx
+import hibiscss from 'hibiscss';
+import kit from 'hibiscss/default';
+
+const styles = hibiscss(kit({ verboseClassNames: true }));
+```
