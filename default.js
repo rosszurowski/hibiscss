@@ -11,6 +11,7 @@ const breakpoints = {
 
 const defaults = {
   colors: {},
+  borderWidths: {},
   borderRadius: {},
   fontFamily: {
     sans: `-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif`,
@@ -89,8 +90,7 @@ function getRules (opts) {
     getRule('bgp', 'background-position', { center: 'center', top: 'top', right: 'right', left: 'left', bottom: 'bottom' }),
     getRule('bgr', 'background-repeat', { noRepeat: 'no-repeat', x: 'repeat-x', y: 'repeat-y' }),
 
-    getRule('br', 'border-radius', config.borderRadius),
-
+    borders(),
     position(),
     flex(),
     sizes(config.sizes),
@@ -163,6 +163,27 @@ function getRules (opts) {
       getRule('bottom', 'bottom', [0]),
       getRule('z', 'z-index', [0, 1, 2, 3, 4]),
       getRule('z', 'z-index', { bottom: -1, top: 99 }),
+    ];
+  }
+
+  function borders () {
+    const borderRadius = getRule('br', 'border-radius', config.borderRadius);
+
+    if (Object.keys(config.borderWidths).length < 1) {
+      return [borderRadius];
+    }
+
+    const withResponsive = { responsive: true };
+
+    return [
+      getRule('bc', 'border-color', config.colors),
+      getRule('bw', 'border-width', config.borderWidths, withResponsive),
+      getRule('ba', 'border-style', 'solid', withResponsive),
+      getRule('bt', 'border-top-style', 'solid', withResponsive),
+      getRule('bl', 'border-left-style', 'solid', withResponsive),
+      getRule('br', 'border-right-style', 'solid', withResponsive),
+      getRule('bb', 'border-bottom-style', 'solid', withResponsive),
+      borderRadius,
     ];
   }
 
