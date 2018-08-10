@@ -6,8 +6,9 @@
 > Functional css generator
 
 [![Build Status](https://travis-ci.org/rosszurowski/hibiscss.svg?branch=master)](https://travis-ci.org/rosszurowski/hibiscss)
+[![npm](https://badgen.now.sh/npm/v/hibiscss)](https://www.npmjs.com/package/hibiscss)
 
-Functional css (ie. [tachyons](http://tachyons.io)), but easily customizable for your project's visual language. No more rewriting long stylesheets to include your colors, typefaces, and spacing scale! 🌺
+Functional css (à la [tachyons](http://tachyons.io)), but customizable for your project's visual language. No more rewriting long stylesheets to include your colours, typefaces, and spacing scale! 🌺
 
 
 #### Features
@@ -33,13 +34,13 @@ For a quick start, use the [default rule kit](https://github.com/rosszurowski/hi
 import hibiscss from 'hibiscss';
 import kit from 'hibiscss/default';
 
-const styles = hibiscss(kkit({
+const styles = hibiscss(kit({
   colors: {
     pink: '#ffb7b3',
     black: '#141414'
   },
   fontFamily: {
-    work: 'Work Sans, -apple-system, sans-serif'
+    work: 'Work Sans, sans-serif'
   },
   fontSize: [36, 24, 19, 17, 15, 12]
 }));
@@ -55,7 +56,7 @@ Yay! :tada: Check out [the examples](https://github.com/rosszurowski/hibiscss/tr
 
 ## Configuration
 
-Hibiscss only gives you a string of css. You can integrate it with your build system however, but the easiest is to spit out a static css file, like so:
+Hibiscss returns a string of css. You can integrate it with your build system however you'd like. I find the easiest is to spit out a static css file, like so:
 
 Make a file with your config and output it to `console.log`, like so:
 
@@ -70,7 +71,7 @@ const styles = hibiscss(tachyons());
 console.log(styles);
 ```
 
-Then add a `package.json` script to generate the styles, and re-run it whenever I change my project’s visual language.
+Then add a `package.json` script to generate the styles:
 
 ```json
 {
@@ -80,16 +81,16 @@ Then add a `package.json` script to generate the styles, and re-run it whenever 
 }
 ```
 
-Run `npm run build-css` to make the file or update it when you make changes to your kit.
+Run `npm run build-css` to create your styles, and re-run whenever you make changes to your kit.
 
 ## Kits
 
-Hibiscss generates css using _kits_, presets that map a visual language you define to a bunch of css styles. Hibiscss comes with two kits bundled into the package:
+Hibiscss generates css using _kits_, presets that map your visual language to functional css styles. Hibiscss comes with two kits bundled into the package:
 
 * **default** ([docs](https://github.com/rosszurowski/hibiscss/blob/master/docs/default.md)): small, highly customizable kit
 * **tachyons** ([docs](https://github.com/rosszurowski/hibiscss/blob/master/docs/tachyons.md)): familiar tachyons-like classes
 
-Kits are just functions that take a bunch of options, returning rules for hibiscss to generate. For example, using the default kit:
+Kits are functions which take options, and return css rules for hibiscss to generate. For example, using the default kit:
 
 ```js
 import hibiscss from 'hibiscss';
@@ -102,7 +103,8 @@ const config = {
   fontWeight: { light: 300, regular: 400, semibold: 600 }
 };
 
-const css = hibiscss(kit(config));
+const rules = kit(config);
+const css = hibiscss(rules);
 ```
 
 Will give you classes like:
@@ -115,66 +117,9 @@ Kits let you customize everything whether you can adjust line heights to how ver
 
 ### Making a custom kit
 
-You can also define a full rule-set from scratch if you'd like fine-grained control over all the css that gets generated. Kits are simply a function that returns a set of rules, created with the `rule` helper function.
+If you'd like fine-grained control over the final css, you can write your own kit. Kits are simply a function that returns a set of rules, created with the `rule` helper function.
 
-Check out [the custom kit example](https://github.com/rosszurowski/hibiscss/blob/master/examples/custom-kit.js) to see more, or read [the API docs](#api).
-
-## Docs
-
-### Anatomy of a Rule
-
-Hibiscss thinks about functional css rules in these terms:
-
-```
- ┌─ prefix (optional)      ┌─ key                  ┌─ value
- ▼                         ▼                       ▼
-.u-             fontSize-  5   {   font-size   :   1.5   rem   }
-                ▲                  ▲                      ▲
-                └─ name            └─ property            └─ unit
-```
-
-## API
-
-#### `hibiscss(rules: Rule[], ?breakpoints): string`
-
-Returns a css stylesheet from the given rules and breakpoints.
-
-#### `rule(name: string, property: string, values: mixed, ?options)`
-
-Returns a `Rule` with the properties and values mapped out. `name` refers to the selector name, and `property` is the css property/properties it should apply to. `values` is a string, number, array, or object of values to use. The format of this variable determines the keys of the rule.
-
-##### `values`
-
-When `values` is an object (`{ r: 'relative', a: 'absolute' }`), hibiscss returns a set of selectors like this:
-
-```css
-.name-r { property: relative; }
-.name-a { property: absolute; }
-```
-
-When `values` is an array (`[0, 4, 8, 16]`), hibiscss returns a set of selectors like this:
-
-```css
-.name-0 { property: 0; }
-.name-1 { property: 4px; }
-.name-2 { property: 8px; }
-.name-3 { property: 16px; }
-```
-
-When `values` is a string or number like `block`, hibiscss returns a single selector _without a key_:
-
-```css
-.name { property: block; }
-```
-
-##### `options`
-
-The `options` argument takes a set of flags that change how hibiscss interprets the rule. Allowed values are:
-
-* `prefix: string`, an optional prefix to add to the selector. Useful when working with third party css or following naming conventions like [suitcss' utility classes](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md#u-utilityName)
-* `responsive: boolean`, whether or not to group this rule into breakpoints and add suffixes (ie. `.name-a-{s,m,l}`)
-* `unit: string`, when passing numbers as `values`, this unit will be applied. Setting `{ unit: 'rem' }` will cause an array like `[0, 1, 2]` to become `['0', '1rem', '2rem']`
-
+Check out [the custom kit example](https://github.com/rosszurowski/hibiscss/blob/master/examples/custom-kit.js), or read [the API docs](https://github.com/rosszurowski/hibiscss/blob/master/docs/api.md) to learn more.
 
 ## Motivation
 

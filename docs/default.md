@@ -6,7 +6,7 @@ A highly-customizable kit with some sane defaults, intended for a quick and easy
 
 * **smart defaults**: enough to quickly get started
 * **flexible**: easy to add in styles as needed
-* **adoptable**: specifying [verbose or concise class names](#verbose-classes) makes it easy for new developers to adopt
+* **adaptable**: specifying [verbose or concise class names](#verbose-classes) makes it easy for new developers to adopt
 
 ## Usage
 
@@ -15,6 +15,7 @@ Here’s an example configuration with default options for all the values.
 ```js
 const config = {
   colors: {},
+  borderWidths: {},
   borderRadius: {},
   fontFamily: {
     sans: `-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif`,
@@ -47,6 +48,8 @@ const config = {
     '75%': 0.75,
     '100%': 1.0,
   },
+  widths: [],
+  heights: [],
   maxWidths: [],
   sizes: {},
   spacing: [0, 4, 8, 16, 32, 64, 128],
